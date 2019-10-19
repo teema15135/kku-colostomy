@@ -33,7 +33,8 @@ public class HomeFragment extends Fragment {
         routineBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getActivity(), RoutineActivity.class);
+                getActivity().startActivity(intent);
             }
         });
         communicationBtn.setOnClickListener(new View.OnClickListener() {

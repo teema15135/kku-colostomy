@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoutineActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/header_padding"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/routine_back_button"
+            android:layout_width="@dimen/back_button_size"
+            android:layout_height="@dimen/back_button_size"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_thin" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/header_left_margin"
+            android:fontFamily="@font/mitr_regular"
+            android:gravity="center_vertical"
+            android:text="@string/routine"
+            android:textSize="@dimen/header_font_size" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/basic_care_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <!-- Bathing -->
+            <LinearLayout
+                android:id="@+id/routine_bathing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_164114"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/routine_padding_topic"
+                android:paddingTop="@dimen/routine_padding_topic"
+                android:paddingRight="@dimen/routine_padding_topic">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/routine_topic_background"
+                    android:fontFamily="@font/mitr_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/bathing"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:fontFamily="@font/mitr_light"
+                    android:text="@string/bathing_short_describe"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!-- Work out -->
+            <LinearLayout
+                android:id="@+id/routine_work_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_164114"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/routine_padding_topic"
+                android:paddingTop="@dimen/routine_padding_topic"
+                android:paddingRight="@dimen/routine_padding_topic">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/routine_topic_background"
+                    android:fontFamily="@font/mitr_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/work_out"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:fontFamily="@font/mitr_light"
+                    android:text="@string/work_out_short_describe"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!-- Eating meal -->
+            <LinearLayout
+                android:id="@+id/routine_eating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_164114"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/routine_padding_topic"
+                android:paddingTop="@dimen/routine_padding_topic"
+                android:paddingRight="@dimen/routine_padding_topic">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/routine_topic_background"
+                    android:fontFamily="@font/mitr_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/eating"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:fontFamily="@font/mitr_light"
+                    android:text="@string/eating_short_describe"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!-- Sex -->
+            <LinearLayout
+                android:id="@+id/routine_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_164114"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/routine_padding_topic"
+                android:paddingTop="@dimen/routine_padding_topic"
+                android:paddingRight="@dimen/routine_padding_topic">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/routine_topic_background"
+                    android:fontFamily="@font/mitr_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/sex"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:fontFamily="@font/mitr_light"
+                    android:text="@string/sex_short_describe"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

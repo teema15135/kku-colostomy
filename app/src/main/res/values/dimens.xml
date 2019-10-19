@@ -1,8 +1,15 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
 
-    <dimen name="back_button_size">30dp</dimen>
 
     <dimen name="compli_menu_font_size">18sp</dimen>
     <dimen name="compli_menu_img_size">60dp</dimen>
+    <dimen name="header_padding">25dp</dimen>
+    <dimen name="header_font_size">24sp</dimen>
+    <dimen name="header_left_margin">20dp</dimen>
+    <dimen name="back_button_size">30dp</dimen>
+    <dimen name="routine_topic_corner">26dp</dimen>
+    <dimen name="routine_topic_all_corner">12dp</dimen>
+    <dimen name="routine_margin_bottom_content">20dp</dimen>
+    <dimen name="routine_padding_topic">30dp</dimen>
 </resources>
