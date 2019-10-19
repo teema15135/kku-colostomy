@@ -2,6 +2,11 @@
     <string name="app_name">KKU Colostomy</string>
     <string name="action_settings">Settings</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_meaning">ทวารเทียม คือ การผ่าตัดนำส่วนของลำไส้ใหญ่หรือลำไส้เล็กมาเปิดทางหน้าท้อง</string>
+    <string name="home_object">เพื่อเป็นทางระบายสิ่งขับถ่ายในระบบทางเดินอาหารออกสู่ภายนอกแทนการขับถ่ายทางทวารหนัก</string>
+    <string name="home_who">ผู้ที่มีการอุดตันของระบบทางเดินอาหาร เช่น ผู้ที่เป็นเนื้องอกลำไส้ หรือทวารหนัก มีติ่งเนื้อในลำไส้ มีการอักเสบและติดเชื้อในลำไส้ใหญ่ รวมถึงผู้ที่ได้รับบาดเจ็บ หรือกระทบกระแทกอย่างรุนแรงที่</string>
+    <string name="home_where">แพทย์จะผ่าตัดทำทวารเทียมบริเวณหน้าท้องที่มองเห็นได้ชัดและง่ายต่อการทำความสะอาด โดยหลีกเลี่ยงแนวเข็มขัด รอยแผลเป็น หรือบริเวณที่เป็นปุ่มกระดูก</string>
+    <string name="title_activity_complication">ComplicationActivity</string>
 </resources>
