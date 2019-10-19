@@ -9,4 +9,5 @@
     <string name="home_who">ผู้ที่มีการอุดตันของระบบทางเดินอาหาร เช่น ผู้ที่เป็นเนื้องอกลำไส้ หรือทวารหนัก มีติ่งเนื้อในลำไส้ มีการอักเสบและติดเชื้อในลำไส้ใหญ่ รวมถึงผู้ที่ได้รับบาดเจ็บ หรือกระทบกระแทกอย่างรุนแรงที่</string>
     <string name="home_where">แพทย์จะผ่าตัดทำทวารเทียมบริเวณหน้าท้องที่มองเห็นได้ชัดและง่ายต่อการทำความสะอาด โดยหลีกเลี่ยงแนวเข็มขัด รอยแผลเป็น หรือบริเวณที่เป็นปุ่มกระดูก</string>
     <string name="title_activity_complication">ComplicationActivity</string>
+    <string name="kku_ncolostomy">KKU\nColostomy</string>
 </resources>
