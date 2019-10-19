@@ -1,3 +1,8 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="routine_topic_corner">26dp</dimen>
+    <dimen name="routine_topic_all_corner">12dp</dimen>
+    <dimen name="routine_margin_bottom_content">20dp</dimen>
+    <dimen name="routine_padding_topic">30dp</dimen>
+    <dimen name="back_button_size">30dp</dimen>
 </resources>
