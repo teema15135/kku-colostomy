@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComplicationContentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/compli_content_back_btn"
+                android:layout_width="@dimen/back_button_size"
+                android:layout_height="@dimen/back_button_size"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_bold_black" />
+            <TextView
+                android:id="@+id/compli_content_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/compli_content_back_btn"
+                android:fontFamily="@font/mitr_light"
+                android:text="อาการ"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="200dp"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/compli_content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_yellow_round"
+                    android:text="ผิวหนังเป็น บลาๆๆๆ"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"/>
+
+                <TextView
+                    android:id="@+id/compli_content_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_light"/>
+
+                <ImageView
+                    android:id="@+id/compli_content_img"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="180dp"
+                    android:layout_height="130dp"/>
+
+                <TextView
+                    android:id="@+id/compli_content_title_care"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="การดูแลเบื้องต้น"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:id="@+id/compli_content_care"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="จากการแพ้ บลาๆๆๆๆๆๆๆๆ"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_light"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
