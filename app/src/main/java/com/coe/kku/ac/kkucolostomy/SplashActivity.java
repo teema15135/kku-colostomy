@@ -33,7 +33,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        handler.postDelayed(runnable, 2500);
+        handler.postDelayed(runnable, 500);
     }
 
     @Override
