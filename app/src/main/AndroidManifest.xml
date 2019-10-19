@@ -11,8 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ComplicationContentDoctorActivity"></activity>
         <activity android:name=".ComplicationContentActivity" />
-        <activity
-            android:name=".SplashActivity"
         <activity android:name=".RoutineContentActivity"></activity>
         <activity android:name=".RoutineActivity" />
         <activity
