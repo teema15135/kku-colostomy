@@ -10,8 +10,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.flexbox.FlexboxLayout;
-
 public class RoutineContentActivity extends AppCompatActivity {
 
     private RoutineContentTopic topic;
