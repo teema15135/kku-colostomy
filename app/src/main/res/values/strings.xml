@@ -179,4 +179,15 @@
     <string name="click_here_complication_3">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 3&lt;/u>&lt;/i></string>
     <string name="click_here_complication_4">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 4&lt;/u>&lt;/i></string>
     <string name="click_here_complication_7">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 7&lt;/u>&lt;/i></string>
+
+    <string name="commu_content_title">เคล็ดลับชีวิตมีสุขเมื่อต้องออกไปข้างนอก</string>
+    <string name="commu_content_subtitle">การรักษาภาพลักษณ์</string>
+    <string name="commu_content_1">การใช้เข็มขัดรัดหน้าท้อง ช่วยให้ถุงแนบชิดกับตัวมากขึ้น</string>
+    <string name="commu_content_2">สวมเสื้อผ้าที่หลวมเล็กน้อย ใช้เสื้อกั๊ก เสื้อคลุมกระโปรง หรือกางเกงที่มีจีบด้านหน้า เพื่อช่วยพรางตาได้</string>
+    <string name="commu_content_3">เตรียมอุปกรณ์ใส่กล่องให้พร้อม นำอุปกรณ์ติดตัวไปด้วยเสมอ เพื่อดูแลทวารใหม่เมื่อจำเป็น</string>
+    <string name="commu_content_4">ใช้กระดาษชำระเปียกเช็ดทำความสะอาดแทนสำลีชุบน้ำ เพื่อความสะดวก</string>
+    <string name="commu_content_5">อย่าทิ้งอุปกรณ์ไว้ในรถ เนื่องจากอากาศร้อนหรือหนาว อาจจะทำให้บริเวณแป้นของถุงรองรับสิ่งขับถ่ายเสียได้</string>
+    <string name="commu_content_6">เตรียมซื้ออุปกรณ์ไว้ให้เพียงพอเสมอ อย่าใช้ถุงรองรับสิ่งขับถ่ายจนใบสุดท้ายแล้วจึงไปซื้ออุปกรณ์เพิ่ม</string>
+    <string name="commu_content_7">สังเกตและเปลี่ยนถุงเพื่อป้องกันการเต็มล้นของถุง หรือใช้ถุงผ้าคลุมถุงรองรับสิ่งขับถ่ายอีกชั้น เพื่อป้องกันกลิ่นได้</string>
+
 </resources>
