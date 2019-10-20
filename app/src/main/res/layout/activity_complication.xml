@@ -6,16 +6,185 @@
     android:layout_height="match_parent"
     tools:context=".ComplicationActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/compli_back_btn"
+            android:layout_width="@dimen/back_button_size"
+            android:layout_height="@dimen/back_button_size"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_bold_black" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/compli_back_btn"
+            android:fontFamily="@font/mitr_light"
+            android:text="ภาวะแทรกซ้อน"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </RelativeLayout>
 
-    // for play sound
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="90dp">
+            <Button
+                android:id="@+id/compli_menu_seven_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:text="@string/compli_menu_seven"
+                android:textSize="@dimen/compli_menu_font_size" />
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/compli_menu_img_size"-->
+            <!--android:layout_height="@dimen/compli_menu_img_size"-->
+            <!--android:src="@drawable/placeholder_hospital_1"-->
+            <!--android:translationZ="2dp"/>-->
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="160dp">
+            <Button
+                android:id="@+id/compli_menu_eight_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:text="@string/compli_menu_eight"
+                android:textSize="@dimen/compli_menu_font_size" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="220dp">
+            <Button
+                android:id="@+id/compli_menu_six_btn"
+                android:text="@string/compli_menu_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="@dimen/compli_menu_font_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="260dp">
+            <Button
+                android:id="@+id/compli_menu_five_btn"
+                android:text="@string/compli_menu_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:maxWidth="200dp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="@dimen/compli_menu_font_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="400dp">
+            <Button
+                android:id="@+id/compli_menu_four_btn"
+                android:text="@string/compli_menu_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="@dimen/compli_menu_font_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="470dp">
+            <Button
+                android:id="@+id/compli_menu_three_btn"
+                android:text="@string/compli_menu_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="@dimen/compli_menu_font_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="530dp">
+            <Button
+                android:id="@+id/compli_menu_two_btn"
+                android:text="@string/compli_menu_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="170dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="@dimen/compli_menu_font_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="620dp">
+            <Button
+                android:id="@+id/compli_menu_one_btn"
+                android:text="@string/compli_menu_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/selector_pastel_blue_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:textSize="@dimen/compli_menu_font_size" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--for play sound-->
+    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />-->
 
 </RelativeLayout>
