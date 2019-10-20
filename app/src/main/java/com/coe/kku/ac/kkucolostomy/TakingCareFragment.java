@@ -17,18 +17,37 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class TakingCareFragment extends Fragment implements View.OnClickListener{
+public class TakingCareFragment extends Fragment implements View.OnClickListener {
+
+    private Button tcOneBtn, tcTwoBtn, tcThreeBtn;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_taking_care, container, false);
 
+        tcOneBtn = (Button) view.findViewById(R.id.taking_care_one_btn);
+        tcTwoBtn = (Button) view.findViewById(R.id.taking_care_two_btn);
+        tcThreeBtn = (Button) view.findViewById(R.id.taking_care_three_btn);
+
+        tcOneBtn.setOnClickListener(this);
+        tcTwoBtn.setOnClickListener(this);
+        tcThreeBtn.setOnClickListener(this);
+
         return view;
     }
 
     @Override
-    public void onClick(View v) {
-
+    public void onClick(View view) {
+        if (view == tcOneBtn) {
+            Intent intent = new Intent(getActivity(), TakingCareContentOneActivity.class);
+            getActivity().startActivity(intent);
+        } else if (view == tcTwoBtn) {
+            Intent intent = new Intent(getActivity(), TakingCareContentTwoActivity.class);
+            getActivity().startActivity(intent);
+        } else if (view == tcThreeBtn) {
+            Intent intent = new Intent(getActivity(), TakingCareContentThreeActivity.class);
+            getActivity().startActivity(intent);
+        }
     }
 }
