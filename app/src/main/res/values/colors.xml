@@ -5,12 +5,15 @@
     <color name="colorAccent">#D81B60</color>
     <color name="pastel_blue">#D9E8EA</color>
     <color name="pastel_yellow">#F9C663</color>
+    <color name="pastel_yellow_darker">#BC9C5F</color>
     <color name="pastel_dark_blue">#71ACB2</color>
+    <color name="pastel_dark_blue_darker">#558287</color>
+    <color name="pastel_red">#FF8B8B</color>
+    <color name="pastel_red_darker">#AA4F4F</color>
     <color name="grey">#BDBDBD</color>
     <color name="grey_shadow">#88BDBDBD</color>
     <color name="bright_grey">#D5D4D3</color>
     <color name="white">#FFFFFF</color>
     <color name="dark">#6A6A6A</color>
-    <color name="pastel_red">#FF8B8B</color>
     <color name="black">#000000</color>
 </resources>
