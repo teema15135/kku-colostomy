@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CommunicationActivity"></activity>
+        <activity android:name=".TakingCareContentThreeActivity"></activity>
+        <activity android:name=".TakingCareContentTwoActivity" />
+        <activity android:name=".TakingCareContentOneActivity" />
+        <activity android:name=".CommunicationActivity" />
         <activity android:name=".ComplicationContentDoctorActivity" />
         <activity android:name=".ComplicationContentActivity" />
         <activity android:name=".RoutineContentActivity" />
