@@ -8,4 +8,5 @@
     <dimen name="routine_topic_all_corner">12dp</dimen>
     <dimen name="routine_margin_bottom_content">20dp</dimen>
     <dimen name="routine_padding_topic">30dp</dimen>
+    <dimen name="evaluation_button_right_margin">30dp</dimen>
 </resources>

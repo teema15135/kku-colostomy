@@ -50,7 +50,7 @@
         อาหารที่ควรรับประทาน\n
         -อาหารที่ช่วยลดแก๊สในลำไส้  เช่น ข่า ขิง สะระแหน่ โยเกิร์ต \n
         -อาหารที่ลดอาการท้องผูก เช่น ส้ม มะละกอ ผักคะน้า ผักกวางตุ้ง น้ำ\n
-        มะเขือเทศ และดื่มน้ำวันละ 6-8 แก้ว\n\n
+        มะเขือเทศ และดื่มน้ำวันละ 6 &#8211; 8 แก้ว\n\n
         อาหารที่ควรหลีกเลี่ยง\n
         1. อาหารที่ทำให้ท้องเสีย เช่น อาหารรสจัด อาหารหมักดอง ผลไม้ดิบ ผักดิบ อาหารที่ใส่เครื่องเทศมาก อาหารไขมันสูง เป็นต้น\n
         2. อาหารที่ทำให้เกิดกลิ่น เช่น กระเทียม ถั่ว ผักกาด หัวหอม กะหล่ำปลี ชะอม ผักกระเฉด สะตอ กระถิน เป็นต้น\n
@@ -58,10 +58,10 @@
     </string>
     <string name="sex">การมีเพศสัมพันธ์</string>
     <string name="sex_short_describe">
-        สามารถมีเพศสัมพันธ์ได้ตามปกติ เมื่อมีสภาพร่างกายแข็งแรงแล้ว 6-8 สัปดาห์หลังผ่าตัด ควรเตรียมตัว&#8230;
+        สามารถมีเพศสัมพันธ์ได้ตามปกติ เมื่อมีสภาพร่างกายแข็งแรงแล้ว 6 &#8211; 8 สัปดาห์หลังผ่าตัด ควรเตรียมตัว&#8230;
     </string>
     <string name="sex_describe">
-        สามารถมีเพศสัมพันธ์ได้ตามปกติ เมื่อมีสภาพร่างกายแข็งแรงแล้ว 6-8 สัปดาห์หลังผ่าตัด ควรเตรียมตัว
+        สามารถมีเพศสัมพันธ์ได้ตามปกติ เมื่อมีสภาพร่างกายแข็งแรงแล้ว 6 &#8211; 8 สัปดาห์หลังผ่าตัด ควรเตรียมตัว
         โดยระบายสิ่งขับถ่ายออก หรือเปลี่ยนอุปกรณ์รองรับก่อนการมีเพศสัมพันธ์ รวมทั้งการใช้ผ้าพันรอบเอวบิดทับบริเวณทวารใหม่
         เพื่อป้องกันการเสียดสีหรือถุงรองรับสิ่งขับถ่ายหลุด และใช้ท่าที่ไม่กดทับบริเวณทวารเทียม
     </string>
@@ -69,4 +69,61 @@
     <string name="see_the_wound_before_change_the_bag">มาดูแผลก่อนเปลี่ยนถุงกันเถอะ</string>
     <string name="take_out_waste">การเทของเสีย และการ\nเปลี่ยนถุงรองรับของเสีย</string>
     <string name="change_platform">การเปลี่ยนแป้นขอบแผล</string>
+    <string name="evaluation">การประเมินผล</string>
+    <string name="pink_or_red">ชมพู, แดง</string>
+    <string name="dark_red_and_more_red">แดงคล้ำ, แดงมากขึ้น</string>
+    <string name="dark_and_black">สีดำคล้ำ, ดำ</string>
+    <string name="color_of_colostomy">สีทวารเทียม</string>
+    <string name="moisture_of_colostomy">ความชุ่มชึ้น</string>
+    <string name="good_moisture">ผิวมันวาว ชุ่มชึ้นดี</string>
+    <string name="dry_colostomy">แห้ง ไม่มันวาว</string>
+    <string name="temp_of_colostomy">ความอุ่น</string>
+    <string name="warm">อุ่น</string>
+    <string name="cold_colostomy">เย็น ซีด</string>
+    <string name="position_of_colostomy">ความสูงของทวานเทียม</string>
+    <string name="normal_position">ความสูงเท่าเดิม</string>
+    <string name="popout">ยื่นออกมากขึ้น</string>
+    <string name="collapse">ยุบลงจากเดิม</string>
+    <string name="bleeding">เลือดออก</string>
+    <string name="no_bleeding">ไม่มีเลือดออก</string>
+    <string name="bleeding_little">มีเลือดซึม</string>
+    <string name="bleeding_tissue">มีเลือดซึม ร่วมกับมีเยื่อบุลำไส้สีขาว, เหลือง แสบรอบทวารเทียม</string>
+    <string name="bleeding_node">มีเลือดซึม ร่วมกับมีตุ่มนูนรอบทวารเทียม</string>
+    <string name="size_of_colostomy">ขนาดของทวารเทียม</string>
+    <string name="normal_size">ขนาดรูทวารเทียมเท่าเดิม</string>
+    <string name="bigger_size">ขนาดรูทวารเทียมบวม</string>
+    <string name="smaller_size">รูทวารเทียมตีบเล็กลง</string>
+    <string name="skin_around_colostomy">ผิวหนังรอบทวารเทียม</string>
+    <string name="totally_normal">ไม่มีอาการผิดปกติ</string>
+    <string name="rash">มีผื่น ตุ่ม มีอาการคัน</string>
+    <string name="peeling_skin">ผิวลอกหลุด ไม่มีผื่นหรือคัน</string>
+    <string name="leak_of_liquid">ผิวหนังรอบทวารเทียมเป็นแผลตื้น มีสิ่งคัดหลั่งรั่วซึม</string>
+    <string name="inflamed">ผิวหนังเป็นตุ่มอักเสบ</string>
+    <string name="swelling_around">มีก้อนตุง บริเวณผิวหนังรอบทวารเทียม</string>
+    <string name="separated">มีการแยกของรอยต่อระหว่างผิวหนัง กับทวารเทียม</string>
+    <string name="choice11">ให้การดูแลตามปกติ</string>
+    <string name="choice12">ควรรีบไปพบแพทย์</string>
+    <string name="choice13">ควรรีบไปพบแพทย์</string>
+    <string name="choice21">ให้การดูแลตามปกติ</string>
+    <string name="choice22">ควรรีบไปพบแพทย์</string>
+    <string name="choice31">ให้การดูแลตามปกติ</string>
+    <string name="choice32">หากพบร่วมกับทวารเทียมมีสีคล้ำ และมีกลิ่นเหม็น ควรรีบไปพบแพทย์</string>
+    <string name="choice41">ให้การดูแลตามปกติ</string>
+    <string name="choice42">ควรรีบไปพบแพทย์</string>
+    <string name="choice43">ควรรีบไปพบแพทย์</string>
+    <string name="choice51">ให้การดูแลตามปกติ</string>
+    <string name="choice52a">เป็นอาการปกติที่สามารถพบได้ ใช้สำลีกด 5 &#8211; 10 นาที ไม่จำเป็นต้องใช้ยาฆ่าเชื้อหรือยาล้างแผล หากเลือดไหลไม่หยุดควรไปพบแพทย์</string>
+    <string name="choice52bc">เป็นอาการผิดปกติ สามารถดูแลได้โดยใช้สำลีกด 5 &#8211; 10 นาที ไม่จำเป็นต้องใช้ยาฆ่าเชื้อหรือยาล้างแผล หากเลือดไม่หยุดไหลควรไปพบแพทย์</string>
+    <string name="choice53">ดูแลเปลี่ยนทวารเทียมให้ถูกวิธี</string>
+    <string name="choice54">ควรไปพบแพทย์ เพื่อทำการรักษาต่อ</string>
+    <string name="choice61">ให้การดูแลตามปกติ</string>
+    <string name="choice62ab">เป็นอาการที่อาจเกิดขึ้นได้ โดยหลังผ่าตัด ทวารเทียมอาจบวม และจะมีขนาดค่อย ๆ เล็กลง</string>
+    <string name="choice63">หากพบทวารเทียมมีรูปิดแคบลง ร่วมกับสิ่งขับถ่ายเป็นลำ เล็กลงเรื่อย ๆ ควรรีบไปพบแพทย์</string>
+    <string name="choice71">ให้การดูแลตามปกติ</string>
+    <string name="choice72">ลอกแป้นอย่างนุ่มนวล ไม่บ่อยเกินไปไม่เกาบริเวณที่คันมีผื่น และควรปรึกษาแพทย์</string>
+    <string name="choice73">เปลี่ยนแป้นให้น้อยลง ติดให้ถูกวิธี ไม่รัดเข็มขัดหรือผ้านุ่งแน่นเกินไป</string>
+    <string name="choice74">ให้เปลี่ยนแป้นทันที</string>
+    <string name="choice75">ควรเปลี่ยนวิธีการเปลี่ยนแป้นด้วยความนุ่มนวล</string>
+    <string name="choice76">ใช้ผ้ายืดหน้าท้องที่เจาะเป็นช่องคาดทับแป้น จะช่วยไม่ให้เป็นมากขึ้น และยังกดให้แป้นแนบติดผนังหน้าท้องได้ดีขึ้น</string>
+    <string name="choice77">ทำความสะอาดแผลด้วย 0.9% NSS ตามปกติ อาจเพิ่มความถี่ในการเปลี่ยนถุงเป็นทุกครั้งที่ทำแผล และไม่ควรใช้ถุงรองรับระบบนูน เพราะอาจทำให้เกิดแรงกด ทำให้แผลแยกเพิ่มขึ้น</string>
 </resources>
