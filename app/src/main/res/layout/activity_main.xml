@@ -19,7 +19,7 @@
         app:menu="@menu/bottom_navigation"
         app:itemIconTint="@color/pastel_dark_blue"
         app:itemTextColor="@color/pastel_dark_blue"
-        app:labelVisibilityMode="selected"
+        app:labelVisibilityMode="labeled"
         android:background="?android:attr/windowBackground">
 
         <!--#B3B6B7-->
