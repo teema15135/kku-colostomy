@@ -55,7 +55,6 @@
     <string name="com"></string>
 
 
-
     <string name="routine">กิจวัตรประจำวัน</string>
     <string name="bathing">การอาบน้ำ</string>
     <string name="bathing_short_describe">
@@ -163,12 +162,21 @@
     <string name="choice54">ควรไปพบแพทย์ เพื่อทำการรักษาต่อ</string>
     <string name="choice61">ให้การดูแลตามปกติ</string>
     <string name="choice62ab">เป็นอาการที่อาจเกิดขึ้นได้ โดยหลังผ่าตัด ทวารเทียมอาจบวม และจะมีขนาดค่อย ๆ เล็กลง</string>
+    <string name="choice62c">หากพบร่วมกับความผิดปกติอื่น ๆ เช่น ปวด มีหนอง มีกลิ่นเหม็น ควรรีบไปพบแพทย์</string>
     <string name="choice63">หากพบทวารเทียมมีรูปิดแคบลง ร่วมกับสิ่งขับถ่ายเป็นลำ เล็กลงเรื่อย ๆ ควรรีบไปพบแพทย์</string>
     <string name="choice71">ให้การดูแลตามปกติ</string>
     <string name="choice72">ลอกแป้นอย่างนุ่มนวล ไม่บ่อยเกินไปไม่เกาบริเวณที่คันมีผื่น และควรปรึกษาแพทย์</string>
     <string name="choice73">เปลี่ยนแป้นให้น้อยลง ติดให้ถูกวิธี ไม่รัดเข็มขัดหรือผ้านุ่งแน่นเกินไป</string>
     <string name="choice74">ให้เปลี่ยนแป้นทันที</string>
     <string name="choice75">ควรเปลี่ยนวิธีการเปลี่ยนแป้นด้วยความนุ่มนวล</string>
-    <string name="choice76">ใช้ผ้ายืดหน้าท้องที่เจาะเป็นช่องคาดทับแป้น จะช่วยไม่ให้เป็นมากขึ้น และยังกดให้แป้นแนบติดผนังหน้าท้องได้ดีขึ้น</string>
+    <string name="choice76">ใช้ผ้ายืดหน้าท้องที่เจาะเป็นช่องคาดทับแป้น จะช่วยไม่ให้เป็นมากขึ้น และยังกดให้แป้นแนบติดผนังหน้าท้องได้ดีขึ้น หากมีอาการปวดท้องร่วมด้วย ควรรีบไปพบแพทย์</string>
     <string name="choice77">ทำความสะอาดแผลด้วย 0.9% NSS ตามปกติ อาจเพิ่มความถี่ในการเปลี่ยนถุงเป็นทุกครั้งที่ทำแผล และไม่ควรใช้ถุงรองรับระบบนูน เพราะอาจทำให้เกิดแรงกด ทำให้แผลแยกเพิ่มขึ้น</string>
+    <string name="advertise">คำแนะนำ</string>
+    <string name="close">ปิด</string>
+    <string name="choice_error">มีข้อผิดพลาดที่ข้อความแนะนำ</string>
+    <string name="click_here_complication_1">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 1&lt;/u>&lt;/i></string>
+    <string name="click_here_complication_2">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 2&lt;/u>&lt;/i></string>
+    <string name="click_here_complication_3">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 3&lt;/u>&lt;/i></string>
+    <string name="click_here_complication_4">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 4&lt;/u>&lt;/i></string>
+    <string name="click_here_complication_7">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 7&lt;/u>&lt;/i></string>
 </resources>
