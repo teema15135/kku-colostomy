@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".TakingCareContentOneActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/pastel_blue"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,477 +29,509 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/back_bold_black" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <TextView
+                android:layout_marginTop="20dp"
                 android:id="@+id/compli_content_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:maxWidth="250dp"
+                android:gravity="center_horizontal"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/tc_one_back_btn"
-                android:fontFamily="@font/mitr_light"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mitr_regular"
                 android:text="@string/tc_one_title"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-        </RelativeLayout>
+                android:textColor="@color/dark"
+                android:textSize="24dp" />
 
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:overScrollMode="always"
-            android:scrollbars="none">
-
+            <!--1-->
             <LinearLayout
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
                 android:orientation="vertical">
 
-                <!--1-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="@string/tc_one_t1"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"/>
                 <LinearLayout
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:background="@drawable/shadow_home"
-                    android:orientation="vertical">
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/tc_one_normal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_weight="1.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_n1"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:text="@string/tc_one_t1"
+                        android:text="@string/tc_one_abnormal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_a1"
                         android:textColor="@color/dark"
                         android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"/>
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_normal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_n1"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_abnormal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_a1"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
+                        android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!--2-->
+            </LinearLayout>
+
+            <!--2-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/tc_content_one_margin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="@string/tc_one_t2"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"/>
                 <LinearLayout
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:background="@drawable/shadow_home"
-                    android:orientation="vertical">
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/tc_one_normal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_weight="1.7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_n2"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:text="@string/tc_one_t2"
+                        android:text="@string/tc_one_abnormal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_a2"
                         android:textColor="@color/dark"
                         android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"/>
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_normal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_n2"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_abnormal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_a2"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
+                        android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!--3-->
+            </LinearLayout>
+
+            <!--3-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/tc_content_one_margin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="@string/tc_one_t3"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"/>
                 <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:background="@drawable/shadow_home"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/tc_one_normal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_weight="1.7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_n3"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:text="@string/tc_one_t3"
+                        android:text="@string/tc_one_abnormal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_a3"
                         android:textColor="@color/dark"
                         android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"/>
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_normal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_n3"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_abnormal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_a3"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
+                        android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!--4-->
+            </LinearLayout>
+
+            <!--4-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/tc_content_one_margin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="@string/tc_one_t4"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"/>
                 <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:background="@drawable/shadow_home"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/tc_one_normal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_n4"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:text="@string/tc_one_t4"
+                        android:text="@string/tc_one_abnormal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_a4"
                         android:textColor="@color/dark"
                         android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"/>
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_normal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_n4"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_abnormal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_a4"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
+                        android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!--5-->
+            </LinearLayout>
+
+            <!--5-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/tc_content_one_margin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="@string/tc_one_t5"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"/>
                 <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:background="@drawable/shadow_home"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/tc_one_normal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_n5"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:text="@string/tc_one_t5"
+                        android:text="@string/tc_one_abnormal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_a5"
                         android:textColor="@color/dark"
                         android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"/>
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_normal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_n5"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_abnormal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_a5"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
+                        android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!--6-->
+            </LinearLayout>
+
+            <!--6-->
+            <LinearLayout
+                android:layout_marginTop="@dimen/tc_content_one_margin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="@string/tc_one_t6"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"/>
                 <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:background="@drawable/shadow_home"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/tc_one_normal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_weight="1.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_n6"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:text="@string/tc_one_t6"
+                        android:text="@string/tc_one_abnormal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_a6"
                         android:textColor="@color/dark"
                         android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"/>
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_normal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_n6"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_abnormal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_a6"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
+                        android:textSize="18sp"/>
                 </LinearLayout>
 
-                <!--7-->
+            </LinearLayout>
+
+            <!--7-->
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="@dimen/tc_content_one_margin_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:background="@drawable/shadow_home"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="@string/tc_one_t7"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"/>
                 <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="30dp"
-                    android:background="@drawable/shadow_home"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="0.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/tc_one_normal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_weight="1.7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_n7"
+                        android:textColor="@color/dark"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:text="@string/tc_one_t7"
+                        android:text="@string/tc_one_abnormal"
+                        android:textColor="@color/pastel_yellow"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tc_one_a7"
                         android:textColor="@color/dark"
                         android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"/>
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_normal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_n7"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="5dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingHorizontal="20dp"
-                            android:text="@string/tc_one_abnormal"
-                            android:textColor="@color/pastel_yellow"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/tc_one_a7"
-                            android:textColor="@color/dark"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textSize="18sp"/>
-                    </LinearLayout>
-
+                        android:textSize="18sp"/>
                 </LinearLayout>
-
 
             </LinearLayout>
 
 
-        </ScrollView>
+        </LinearLayout>
 
-    </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
