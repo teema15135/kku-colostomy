@@ -68,6 +68,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_11"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -89,6 +93,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_12"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -110,6 +118,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_13"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -155,6 +167,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_21"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -176,6 +192,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_22"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -221,6 +241,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_31"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -242,6 +266,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_32"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -287,6 +315,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_41"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -308,6 +340,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_42"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -329,6 +365,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_43"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -374,6 +414,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_51"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -395,6 +439,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_52"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -417,6 +465,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_53"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -440,6 +492,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_54"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -484,6 +540,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_61"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -505,6 +565,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_62"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -527,6 +591,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_63"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -572,6 +640,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_71"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -593,6 +665,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_72"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -615,6 +691,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_73"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -638,6 +718,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_74"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -661,6 +745,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_75"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -684,6 +772,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_76"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
@@ -707,6 +799,10 @@
                     android:paddingLeft="@dimen/evaluation_button_right_margin">
 
                     <ImageButton
+                        android:padding="4dp"
+                        android:src="@drawable/check_circle_unchecked"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
                         android:id="@+id/choice_77"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
