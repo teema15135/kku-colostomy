@@ -6,21 +6,21 @@
     <item
         android:id="@+id/nav_taking_care"
         android:enabled="true"
-        android:icon="@drawable/menu_aidkit_grey"
+        android:icon="@drawable/selector_navigation_aidkit"
         android:title="การดูแลตัวเอง"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_home"
         android:enabled="true"
-        android:icon="@drawable/menu_home_grey"
+        android:icon="@drawable/selector_navigation_home"
         android:title="หน้าหลัก"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_evaluation"
         android:enabled="true"
-        android:icon="@drawable/menu_file_grey"
+        android:icon="@drawable/selector_navigation_file"
         android:title="ประเมิน"
         app:showAsAction="ifRoom" />
 
