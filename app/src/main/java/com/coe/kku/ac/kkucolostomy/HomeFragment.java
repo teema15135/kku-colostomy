@@ -40,7 +40,8 @@ public class HomeFragment extends Fragment {
         communicationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getActivity(), CommunicationActivity.class);
+                getActivity().startActivity(intent);
             }
         });
         complicatoinBtn.setOnClickListener(new View.OnClickListener() {

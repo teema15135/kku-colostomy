@@ -16,7 +16,7 @@
             android:layout_height="70dp"
             android:gravity="center_vertical">
             <ImageButton
-                android:id="@+id/compli_content_back_btn"
+                android:id="@+id/commu_content_back_btn"
                 android:layout_width="@dimen/back_button_size"
                 android:layout_height="@dimen/back_button_size"
                 android:layout_margin="20dp"
@@ -25,11 +25,10 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/back_bold_black" />
             <TextView
-                android:id="@+id/compli_content_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/compli_content_back_btn"
+                android:layout_toRightOf="@id/commu_content_back_btn"
                 android:fontFamily="@font/mitr_light"
                 android:text="การเข้าสังคม"
                 android:textColor="@color/black"
@@ -46,12 +45,92 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="200dp"
                 android:padding="30dp"
                 android:background="@drawable/shadow_home"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_title"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textSize="16sp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:paddingHorizontal="15dp"
+                    android:textColor="@color/dark"/>
 
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_subtitle"
+                    android:textColor="@color/pastel_yellow"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/mitr_regular"/>
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_1"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_2"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_3"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_4"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_5"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_6"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mitr_regular"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commu_content_7"
+                    android:textColor="@color/dark"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/mitr_regular"/>
 
 
             </LinearLayout>
