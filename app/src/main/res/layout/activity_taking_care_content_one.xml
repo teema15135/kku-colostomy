@@ -91,7 +91,7 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_normal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_weight="1.8"
@@ -99,7 +99,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_n1"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -114,14 +114,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_abnormal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_a1"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -158,7 +158,7 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_normal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_weight="1.7"
@@ -166,7 +166,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_n2"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -181,14 +181,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_abnormal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_a2"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -219,21 +219,19 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <TextView
-                        android:layout_weight="0.8"
-                        android:layout_width="wrap_content"
+                        android:layout_width="90dp"
                         android:layout_height="wrap_content"
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_normal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
-                        android:layout_weight="1.7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_n3"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -248,14 +246,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_abnormal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_a3"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -292,14 +290,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_normal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_n4"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -314,14 +312,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_abnormal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_a4"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -358,14 +356,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_normal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_n5"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -380,14 +378,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_abnormal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_a5"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -424,7 +422,7 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_normal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_weight="1.5"
@@ -432,7 +430,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_n6"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -447,14 +445,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_abnormal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_a6"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -492,7 +490,7 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_normal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_weight="1.7"
@@ -500,7 +498,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_n7"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
@@ -515,14 +513,14 @@
                         android:paddingHorizontal="20dp"
                         android:text="@string/tc_one_abnormal"
                         android:textColor="@color/pastel_yellow"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/tc_one_a7"
                         android:textColor="@color/dark"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:textSize="18sp"/>
                 </LinearLayout>
 
