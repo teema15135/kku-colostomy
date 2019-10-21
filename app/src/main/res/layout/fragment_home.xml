@@ -68,14 +68,33 @@
                             android:textSize="15sp"
                             android:fontFamily="@font/mitr_light"
                             android:textColor="@color/pastel_dark_blue"/>
-                        <TextView
+
+                        <LinearLayout
                             android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="ทวารเทียมคืออะไร"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textColor="@color/dark"/>
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ทวารเทียมคืออะไร"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/mitr_regular"
+                                android:textColor="@color/dark"/>
+
+                            <ImageButton
+                                android:id="@+id/home_what_is_colostomy_speaker"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:layout_gravity="center_vertical"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/speaker_red"
+                                android:scaleType="fitCenter"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
                         <TextView
                             android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
@@ -85,14 +104,32 @@
                             android:fontFamily="@font/mitr_light"
                             android:textColor="@color/dark"/>
 
-                        <TextView
+                        <LinearLayout
                             android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="ทำไมจึงต้องทำทวารเทียม"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textColor="@color/dark"/>
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ทำไมจึงต้องทำทวารเทียม"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/mitr_regular"
+                                android:textColor="@color/dark"/>
+
+                            <ImageButton
+                                android:id="@+id/home_why_colostomy_speaker"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:layout_gravity="center_vertical"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/speaker_red"
+                                android:scaleType="fitCenter"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
                         <TextView
                             android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
@@ -102,14 +139,31 @@
                             android:fontFamily="@font/mitr_light"
                             android:textColor="@color/dark"/>
 
-                        <TextView
+                        <LinearLayout
                             android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ใครบ้างที่ต้องทำทวารเทียม"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textColor="@color/dark"/>
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ใครบ้างที่ต้องทำทวารเทียม"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/mitr_regular"
+                                android:textColor="@color/dark"/>
+
+                            <ImageButton
+                                android:id="@+id/home_who_need_colostomy"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:layout_gravity="center_vertical"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/speaker_red"
+                                android:scaleType="fitCenter"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
                         <TextView
                             android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
@@ -119,14 +173,31 @@
                             android:fontFamily="@font/mitr_light"
                             android:textColor="@color/dark"/>
 
-                        <TextView
+                        <LinearLayout
                             android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ตำแหน่งที่ทำทวารเทียม"
-                            android:textSize="20sp"
-                            android:fontFamily="@font/mitr_regular"
-                            android:textColor="@color/dark"/>
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ตำแหน่งที่ทำทวารเทียม"
+                                android:textSize="20sp"
+                                android:fontFamily="@font/mitr_regular"
+                                android:textColor="@color/dark"/>
+
+                            <ImageButton
+                                android:id="@+id/home_position_colostomy_speaker"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:layout_gravity="center_vertical"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/speaker_red"
+                                android:scaleType="fitCenter"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
                         <TextView
                             android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
