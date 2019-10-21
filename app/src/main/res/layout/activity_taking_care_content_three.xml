@@ -51,6 +51,7 @@
                 android:layout_height="200dp"
                 android:background="@color/pastel_blue">
                 <TextView
+                    android:id="@+id/taking_care_three_topic"
                     android:gravity="center"
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
@@ -60,6 +61,17 @@
                     android:textColor="@color/dark"
                     android:textSize="20sp"
                     android:fontFamily="@font/mitr_regular"/>
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/taking_care_three_overall_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taking_care_three_topic"
+                    android:fontFamily="@font/mitr_regular"
+                    android:gravity="center_horizontal"
+                    android:text="กดเพื่อฟังการอธิบายโดยรวม"
+                    android:textColor="@color/colorAccent" />
             </RelativeLayout>
 
             <LinearLayout

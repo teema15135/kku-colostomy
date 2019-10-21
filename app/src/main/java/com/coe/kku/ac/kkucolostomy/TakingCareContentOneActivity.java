@@ -76,4 +76,10 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
         mPlayer = MediaPlayer.create(TakingCareContentOneActivity.this, rawResourceId);
         mPlayer.start();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mPlayer != null && mPlayer.isPlaying()) mPlayer.stop();
+    }
 }

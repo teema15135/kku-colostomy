@@ -7,9 +7,9 @@
     tools:context=".TakingCareContentOneActivity">
 
     <!--<View-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="320dp"-->
-        <!--android:background="@color/white"/>-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="320dp"-->
+    <!--android:background="@color/white"/>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,13 +20,14 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:gravity="center_vertical">
+
             <ImageButton
                 android:id="@+id/tc_two_back_btn"
                 android:layout_width="@dimen/back_button_size"
                 android:layout_height="@dimen/back_button_size"
                 android:layout_margin="20dp"
-                android:clickable="true"
                 android:background="@android:color/transparent"
+                android:clickable="true"
                 android:scaleType="fitCenter"
                 android:src="@drawable/back_bold_black" />
         </RelativeLayout>
@@ -34,450 +35,571 @@
     </LinearLayout>
 
     <ScrollView
-        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:overScrollMode="always"
         android:scrollbars="none">
 
         <LinearLayout
-            android:layout_marginHorizontal="0dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:background="@color/pastel_blue">
+
                 <TextView
-                    android:gravity="center"
-                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:layout_marginHorizontal="50dp"
+                    android:fontFamily="@font/mitr_regular"
+                    android:gravity="center"
                     android:text="@string/tc_two_title"
                     android:textColor="@color/dark"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <LinearLayout
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp"
                     android:text="@string/tc_two_c1_title"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:paddingVertical="5dp"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c1_s1_title"
-                    android:layout_marginVertical="5dp"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c1_s1"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_1"/>
-
-                <TextView
-                    android:layout_marginVertical="5dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c1_s2_title"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c1_s2"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_2"/>
-
-                <TextView
-                    android:layout_marginTop="40dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ถุงรองรับที่ดี"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:paddingVertical="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_1"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="40dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="การดูแลตัวเองเมื่อมีทวารเทียม"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:paddingVertical="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_2"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_3"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="40dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="เวลาที่ควรเปลี่ยนถุงรองรับสิ่งขับถ่าย"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:paddingVertical="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_4"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <!--11 steps-->
-                <TextView
-                    android:layout_marginTop="40dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="วิธีการเปลี่ยนถุงรองรับสิ่งขับถ่าย"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:paddingVertical="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s1"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s2"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s3"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_3"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s4"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s5"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_5"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s6"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_6"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s7"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_7"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s8"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_8"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s9"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
-
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_9"/>
-
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s10"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
 
                 <LinearLayout
-                    android:layout_marginTop="15dp"
-                    android:layout_gravity="center_horizontal"
-                    android:gravity="center_horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:layout_width="@dimen/tc_content_two_img_width"
-                        android:layout_height="@dimen/tc_content_two_img_height"
-                        android:src="@drawable/img_2_22_10a"/>
-                    <ImageView
-                        android:layout_gravity="center"
-                        android:layout_width="@dimen/tc_content_two_img_width"
-                        android:layout_height="@dimen/tc_content_two_img_height"
-                        android:src="@drawable/img_2_22_10b"/>
-                </LinearLayout>
-                <ImageView
-                    android:layout_gravity="center"
-                    android:layout_width="@dimen/tc_content_two_img_width"
-                    android:layout_height="@dimen/tc_content_two_img_height"
-                    android:src="@drawable/img_2_22_10c"/>
-
-                <TextView
-                    android:layout_marginTop="30dp"
-                    android:layout_marginLeft="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c2_s11"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baijamjuree_semibold"
+                        android:text="@string/tc_two_c1_s1_title"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/taking_care_two_1_speaker"
+                        android:layout_width="25dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/speaker_red" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
                     android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
                     android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
+                    android:text="@string/tc_two_c1_s1"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/img_2_22_1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5dp"
+                        android:fontFamily="@font/baijamjuree_semibold"
+                        android:text="@string/tc_two_c1_s2_title"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/taking_care_two_2_speaker"
+                        android:layout_width="25dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/speaker_red" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c1_s2"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/img_2_22_2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:fontFamily="@font/baijamjuree_semibold"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="5dp"
+                        android:text="@string/good_bag"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/taking_care_two_3_speaker"
+                        android:layout_width="25dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/speaker_red" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_1"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp"
+                    android:text="การดูแลตัวเองเมื่อมีทวารเทียม"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_2"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_3"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:fontFamily="@font/baijamjuree_semibold"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="5dp"
+                        android:text="เวลาที่ควรเปลี่ยนถุงรองรับสิ่งขับถ่าย"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/taking_care_two_41_speaker"
+                        android:layout_width="25dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/speaker_red" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_4"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <!--11 steps-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:fontFamily="@font/baijamjuree_semibold"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="5dp"
+                        android:text="วิธีการเปลี่ยนถุงรองรับสิ่งขับถ่าย"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
+
+                    <ImageButton
+                        android:id="@+id/taking_care_two_42_speaker"
+                        android:layout_width="25dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/speaker_red" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s1"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s2"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s3"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/img_2_22_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s4"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s5"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/img_2_22_5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s6"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/img_2_22_6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s7"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/img_2_22_7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s8"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/img_2_22_8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s9"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/img_2_22_9" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s10"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/tc_content_two_img_width"
+                        android:layout_height="@dimen/tc_content_two_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_2_22_10a" />
+
+                    <ImageView
+                        android:layout_width="@dimen/tc_content_two_img_width"
+                        android:layout_height="@dimen/tc_content_two_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_2_22_10b" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/tc_content_two_img_width"
+                    android:layout_height="@dimen/tc_content_two_img_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_2_22_10c" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/tc_two_c2_s11"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
 
 
                 <!--c4 c5-->
                 <TextView
-                    android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c4c5_title"
+                    android:layout_marginTop="40dp"
                     android:background="@drawable/shape_pastel_yellow_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="5dp"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:textColor="@color/darker"/>
+                    android:text="@string/tc_two_c4c5_title"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/taking_care_two_43_speaker"
+                        android:layout_width="25dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        android:layout_marginRight="@dimen/speaker_right_margin"
+                        android:src="@drawable/speaker_red" />
+
+                    <TextView
+                        android:text="กดเพื่อฟังคำแนะนำ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
+
+                </LinearLayout>
 
                 <!--c4-->
                 <TextView
-                    android:layout_marginTop="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c4_title"
+                    android:layout_marginTop="15dp"
                     android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="5dp"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:textColor="@color/darker"/>
+                    android:text="@string/tc_two_c4_title"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
 
                 <TextView
-                    android:layout_marginLeft="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c4_1"
+                    android:layout_marginLeft="15dp"
                     android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
                     android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
+                    android:text="@string/tc_two_c4_1"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
 
                 <!--c5-->
                 <TextView
-                    android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c5_title"
+                    android:layout_marginTop="40dp"
                     android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="5dp"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:textSize="@dimen/tc_content_two_text_size"
-                    android:textColor="@color/darker"/>
+                    android:text="@string/tc_two_c5_title"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
 
                 <TextView
-                    android:layout_marginLeft="15dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/tc_two_c5"
+                    android:layout_marginLeft="15dp"
                     android:fontFamily="@font/baijamjuree_regular"
-                    android:textSize="@dimen/tc_content_two_text_size"
                     android:lineSpacingExtra="5dp"
-                    android:textColor="@color/darker"/>
+                    android:text="@string/tc_two_c5"
+                    android:textColor="@color/darker"
+                    android:textSize="@dimen/tc_content_two_text_size" />
 
             </LinearLayout>
 
