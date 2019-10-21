@@ -101,7 +101,8 @@
                             android:layout_height="wrap_content"
                             android:text="@string/home_meaning"
                             android:textSize="16sp"
-                            android:fontFamily="@font/mitr_light"
+                            android:fontFamily="@font/baijamjuree_regular"
+                            android:lineSpacingExtra="5dp"
                             android:textColor="@color/dark"/>
 
                         <LinearLayout
@@ -136,7 +137,8 @@
                             android:layout_height="wrap_content"
                             android:text="@string/home_object"
                             android:textSize="16sp"
-                            android:fontFamily="@font/mitr_light"
+                            android:fontFamily="@font/baijamjuree_regular"
+                            android:lineSpacingExtra="5dp"
                             android:textColor="@color/dark"/>
 
                         <LinearLayout
@@ -170,7 +172,8 @@
                             android:layout_height="wrap_content"
                             android:text="@string/home_who"
                             android:textSize="16sp"
-                            android:fontFamily="@font/mitr_light"
+                            android:fontFamily="@font/baijamjuree_regular"
+                            android:lineSpacingExtra="5dp"
                             android:textColor="@color/dark"/>
 
                         <LinearLayout
@@ -204,7 +207,8 @@
                             android:layout_height="wrap_content"
                             android:text="@string/home_where"
                             android:textSize="16sp"
-                            android:fontFamily="@font/mitr_light"
+                            android:fontFamily="@font/baijamjuree_regular"
+                            android:lineSpacingExtra="5dp"
                             android:textColor="@color/dark"/>
                     </LinearLayout>
 
@@ -222,7 +226,7 @@
                             android:text="กิจวัตรประจำวัน"
                             android:layout_gravity="center_horizontal"
                             android:layout_weight="1"
-                            android:textSize="16sp"
+                            android:textSize="18sp"
                             android:textColor="@color/dark"
                             android:paddingHorizontal="20dp"
                             android:fontFamily="@font/mitr_regular"
@@ -240,9 +244,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="7dp"
                                 android:text="การเข้าสังคม"
-                                android:textSize="16sp"
+                                android:textSize="18sp"
                                 android:textColor="@color/dark"
-                                android:paddingHorizontal="25dp"
+                                android:paddingHorizontal="20dp"
                                 android:fontFamily="@font/mitr_regular"
                                 android:background="@drawable/selector_pastel_blue_shadow_round"/>
                             <Button
@@ -250,9 +254,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="ภาวะแทรกซ้อน"
-                                android:textSize="16sp"
+                                android:textSize="18sp"
                                 android:textColor="@color/dark"
-                                android:paddingHorizontal="25dp"
+                                android:paddingHorizontal="20dp"
                                 android:fontFamily="@font/mitr_regular"
                                 android:background="@drawable/selector_pastel_yellow_shadow_round"/>
                         </LinearLayout>
