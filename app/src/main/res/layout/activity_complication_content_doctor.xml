@@ -54,19 +54,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1. ลำไส้มีสีที่เปลี่ยนไป "
-                    android:textSize="20sp"
-                    android:textColor="@color/dark"
+                    android:layout_marginBottom="10dp"
                     android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:text="1. ลำไส้มีสีที่เปลี่ยนไป "
+                    android:textColor="@color/dark"
+                    android:textSize="18sp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/compli_content_doctor_1"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_light"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
 
                 <ImageView
                     android:layout_marginTop="20dp"
@@ -77,22 +79,23 @@
 
 
                 <TextView
+                    android:layout_marginBottom="10dp"
                     android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2. ลำไส้นูนยื่นออกมา"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:background="@drawable/shape_pastel_blue_round"
                     android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_semibold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/compli_content_doctor_2"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_light"/>
+                    android:fontFamily="@font/baijamjuree_regular"/>
 
                 <ImageView
                     android:layout_marginTop="20dp"
@@ -103,22 +106,24 @@
 
 
                 <TextView
+                    android:layout_marginBottom="10dp"
                     android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="3. ทวารเทียมตีบ "
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:background="@drawable/shape_pastel_blue_round"
                     android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_semibold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/compli_content_doctor_3"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_light"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
 
                 <ImageView
                     android:layout_marginTop="20dp"
@@ -129,22 +134,25 @@
 
 
                 <TextView
+                    android:layout_marginBottom="10dp"
                     android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4. ทวารเทียมยุบตัวลงระดับผิวหนังหรือต่ำกว่าระดับผิวหนัง "
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:background="@drawable/shape_pastel_blue_round"
                     android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_semibold"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/compli_content_doctor_4"
-                    android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_light"/>
+                    android:textSize="18sp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp" />
 
                 <ImageView
                     android:layout_marginTop="20dp"
@@ -155,22 +163,24 @@
 
 
                 <TextView
+                    android:layout_marginBottom="10dp"
                     android:layout_marginTop="50dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5. ปวดท้องร่วมกับการมีไข้ "
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:background="@drawable/shape_pastel_blue_round"
                     android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_semibold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/compli_content_doctor_5"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_light"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
 
 
             </LinearLayout>

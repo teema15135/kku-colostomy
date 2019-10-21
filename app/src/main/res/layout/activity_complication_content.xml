@@ -56,11 +56,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
+                    android:paddingVertical="5dp"
                     android:background="@drawable/shape_pastel_yellow_round"
                     android:text="ผิวหนังเป็น บลาๆๆๆ"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_semibold"/>
 
                 <TextView
                     android:id="@+id/compli_content_subtitle"
@@ -69,7 +70,8 @@
                     android:text=""
                     android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_light"/>
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="@font/baijamjuree_regular"/>
 
                 <ImageView
                     android:id="@+id/compli_content_img"
@@ -86,9 +88,9 @@
                     android:paddingHorizontal="20dp"
                     android:background="@drawable/shape_pastel_blue_round"
                     android:text="การดูแลเบื้องต้น"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_semibold"/>
                 <TextView
                     android:id="@+id/compli_content_care"
                     android:layout_width="wrap_content"
@@ -96,7 +98,8 @@
                     android:text="จากการแพ้ บลาๆๆๆๆๆๆๆๆ"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
-                    android:fontFamily="@font/mitr_light"/>
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="@font/baijamjuree_regular"/>
 
 
             </LinearLayout>
