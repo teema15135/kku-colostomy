@@ -15,4 +15,8 @@
     <dimen name="evaluation_button_right_margin">20dp</dimen>
 
     <dimen name="tc_content_one_margin_list">-10dp</dimen>
+
+    <dimen name="tc_content_two_img_width">160dp</dimen>
+    <dimen name="tc_content_two_img_height">130dp</dimen>
+    <dimen name="tc_content_two_text_size">16sp</dimen>
 </resources>
