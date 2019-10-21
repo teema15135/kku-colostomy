@@ -91,7 +91,7 @@
                         android:paddingTop="10dp"
                         android:paddingRight="30dp"
                         android:paddingBottom="10dp"
-                        android:text="@string/change_platform"
+                        android:text="@string/take_out_waste"
                         android:textScaleX="1.04"
                         android:textSize="20sp" />
 
@@ -123,12 +123,12 @@
                         android:layout_marginLeft="20dp"
                         android:background="@drawable/selector_pastel_blue_shadow_round"
                         android:fontFamily="@font/mitr_regular"
+                        android:text="@string/change_platform"
                         android:lineSpacingMultiplier="0.8"
                         android:paddingLeft="30dp"
                         android:paddingTop="8dp"
                         android:paddingRight="30dp"
                         android:paddingBottom="8dp"
-                        android:text="@string/take_out_waste"
                         android:textAlignment="center"
                         android:textScaleX="1.04"
                         android:textSize="20sp" />

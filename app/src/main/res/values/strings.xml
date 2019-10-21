@@ -111,8 +111,8 @@
     </string>
     <string name="taking_care">การดูแลตนเอง</string>
     <string name="see_the_wound_before_change_the_bag">มาดูแผลก่อนเปลี่ยนถุงกันเถอะ</string>
-    <string name="take_out_waste">การเทของเสีย และการ\nเปลี่ยนถุงรองรับของเสีย</string>
-    <string name="change_platform">การเปลี่ยนแป้นขอบแผล</string>
+    <string name="take_out_waste">การเทสิ่งขับถ่าย</string>
+    <string name="change_platform">การเปลี่ยนถุงรองรับสิ่งขับถ่าย และการเปลี่ยนแป้นขอบแผล</string>
     <string name="evaluation">การประเมินผล</string>
     <string name="pink_or_red">ชมพู, แดง</string>
     <string name="dark_red_and_more_red">แดงคล้ำ, แดงมากขึ้น</string>
