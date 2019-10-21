@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pastel_blue"
     tools:context=".CommunicationActivity">
 
     <LinearLayout
@@ -58,8 +59,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/commu_content_title"
-                        android:fontFamily="@font/mitr_regular"
-                        android:textSize="16sp"
+                        android:fontFamily="@font/baijamjuree_semibold"
+                        android:textSize="18sp"
                         android:background="@drawable/shape_pastel_blue_round"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
@@ -84,7 +85,7 @@
                     android:text="@string/commu_content_subtitle"
                     android:textColor="@color/pastel_yellow"
                     android:textSize="14sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_semibold"/>
 
                 <TextView
                     android:layout_marginLeft="20dp"
@@ -94,7 +95,8 @@
                     android:text="@string/commu_content_1"
                     android:textColor="@color/dark"
                     android:textSize="16sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
                 <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
@@ -103,7 +105,8 @@
                     android:text="@string/commu_content_2"
                     android:textColor="@color/dark"
                     android:textSize="16sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
                 <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
@@ -112,7 +115,8 @@
                     android:text="@string/commu_content_3"
                     android:textColor="@color/dark"
                     android:textSize="16sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
                 <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
@@ -121,7 +125,8 @@
                     android:text="@string/commu_content_4"
                     android:textColor="@color/dark"
                     android:textSize="16sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
                 <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
@@ -130,7 +135,8 @@
                     android:text="@string/commu_content_5"
                     android:textColor="@color/dark"
                     android:textSize="16sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
                 <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
@@ -139,7 +145,8 @@
                     android:text="@string/commu_content_6"
                     android:textColor="@color/dark"
                     android:textSize="16sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
                 <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
@@ -148,7 +155,8 @@
                     android:text="@string/commu_content_7"
                     android:textColor="@color/dark"
                     android:textSize="16sp"
-                    android:fontFamily="@font/mitr_regular"/>
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"/>
 
 
             </LinearLayout>
