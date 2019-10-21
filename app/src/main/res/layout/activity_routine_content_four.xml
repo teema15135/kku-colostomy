@@ -20,7 +20,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/routine_content_back_button"
+                android:id="@+id/routine_content_four_back_button"
                 android:layout_width="@dimen/back_button_size"
                 android:layout_height="@dimen/back_button_size"
                 android:background="@android:color/transparent"
@@ -52,7 +52,8 @@
                 android:paddingRight="@dimen/routine_padding_topic">
 
                 <LinearLayout
-                    android:id="@+id/routine_content_media_play"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/routine_content_four_media_play"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -69,13 +70,14 @@
                         android:textColor="@color/colorAccent"
                         android:textSize="20dp"
                         android:fontFamily="@font/mitr_regular"
-                        android:text="กดเพื่อฟัง"
+                        android:text="@string/press_to_listen"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                 </LinearLayout>
 
                 <TextView
+                    android:layout_marginTop="20dp"
                     android:id="@+id/routine_content_describe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
