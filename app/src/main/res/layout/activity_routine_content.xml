@@ -51,6 +51,30 @@
                 android:paddingLeft="@dimen/routine_padding_topic"
                 android:paddingRight="@dimen/routine_padding_topic">
 
+                <LinearLayout
+                    android:id="@+id/routine_content_media_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/speaker_yellow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="@dimen/speaker_right_margin"/>
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/mitr_regular"
+                        android:text="กดเพื่อฟัง"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
                 <TextView
                     android:id="@+id/routine_content_describe"
                     android:layout_width="match_parent"

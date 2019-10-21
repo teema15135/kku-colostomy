@@ -49,15 +49,33 @@
                 android:background="@drawable/shadow_home"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/commu_content_title"
-                    android:fontFamily="@font/mitr_regular"
-                    android:textSize="16sp"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="15dp"
-                    android:textColor="@color/dark"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/commu_content_title"
+                        android:fontFamily="@font/mitr_regular"
+                        android:textSize="16sp"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:textColor="@color/dark"/>
+
+                    <ImageButton
+                        android:id="@+id/commu_content_media_play"
+                        android:layout_marginLeft="20dp"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/speaker_red"/>
+
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_marginTop="20dp"

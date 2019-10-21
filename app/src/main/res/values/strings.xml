@@ -194,33 +194,34 @@
     <string name="tc_one_normal">ปกติ</string>
     <string name="tc_one_abnormal">ผิดปกติ</string>
 
-    <string name="tc_one_t1">สีทวารเทียม</string>
+    <string name="tc_one_t1">สีทวารเทียม (กดเพื่อฟังเสียง)</string>
     <string name="tc_one_n1">สีชมพูแดง</string>
     <string name="tc_one_a1">จะมีสีแดงคล้ำ แดงมากขึ้นหรือดำ</string>
 
-    <string name="tc_one_t2">ความชุ่มชื้น</string>
+    <string name="tc_one_t2">ความชุ่มชื้น (กดเพื่อฟังเสียง)</string>
     <string name="tc_one_n2">ผิวมันวาว ชุ่มชื้นดี</string>
     <string name="tc_one_a2">แห้ง ไม่มันวาว</string>
 
-    <string name="tc_one_t3">ความอุ่น</string>
+    <string name="tc_one_t3">ความอุ่น (กดเพื่อฟังเสียง)</string>
     <string name="tc_one_n3">ปกติพื้นผิวบริเวณนี้จะมีความอุ่น</string>
     <string name="tc_one_a3">เย็นซีด</string>
 
-    <string name="tc_one_t4">ความสูงของทวารเทียม</string>
+    <string name="tc_one_t4">ความสูงของทวารเทียม (กดเพื่อฟังเสียง)</string>
     <string name="tc_one_n4">ความสูงเท่าเดิม</string>
     <string name="tc_one_a4">ยื่นออกมากขึ้น หรือยุบลง</string>
 
-    <string name="tc_one_t5">เลือดออก</string>
+    <string name="tc_one_t5">เลือดออก (กดเพื่อฟังเสียง)</string>
     <string name="tc_one_n5">ไม่มีเลือดออก</string>
     <string name="tc_one_a5">มีเลือดซึม ร่วมกับมีสีขาว,เหลือง แสบรอบทวารเทียม หรือร่วมกับมีตุ่มนูนรอบทวารเทียม</string>
 
-    <string name="tc_one_t6">ขนาดทวารเทียม</string>
+    <string name="tc_one_t6">ขนาดทวารเทียม (กดเพื่อฟังเสียง)</string>
     <string name="tc_one_n6">ขนาดรูเปิดทวารเทียมเท่าเดิม</string>
     <string name="tc_one_a6">ทวารเทียมบวม, รูเปิดทวารเทียมตีบเล็กลง</string>
 
-    <string name="tc_one_t7">ผิวหนังรอบทวารเทียม</string>
+    <string name="tc_one_t7">ผิวหนังรอบทวารเทียม (กดเพื่อฟังเสียง)</string>
     <string name="tc_one_n7">ไม่มีผื่น ตุ่ม อาการคัน</string>
     <string name="tc_one_a7">มีผื่น ตุ่ม มีอาการคัน ผิวลอกหลุด ไม่มีผื่นหรือคัน ผิวหนังรอบทวารเทียมเป็นแผลตื้น มีสิ่งคัดหลั่งรั่วซึม ผิวหนังเป็นตุ่มอักเสบ มีก้อนตุง บริเวณผิวหนังรอบทวารเทียม มีการแยกของรอยต่อระหว่างผิวหนังกับทวารเทียม</string>
+    <string name="press_to_listen">กดเพื่อฟัง</string>
 
     <string name="tc_two_title">การเปลี่ยนถุงรองรับสิ่งขับถ่ายและการเปลี่ยนแป้นขอบแผล</string>
     <string name="tc_two_c1_title">อุปกรณ์สำหรับรองรับสิ่งขับถ่าย มี 2 แบบ</string>

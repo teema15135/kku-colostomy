@@ -44,21 +44,42 @@
             android:layout_marginHorizontal="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
                 android:layout_marginTop="20dp"
-                android:id="@+id/compli_content_label"
+                android:gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxWidth="250dp"
-                android:gravity="center_horizontal"
-                android:layout_centerVertical="true"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/mitr_regular"
-                android:text="@string/tc_one_title"
-                android:textColor="@color/dark"
-                android:textSize="24dp" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/compli_content_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="250dp"
+                    android:gravity="center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/mitr_regular"
+                    android:text="@string/tc_one_title"
+                    android:textColor="@color/dark"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/taking_care_one_overall_sound"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/mitr_regular"
+                    android:gravity="center_horizontal"
+                    android:text="กดเพื่อฟังการอธิบายโดยรวม"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
 
             <!--1-->
             <LinearLayout
@@ -70,6 +91,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/taking_care_one_sound_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
@@ -137,6 +159,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/taking_care_one_sound_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
@@ -204,6 +227,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/taking_care_one_sound_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
@@ -269,6 +293,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/taking_care_one_sound_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
@@ -335,6 +360,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/taking_care_one_sound_5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
@@ -401,6 +427,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/taking_care_one_sound_6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
@@ -469,6 +496,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/taking_care_one_sound_7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
