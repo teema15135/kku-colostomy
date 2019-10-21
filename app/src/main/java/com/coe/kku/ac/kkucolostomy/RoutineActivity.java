@@ -38,17 +38,16 @@ public class RoutineActivity extends AppCompatActivity implements View.OnClickLi
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(RoutineActivity.this, RoutineContentActivity.class);
+        Intent intent = new Intent(RoutineActivity.this, RoutineContentOneActivity.class);
         if (view == routineBathing) {
-            intent.putExtra("topic", RoutineContentTopic.BATHING);
+            intent = new Intent(RoutineActivity.this, RoutineContentOneActivity.class);
         } else if (view == routineWorkOut) {
-            intent.putExtra("topic", RoutineContentTopic.WORK_OUT);
+            intent = new Intent(RoutineActivity.this, RoutineContentTwoActivity.class);
         } else if (view == routineEating) {
-            intent.putExtra("topic", RoutineContentTopic.EATING);
+            intent = new Intent(RoutineActivity.this, RoutineContentThreeActivity.class);
         } else if (view == routineSex) {
-            intent.putExtra("topic", RoutineContentTopic.SEX);
+            intent = new Intent(RoutineActivity.this, RoutineContentFourActivity.class);
         }
-
         startActivity(intent);
     }
 }

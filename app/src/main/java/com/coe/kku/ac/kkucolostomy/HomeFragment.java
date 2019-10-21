@@ -24,8 +24,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        mediaPlayer = MediaPlayer.create(getActivity(), R.raw.sound_1_1_meaning);
-
         routineBtn = (Button) view.findViewById(R.id.home_routine_btn);
         communicationBtn = (Button) view.findViewById(R.id.home_commu_btn);
         complicatoinBtn = (Button) view.findViewById(R.id.home_compli_btn);
@@ -35,6 +33,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), RoutineActivity.class);
                 getActivity().startActivity(intent);
+                if (mediaPlayer != null && mediaPlayer.isPlaying()) mediaPlayer.stop();
             }
         });
         communicationBtn.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +41,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), CommunicationActivity.class);
                 getActivity().startActivity(intent);
+                if (mediaPlayer != null && mediaPlayer.isPlaying()) mediaPlayer.stop();
             }
         });
         complicatoinBtn.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +49,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ComplicationActivity.class);
                 getActivity().startActivity(intent);
+                if (mediaPlayer != null && mediaPlayer.isPlaying()) mediaPlayer.stop();
             }
         });
 
@@ -80,10 +81,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     }
 
     private void playSound(int rawResourceId) {
+        if (mediaPlayer == null)
+            mediaPlayer = MediaPlayer.create(getActivity(), rawResourceId);
         if (mediaPlayer.isPlaying()) {
             mediaPlayer.stop();
         }
         mediaPlayer = MediaPlayer.create(getActivity(), rawResourceId);
         mediaPlayer.start();
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (mediaPlayer != null && mediaPlayer.isPlaying()) mediaPlayer.stop();
     }
 }
