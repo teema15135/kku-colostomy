@@ -24,4 +24,16 @@
         android:fontStyle="normal"
         android:fontWeight="400"
         android:font="@font/nunito_regular" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/baijamjuree_light" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/baijamjuree_regular" />
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/baijamjuree_semibold" />
 </font-family>
