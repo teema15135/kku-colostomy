@@ -227,7 +227,7 @@
                             android:layout_gravity="center_horizontal"
                             android:layout_weight="1"
                             android:textSize="18sp"
-                            android:textColor="@color/dark"
+                            android:textColor="@color/darker"
                             android:paddingHorizontal="20dp"
                             android:fontFamily="@font/mitr_regular"
                             android:background="@drawable/selector_bright_grey_round"/>
@@ -245,7 +245,7 @@
                                 android:layout_marginRight="7dp"
                                 android:text="การเข้าสังคม"
                                 android:textSize="18sp"
-                                android:textColor="@color/dark"
+                                android:textColor="@color/darker"
                                 android:paddingHorizontal="20dp"
                                 android:fontFamily="@font/mitr_regular"
                                 android:background="@drawable/selector_pastel_blue_shadow_round"/>
@@ -255,7 +255,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="ภาวะแทรกซ้อน"
                                 android:textSize="18sp"
-                                android:textColor="@color/dark"
+                                android:textColor="@color/darker"
                                 android:paddingHorizontal="20dp"
                                 android:fontFamily="@font/mitr_regular"
                                 android:background="@drawable/selector_pastel_yellow_shadow_round"/>

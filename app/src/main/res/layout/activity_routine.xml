@@ -7,32 +7,30 @@
     android:orientation="vertical"
     tools:context=".RoutineActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/basic_care_header"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="@dimen/header_padding"
-        app:layout_constraintTop_toTopOf="parent">
-
+        android:layout_height="70dp"
+        android:gravity="center_vertical">
         <ImageButton
             android:id="@+id/routine_back_button"
             android:layout_width="@dimen/back_button_size"
             android:layout_height="@dimen/back_button_size"
+            android:layout_margin="20dp"
+            android:clickable="true"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/back_thin" />
-
+            android:src="@drawable/back_bold_black" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/header_left_margin"
-            android:fontFamily="@font/mitr_regular"
-            android:gravity="center_vertical"
-            android:text="@string/routine"
-            android:textSize="@dimen/header_font_size" />
-
-    </LinearLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/routine_back_button"
+            android:fontFamily="@font/mitr_light"
+            android:text="กิจวัตรประจำวัน"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -42,16 +40,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
+            android:orientation="vertical">
 
             <!-- Bathing -->
             <LinearLayout
                 android:id="@+id/routine_bathing"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shadow_164114"
+                android:background="@drawable/shadow_home"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/routine_padding_topic"
                 android:paddingTop="@dimen/routine_padding_topic"
@@ -61,20 +58,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:background="@drawable/routine_topic_background"
-                    android:fontFamily="@font/mitr_regular"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="@drawable/shape_pastel_yellow_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:text="@string/bathing"
-                    android:textSize="26sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:fontFamily="@font/mitr_light"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
                     android:text="@string/bathing_short_describe"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darker"
+                    android:paddingHorizontal="10dp"
+                    android:text="คลิกเพื่ออ่านต่อ"/>
 
             </LinearLayout>
 
@@ -83,7 +93,7 @@
                 android:id="@+id/routine_work_out"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shadow_164114"
+                android:background="@drawable/shadow_home"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/routine_padding_topic"
                 android:paddingTop="@dimen/routine_padding_topic"
@@ -93,20 +103,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:background="@drawable/routine_topic_background"
-                    android:fontFamily="@font/mitr_regular"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="@drawable/shape_pastel_yellow_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:text="@string/work_out"
-                    android:textSize="26sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:fontFamily="@font/mitr_light"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
                     android:text="@string/work_out_short_describe"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darker"
+                    android:paddingHorizontal="10dp"
+                    android:text="คลิกเพื่ออ่านต่อ"/>
 
             </LinearLayout>
 
@@ -115,7 +138,7 @@
                 android:id="@+id/routine_eating"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shadow_164114"
+                android:background="@drawable/shadow_home"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/routine_padding_topic"
                 android:paddingTop="@dimen/routine_padding_topic"
@@ -125,20 +148,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:background="@drawable/routine_topic_background"
-                    android:fontFamily="@font/mitr_regular"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="@drawable/shape_pastel_yellow_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:text="@string/eating"
-                    android:textSize="26sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:fontFamily="@font/mitr_light"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
                     android:text="@string/eating_short_describe"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darker"
+                    android:paddingHorizontal="10dp"
+                    android:text="คลิกเพื่ออ่านต่อ"/>
 
             </LinearLayout>
 
@@ -147,7 +183,7 @@
                 android:id="@+id/routine_sex"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shadow_164114"
+                android:background="@drawable/shadow_home"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/routine_padding_topic"
                 android:paddingTop="@dimen/routine_padding_topic"
@@ -157,20 +193,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:background="@drawable/routine_topic_background"
-                    android:fontFamily="@font/mitr_regular"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp"
+                    android:background="@drawable/shape_pastel_yellow_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
                     android:text="@string/sex"
-                    android:textSize="26sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
-                    android:fontFamily="@font/mitr_light"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:lineSpacingExtra="5dp"
                     android:text="@string/sex_short_describe"
-                    android:textSize="18sp" />
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/routine_margin_bottom_content"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/darker"
+                    android:paddingHorizontal="10dp"
+                    android:text="คลิกเพื่ออ่านต่อ"/>
 
             </LinearLayout>
 

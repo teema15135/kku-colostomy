@@ -25,7 +25,7 @@
                 android:layout_height="@dimen/back_button_size"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/back_thin" />
+                android:src="@drawable/back_bold_black" />
 
             <TextView
                 android:id="@+id/routine_content_topic"
@@ -47,9 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/routine_padding_topic"
-                android:paddingRight="@dimen/routine_padding_topic">
+                android:paddingHorizontal="15dp"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -81,31 +80,32 @@
                     android:id="@+id/routine_content_describe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp"
-                    android:fontFamily="@font/mitr_light"
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="@font/baijamjuree_regular"
                     android:text="@string/work_out_describe"
-                    android:textSize="20sp" />
+                    android:textSize="18sp" />
 
                 <LinearLayout
                     android:id="@+id/routine_content_image_section"
+                    android:layout_marginBottom="70dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_marginRight="10dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
                         android:src="@drawable/img_3_32_a"
-                        android:layout_width="match_parent"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content" />
 
                     <ImageView
-                        android:layout_marginTop="30dp"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
                         android:src="@drawable/img_3_32_b"
-                        android:layout_width="match_parent"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content" />
 
 
