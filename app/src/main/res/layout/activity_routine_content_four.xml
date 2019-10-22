@@ -87,13 +87,17 @@
                     android:text="@string/sex_describe"
                     android:textSize="18sp" />
 
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/give"/>
+
                 <LinearLayout
                     android:id="@+id/routine_content_image_section"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:orientation="vertical">
-
                 </LinearLayout>
 
             </LinearLayout>

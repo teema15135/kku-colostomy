@@ -46,17 +46,16 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
                 android:orientation="vertical"
                 android:paddingLeft="@dimen/routine_padding_topic"
                 android:paddingRight="@dimen/routine_padding_topic">
 
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/routine_content_three_media_play"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                <!--<LinearLayout-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:id="@+id/routine_content_three_media_play"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
 
                     <!--<ImageButton-->
                         <!--android:scaleType="fitCenter"-->
@@ -74,28 +73,65 @@
                         <!--android:layout_width="match_parent"-->
                         <!--android:layout_height="wrap_content" />-->
 
-                </LinearLayout>
+                <!--</LinearLayout>-->
 
                 <TextView
-                    android:layout_marginTop="20dp"
                     android:id="@+id/routine_content_describe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="40dp"
-                    android:lineSpacingExtra="5dp"
                     android:fontFamily="@font/baijamjuree_regular"
-                    android:text="@string/eating_describe"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/eating_1"
                     android:textSize="18sp" />
 
-                <LinearLayout
-                    android:id="@+id/routine_content_image_section"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical">
+                    android:text="@string/eating_2"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="18sp"/>
 
+                <TextView
+                    android:lineSpacingExtra="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eating_3"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"/>
 
-                </LinearLayout>
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/good_food"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eating_4"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:lineSpacingExtra="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eating_5"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bad_food"/>
 
             </LinearLayout>
 
