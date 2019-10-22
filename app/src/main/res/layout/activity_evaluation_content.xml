@@ -21,7 +21,7 @@
             android:layout_height="@dimen/back_button_size"
             android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/back_thin" />
+            android:src="@drawable/back_bold_black" />
 
         <TextView
             android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/mitr_regular"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:gravity="center_vertical"
                     android:text="@string/color_of_colostomy"
                     android:textSize="18sp" />
@@ -78,7 +78,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -103,7 +105,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -128,7 +132,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -155,7 +161,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/mitr_regular"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:gravity="center_vertical"
                     android:text="@string/moisture_of_colostomy"
                     android:textSize="18sp" />
@@ -177,7 +183,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -202,7 +210,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -229,7 +239,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/mitr_regular"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:gravity="center_vertical"
                     android:text="@string/temp_of_colostomy"
                     android:textSize="18sp" />
@@ -251,7 +261,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -276,7 +288,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -303,7 +317,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/mitr_regular"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:gravity="center_vertical"
                     android:text="@string/position_of_colostomy"
                     android:textSize="18sp" />
@@ -325,7 +339,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -350,7 +366,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -375,9 +393,11 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:gravity="center_vertical"
                         android:text="@string/collapse" />
 
@@ -402,7 +422,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/mitr_regular"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:gravity="center_vertical"
                     android:text="@string/bleeding"
                     android:textSize="18sp" />
@@ -424,7 +444,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -449,7 +471,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -476,7 +500,9 @@
 
                     <TextView
                         android:lineSpacingMultiplier="0.9"
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -502,7 +528,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -528,7 +556,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/mitr_regular"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:gravity="center_vertical"
                     android:text="@string/size_of_colostomy"
                     android:textSize="18sp" />
@@ -550,7 +578,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -575,7 +605,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -602,7 +634,9 @@
 
                     <TextView
                         android:lineSpacingMultiplier="0.9"
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -628,7 +662,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/mitr_regular"
+                    android:fontFamily="@font/baijamjuree_semibold"
                     android:gravity="center_vertical"
                     android:text="@string/skin_around_colostomy"
                     android:textSize="18sp" />
@@ -650,7 +684,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -675,7 +711,9 @@
                         android:layout_marginRight="@dimen/evaluation_button_right_margin" />
 
                     <TextView
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -702,7 +740,9 @@
 
                     <TextView
                         android:lineSpacingMultiplier="0.9"
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -729,7 +769,9 @@
 
                     <TextView
                         android:lineSpacingMultiplier="0.9"
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -756,7 +798,9 @@
 
                     <TextView
                         android:lineSpacingMultiplier="0.9"
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -783,7 +827,9 @@
 
                     <TextView
                         android:lineSpacingMultiplier="0.9"
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
@@ -810,7 +856,9 @@
 
                     <TextView
                         android:lineSpacingMultiplier="0.9"
-                        android:fontFamily="@font/mitr_light"
+                        android:textSize="@dimen/tc_content_two_text_size"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:textColor="@color/darker"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"

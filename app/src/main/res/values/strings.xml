@@ -121,7 +121,7 @@
     <string name="temp_of_colostomy">ความอุ่น</string>
     <string name="warm">อุ่น</string>
     <string name="cold_colostomy">เย็น ซีด</string>
-    <string name="position_of_colostomy">ความสูงของทวานเทียม</string>
+    <string name="position_of_colostomy">ความสูงของทวารเทียม</string>
     <string name="normal_position">ความสูงเท่าเดิม</string>
     <string name="popout">ยื่นออกมากขึ้น</string>
     <string name="collapse">ยุบลงจากเดิม</string>
@@ -171,11 +171,11 @@
     <string name="advertise">คำแนะนำ</string>
     <string name="close">ปิด</string>
     <string name="choice_error">มีข้อผิดพลาดที่ข้อความแนะนำ</string>
-    <string name="click_here_complication_1">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 1&lt;/u>&lt;/i></string>
-    <string name="click_here_complication_2">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 2&lt;/u>&lt;/i></string>
-    <string name="click_here_complication_3">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 3&lt;/u>&lt;/i></string>
-    <string name="click_here_complication_4">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 4&lt;/u>&lt;/i></string>
-    <string name="click_here_complication_7">&lt;i>&lt;u>คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 7&lt;/u>&lt;/i></string>
+    <string name="click_here_complication_1">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 1</string>
+    <string name="click_here_complication_2">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 2</string>
+    <string name="click_here_complication_3">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 3</string>
+    <string name="click_here_complication_4">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 4</string>
+    <string name="click_here_complication_7">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 7</string>
 
     <string name="commu_content_title">เคล็ดลับชีวิตมีสุขเมื่อต้องออกไปข้างนอก</string>
     <string name="commu_content_subtitle">การรักษาภาพลักษณ์</string>
