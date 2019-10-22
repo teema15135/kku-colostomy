@@ -8,10 +8,12 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class TakingCareContentOneActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton backBtn;
-    private TextView overAllSound, sound1, sound2, sound3, sound4, sound5, sound6, sound7;
+    private ImageButton overAllSound, sound1, sound2, sound3, sound4, sound5, sound6, sound7;
 
     private MediaPlayer mPlayer;
 
@@ -20,6 +22,14 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taking_care_content_one);
 
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playMedia(R.raw.sound21_0);
+            }
+        });
+
         backBtn = (ImageButton) findViewById(R.id.tc_one_back_btn);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,17 +37,17 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
                 finish();
             }
         });
+//
+//        overAllSound = (TextView) findViewById(R.id.taking_care_one_overall_sound);
+        sound1 = (ImageButton) findViewById(R.id.taking_care_one_sound_1);
+        sound2 = (ImageButton) findViewById(R.id.taking_care_one_sound_2);
+        sound3 = (ImageButton) findViewById(R.id.taking_care_one_sound_3);
+        sound4 = (ImageButton) findViewById(R.id.taking_care_one_sound_4);
+        sound5 = (ImageButton) findViewById(R.id.taking_care_one_sound_5);
+        sound6 = (ImageButton) findViewById(R.id.taking_care_one_sound_6);
+        sound7 = (ImageButton) findViewById(R.id.taking_care_one_sound_7);
 
-        overAllSound = (TextView) findViewById(R.id.taking_care_one_overall_sound);
-        sound1 = (TextView) findViewById(R.id.taking_care_one_sound_1);
-        sound2 = (TextView) findViewById(R.id.taking_care_one_sound_2);
-        sound3 = (TextView) findViewById(R.id.taking_care_one_sound_3);
-        sound4 = (TextView) findViewById(R.id.taking_care_one_sound_4);
-        sound5 = (TextView) findViewById(R.id.taking_care_one_sound_5);
-        sound6 = (TextView) findViewById(R.id.taking_care_one_sound_6);
-        sound7 = (TextView) findViewById(R.id.taking_care_one_sound_7);
-
-        overAllSound.setOnClickListener(this);
+//        overAllSound.setOnClickListener(this);
         sound1.setOnClickListener(this);
         sound2.setOnClickListener(this);
         sound3.setOnClickListener(this);
@@ -49,9 +59,7 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
 
     @Override
     public void onClick(View view) {
-        if (view == overAllSound) {
-            playMedia(R.raw.sound21_0);
-        } else if (view == sound1) {
+        if (view == sound1) {
             playMedia(R.raw.sound21_1);
         } else if (view == sound2) {
             playMedia(R.raw.sound21_2);

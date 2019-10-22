@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class TakingCareContentThreeActivity extends AppCompatActivity {
 
     private ImageButton backBtn;
@@ -31,14 +33,23 @@ public class TakingCareContentThreeActivity extends AppCompatActivity {
             }
         });
 
-        playMedia = (TextView) findViewById(R.id.taking_care_three_overall_sound);
-        playMedia.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (!mPlayer.isPlaying())
                     mPlayer.start();
             }
         });
+
+//        playMedia = (TextView) findViewById(R.id.taking_care_three_overall_sound);
+//        playMedia.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (!mPlayer.isPlaying())
+//                    mPlayer.start();
+//            }
+//        });
     }
 
     @Override

@@ -11,18 +11,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="@font/mitr_regular"
-            android:gravity="center"
-            android:text="@string/taking_care"
-            android:textSize="36sp" />
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/title_tc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/mitr_regular"
+                android:gravity="center"
+                android:text="@string/taking_care"
+                android:textSize="30dp" />
 
             <ImageView
                 android:layout_width="700dp"
@@ -43,6 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -53,14 +59,15 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="25dp"
                         android:background="@drawable/selector_pastel_blue_shadow_round"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:paddingLeft="20dp"
+                        android:textColor="@color/darker"
                         android:paddingTop="10dp"
                         android:paddingRight="20dp"
                         android:paddingBottom="10dp"
                         android:text="@string/see_the_wound_before_change_the_bag"
                         android:textScaleX="1.04"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="60dp"
@@ -80,20 +87,21 @@
                     app:layout_constraintLeft_toLeftOf="parent">
 
                     <Button
+                        android:textColor="@color/darker"
                         android:id="@+id/taking_care_three_btn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="30dp"
                         android:background="@drawable/selector_pastel_blue_shadow_round"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
                         android:paddingLeft="30dp"
                         android:paddingTop="10dp"
                         android:paddingRight="30dp"
                         android:paddingBottom="10dp"
                         android:text="@string/take_out_waste"
                         android:textScaleX="1.04"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_marginLeft="10dp"
@@ -106,6 +114,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_marginTop="190dp"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
                     android:layout_marginRight="20dp"
@@ -115,14 +124,16 @@
                     app:layout_constraintVertical_bias="0.34">
 
                     <Button
+                        android:textColor="@color/darker"
                         android:id="@+id/taking_care_two_btn"
-                        android:layout_width="wrap_content"
+                        android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="20dp"
                         android:background="@drawable/selector_pastel_blue_shadow_round"
-                        android:fontFamily="@font/mitr_regular"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:lineSpacingExtra="5dp"
                         android:text="@string/change_platform"
                         android:lineSpacingMultiplier="0.8"
                         android:paddingLeft="30dp"
@@ -131,7 +142,7 @@
                         android:paddingBottom="8dp"
                         android:textAlignment="center"
                         android:textScaleX="1.04"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="60dp"

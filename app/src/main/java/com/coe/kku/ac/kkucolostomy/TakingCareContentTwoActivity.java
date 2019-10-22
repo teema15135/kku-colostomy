@@ -8,12 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class TakingCareContentTwoActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String tag = "TakingCareDialogFragment";
 
     private ImageButton backBtn, sound1, sound2, sound3, sound41, sound42, sound43;
-    private Button showVideo;
+    private ImageButton showVideo;
     private MediaPlayer mPlayer;
 
     @Override
@@ -29,7 +31,16 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
             }
         });
 
-        showVideo = (Button) findViewById(R.id.taking_care_two_show_video);
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TakingCareDialogFragment fragment = TakingCareDialogFragment.newInstance();
+                fragment.show(getSupportFragmentManager(), tag);
+            }
+        });
+
+        showVideo = (ImageButton) findViewById(R.id.taking_care_two_show_video);
         showVideo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
