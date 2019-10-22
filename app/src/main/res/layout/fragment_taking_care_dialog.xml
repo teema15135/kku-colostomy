@@ -17,16 +17,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:background="@drawable/pastel_blue_round_background"
+            android:background="@drawable/shape_white_round"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/mitr_regular"
+                android:textColor="@color/darker"
                 android:gravity="center"
                 android:text="@string/demo_video"
-                android:textSize="30sp" />
+                android:textSize="24sp" />
 
             <VideoView
                 android:id="@+id/taking_care_dialog_video"
