@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
 public class RoutineContentOneActivity extends AppCompatActivity {
 
     private LinearLayout playMedia;
@@ -20,8 +23,16 @@ public class RoutineContentOneActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_routine_content_one);
 
-        playMedia = (LinearLayout) findViewById(R.id.routine_content_one_media_play);
-        playMedia.setOnClickListener(new View.OnClickListener() {
+//        playMedia = (LinearLayout) findViewById(R.id.routine_content_one_media_play);
+//        playMedia.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                playMedia(R.raw.sound31);
+//            }
+//        });
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 playMedia(R.raw.sound31);

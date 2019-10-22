@@ -273,6 +273,7 @@
     <string name="good_bag">ถุงรองรับที่ดี</string>
     <string name="click_here_to_show_video">กดที่นี่เพื่อชมวิดีโอสาธิตการเปลี่ยนถุงรับรับสิ่งขับถ่าย</string>
     <string name="demo_video">วิดีโอสาธิต</string>
+    <string name="title_activity_test">TestActivity</string>
 
 
 </resources>

@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class RoutineContentThreeActivity extends AppCompatActivity {
 
     private LinearLayout playMedia;
@@ -20,13 +22,22 @@ public class RoutineContentThreeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_routine_content_three);
 
-        playMedia = (LinearLayout) findViewById(R.id.routine_content_three_media_play);
-        playMedia.setOnClickListener(new View.OnClickListener() {
+//        playMedia = (LinearLayout) findViewById(R.id.routine_content_three_media_play);
+//        playMedia.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                playMedia(R.raw.sound33);
+//            }
+//        });
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 playMedia(R.raw.sound33);
             }
         });
+
 
         backButton = (ImageButton) findViewById(R.id.routine_content_three_back_button);
         backButton.setOnClickListener(new View.OnClickListener() {

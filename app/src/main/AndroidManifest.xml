@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoutineContentFourActivity"></activity>
+        <activity android:name=".RoutineContentFourActivity" />
         <activity android:name=".RoutineContentThreeActivity" />
         <activity android:name=".RoutineContentTwoActivity" />
         <activity android:name=".RoutineContentOneActivity" />
