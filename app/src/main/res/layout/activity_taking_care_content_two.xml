@@ -513,6 +513,19 @@
                     android:textColor="@color/darker"
                     android:textSize="@dimen/tc_content_two_text_size" />
 
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/taking_care_two_show_video"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="@string/click_here_to_show_video"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
 
                 <!--c4 c5-->
                 <TextView

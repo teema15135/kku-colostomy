@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class TakingCareContentTwoActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private ImageButton backBtn, sound1, sound2, sound3, sound41, sound42, sound43;
+    private static final String tag = "TakingCareDialogFragment";
 
+    private ImageButton backBtn, sound1, sound2, sound3, sound41, sound42, sound43;
+    private Button showVideo;
     private MediaPlayer mPlayer;
 
     @Override
@@ -23,6 +26,15 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        showVideo = (Button) findViewById(R.id.taking_care_two_show_video);
+        showVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TakingCareDialogFragment fragment = TakingCareDialogFragment.newInstance();
+                fragment.show(getSupportFragmentManager(), tag);
             }
         });
 
