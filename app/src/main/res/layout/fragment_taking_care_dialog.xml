@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:background="@drawable/shape_white_round"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <TextView
@@ -29,12 +30,18 @@
                 android:text="@string/demo_video"
                 android:textSize="24sp" />
 
-            <VideoView
+            <com.google.android.exoplayer2.ui.PlayerView
                 android:id="@+id/taking_care_dialog_video"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_margin="10dp"
                 />
+
+            <Button
+                android:id="@+id/taking_care_dialog_fullscreen_button"
+                android:text="Full screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <Button
                 android:id="@+id/taking_care_dialog_close_button"
