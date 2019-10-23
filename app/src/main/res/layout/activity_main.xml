@@ -19,6 +19,8 @@
         app:menu="@menu/bottom_navigation"
         app:itemIconTint="@color/pastel_dark_blue"
         app:itemTextColor="@color/pastel_dark_blue"
+        app:itemTextAppearanceActive="@style/style_textView_active"
+        app:itemTextAppearanceInactive="@style/style_textView_inactive"
         app:labelVisibilityMode="labeled"
         android:background="?android:attr/windowBackground">
 

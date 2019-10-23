@@ -10,4 +10,12 @@
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
+    <style name="style_textView_active">
+        <item name="fontFamily">@font/mitr_regular</item>
+    </style>
+
+    <style name="style_textView_inactive">
+        <item name="fontFamily">@font/mitr_light</item>
+    </style>
 </resources>
