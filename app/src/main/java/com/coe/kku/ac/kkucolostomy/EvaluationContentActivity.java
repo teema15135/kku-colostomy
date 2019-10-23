@@ -20,6 +20,8 @@ public class EvaluationContentActivity extends AppCompatActivity implements View
     private ImageButton choice61, choice62, choice63;
     private ImageButton choice71, choice72, choice73, choice74, choice75, choice76, choice77;
 
+    private ImageButton backBtn;
+
     HashMap<ImageButton, Integer> stringIdMap;
     HashMap<ImageButton, Integer> complicationNumberMap;
 
@@ -29,6 +31,14 @@ public class EvaluationContentActivity extends AppCompatActivity implements View
         setContentView(R.layout.activity_evaluation_content);
 
         period = (EvaluationPeriod) getIntent().getSerializableExtra("period");
+
+        backBtn = (ImageButton) findViewById(R.id.evaluation_content_back_button);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         initializeView();
         addViewListener();
