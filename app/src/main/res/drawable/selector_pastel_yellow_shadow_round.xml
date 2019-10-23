@@ -3,12 +3,12 @@
     <item
         android:state_focused="true"
         android:state_pressed="true"
-        android:drawable="@drawable/shape_pastel_yellow_shadow_round" />
+        android:drawable="@drawable/shape_bright_grey_round" />
 
     <item
         android:state_focused="false"
         android:state_pressed="true"
-        android:drawable="@drawable/shape_pastel_yellow_shadow_round" />
+        android:drawable="@drawable/shape_bright_grey_round" />
 
     <item android:drawable="@drawable/shape_pastel_yellow_shadow_round" />
 </selector>
