@@ -3,7 +3,8 @@
 
 
     <dimen name="compli_menu_font_size">18sp</dimen>
-    <dimen name="compli_menu_img_size">60dp</dimen>
+    <dimen name="compli_menu_img_size">45dp</dimen>
+    <dimen name="compli_menu_margin">15dp</dimen>
     <dimen name="header_padding">25dp</dimen>
     <dimen name="header_font_size">24sp</dimen>
     <dimen name="header_left_margin">20dp</dimen>

@@ -37,161 +37,220 @@
             android:textSize="24sp" />
     </RelativeLayout>
 
-    <RelativeLayout
+
+    <ScrollView
+        android:layout_marginTop="70dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:overScrollMode="always"
+        android:scrollbars="none">
 
-        <RelativeLayout
-            android:layout_width="180dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="90dp">
-            <Button
-                android:id="@+id/compli_menu_seven_btn"
-                android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingHorizontal="20dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:text="@string/compli_menu_seven"
-                android:textSize="@dimen/compli_menu_font_size" />
-            <!--<ImageView-->
-            <!--android:layout_width="@dimen/compli_menu_img_size"-->
-            <!--android:layout_height="@dimen/compli_menu_img_size"-->
-            <!--android:src="@drawable/placeholder_hospital_1"-->
-            <!--android:translationZ="2dp"/>-->
-        </RelativeLayout>
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/compli_menu_seven_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:text="@string/compli_menu_seven"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="160dp">
-            <Button
-                android:id="@+id/compli_menu_eight_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="20dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:text="@string/compli_menu_eight"
-                android:textSize="@dimen/compli_menu_font_size" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/compli_menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/compli_menu_eight_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:text="@string/compli_menu_eight"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="220dp">
-            <Button
-                android:id="@+id/compli_menu_six_btn"
-                android:text="@string/compli_menu_six"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="20dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:textSize="@dimen/compli_menu_font_size" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/compli_menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginLeft="70dp"
+                    android:id="@+id/compli_menu_six_btn"
+                    android:text="@string/compli_menu_six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="260dp">
-            <Button
-                android:id="@+id/compli_menu_five_btn"
-                android:text="@string/compli_menu_five"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingVertical="10dp"
-                android:maxWidth="200dp"
-                android:paddingHorizontal="20dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:textSize="@dimen/compli_menu_font_size" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/compli_menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/compli_menu_five_btn"
+                    android:text="@string/compli_menu_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:maxWidth="200dp"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="380dp">
-            <Button
-                android:id="@+id/compli_menu_four_btn"
-                android:text="@string/compli_menu_four"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="20dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:textSize="@dimen/compli_menu_font_size" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/compli_menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginLeft="35sp"
+                    android:id="@+id/compli_menu_four_btn"
+                    android:text="@string/compli_menu_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="470dp">
-            <Button
-                android:id="@+id/compli_menu_three_btn"
-                android:text="@string/compli_menu_three"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="20dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:textSize="@dimen/compli_menu_font_size" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/compli_menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="32dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/compli_menu_three_btn"
+                    android:text="@string/compli_menu_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="530dp">
-            <Button
-                android:id="@+id/compli_menu_two_btn"
-                android:text="@string/compli_menu_two"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:maxWidth="170dp"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="10dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:textSize="@dimen/compli_menu_font_size" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/compli_menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginLeft="65dp"
+                    android:id="@+id/compli_menu_two_btn"
+                    android:text="@string/compli_menu_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="170dp"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="170dp"
-            android:layout_marginTop="620dp">
-            <Button
-                android:id="@+id/compli_menu_one_btn"
-                android:text="@string/compli_menu_one"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingHorizontal="20dp"
-                android:background="@drawable/selector_pastel_blue_shadow_round"
-                android:fontFamily="@font/baijamjuree_regular"
-                android:textSize="@dimen/compli_menu_font_size" />
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/compli_menu_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_marginRight="40dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/compli_menu_one_btn"
+                    android:text="@string/compli_menu_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
+                    android:fontFamily="@font/baijamjuree_regular"
+                    android:textSize="@dimen/compli_menu_font_size" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="@dimen/compli_menu_img_size"
+                    android:layout_height="@dimen/compli_menu_img_size"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/hospital_place_2"
+                    android:translationZ="3dp" />
+            </RelativeLayout>
 
-    </RelativeLayout>
+        </LinearLayout>
 
+    </ScrollView>
 
-    <!--for play sound-->
-    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
-        <!--android:id="@+id/fab"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--android:layout_gravity="bottom|end"-->
-        <!--android:layout_margin="@dimen/fab_margin"-->
-        <!--app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />-->
 
 </RelativeLayout>
