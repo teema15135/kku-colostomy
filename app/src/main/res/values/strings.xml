@@ -171,11 +171,12 @@
     <string name="advertise">คำแนะนำ</string>
     <string name="close">ปิด</string>
     <string name="choice_error">มีข้อผิดพลาดที่ข้อความแนะนำ</string>
-    <string name="click_here_complication_1">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 1</string>
-    <string name="click_here_complication_2">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 2</string>
-    <string name="click_here_complication_3">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 3</string>
-    <string name="click_here_complication_4">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 4</string>
-    <string name="click_here_complication_7">คลิกที่นี่เพื่อดูภาวะแทรกซ้อนที่ 7</string>
+    <string name="click_here_complication_1">กดที่นี่เพื่อดูภาวะแทรกซ้อนที่ 1</string>
+    <string name="click_here_complication_2">กดที่นี่เพื่อดูภาวะแทรกซ้อนที่ 2</string>
+    <string name="click_here_complication_3">กดที่นี่เพื่อดูภาวะแทรกซ้อนที่ 3</string>
+    <string name="click_here_complication_4">กดที่นี่เพื่อดูภาวะแทรกซ้อนที่ 4</string>
+    <string name="click_here_complication_6">กดที่นี่เพื่อดูภาวะแทรกซ้อนที่ 6</string>
+    <string name="click_here_complication_7">กดที่นี่เพื่อดูภาวะแทรกซ้อนที่ 7</string>
 
     <string name="commu_content_title">เคล็ดลับชีวิตมีสุขเมื่อต้องออกไปข้างนอก</string>
     <string name="commu_content_subtitle">การรักษาภาพลักษณ์</string>

@@ -124,6 +124,10 @@ public class EvaluationAdviceDialogFragment extends DialogFragment {
                         getString(R.string.click_here_complication_4))));
                 intent = new Intent(getActivity(), ComplicationContentActivity.class);
                 break;
+            case  6:
+                toComplicationTextView.setText(Html.fromHtml(String.format(
+                        getString(R.string.click_here_complication_6))));
+                intent = new Intent(getActivity(), ComplicationContentActivity.class);
             case 7:
                 toComplicationTextView.setText(Html.fromHtml(String.format(
                         getString(R.string.click_here_complication_7))));

@@ -153,7 +153,7 @@ public class EvaluationContentActivity extends AppCompatActivity implements View
         complicationNumberMap.put(choice73, 2);
         complicationNumberMap.put(choice74, 3);
         complicationNumberMap.put(choice75, 4);
-        complicationNumberMap.put(choice76, -1);
+        complicationNumberMap.put(choice76, 6);
         complicationNumberMap.put(choice77, -1);
     }
 
