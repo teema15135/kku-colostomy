@@ -75,14 +75,6 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
             subtitle.setText(getString(R.string.compli_content_six_subtitle));
             care.setText(getString(R.string.compli_content_six_care));
         }
-        else if (content == 7) {
-            img.setImageResource(R.drawable.img_4_1_7);
-            title.setText(getString(R.string.compli_content_seven_title));
-            subtitle.setText(getString(R.string.compli_content_seven_subtitle));
-            care.setText(getString(R.string.compli_content_seven_care));
-            careTitle.setText("");
-            careTitle.setBackgroundResource(R.color.white);
-        }
         else if (content == 8) {
 
         }

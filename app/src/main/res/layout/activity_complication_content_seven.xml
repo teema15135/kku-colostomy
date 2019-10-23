@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ComplicationContentActivity">
+    tools:context=".ComplicationContentSevenActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_height="70dp"
             android:gravity="center_vertical">
             <ImageButton
-                android:id="@+id/compli_content_back_btn"
+                android:id="@+id/compli_content_seven_back_btn"
                 android:layout_width="@dimen/back_button_size"
                 android:layout_height="@dimen/back_button_size"
                 android:layout_margin="20dp"
@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/compli_content_back_btn"
+                android:layout_toRightOf="@id/compli_content_seven_back_btn"
                 android:fontFamily="@font/mitr_light"
                 android:text="อาการ"
                 android:textColor="@color/black"
@@ -52,34 +52,25 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/compli_content_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="5dp"
                     android:background="@drawable/shape_pastel_yellow_round"
-                    android:text="ผิวหนังเป็น บลาๆๆๆ"
+                    android:text="@string/compli_content_seven_title"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:fontFamily="@font/baijamjuree_semibold"/>
 
                 <TextView
                     android:layout_marginTop="10dp"
-                    android:id="@+id/compli_content_subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="@string/compli_content_seven_subtitle_1"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:lineSpacingExtra="5dp"
                     android:fontFamily="@font/baijamjuree_regular"/>
-
-                <ImageView
-                    android:id="@+id/compli_content_img"
-                    android:layout_marginTop="20dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_width="180dp"
-                    android:layout_height="130dp"/>
 
                 <TextView
                     android:id="@+id/compli_content_title_care"
@@ -94,10 +85,56 @@
                     android:fontFamily="@font/baijamjuree_semibold"/>
                 <TextView
                     android:layout_marginTop="10dp"
-                    android:id="@+id/compli_content_care"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="จากการแพ้ บลาๆๆๆๆๆๆๆๆ"
+                    android:text="@string/compli_content_seven_care_1"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark"
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="@font/baijamjuree_regular"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baijamjuree_semibold"
+                    android:textColor="@color/pastel_dark_blue"
+                    android:text="--------------------------------"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compli_content_seven_subtitle_2"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark"
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="@font/baijamjuree_regular"/>
+
+                <ImageView
+                    android:src="@drawable/img_4_1_7"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="180dp"
+                    android:layout_height="130dp"/>
+
+                <TextView
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp"
+                    android:background="@drawable/shape_pastel_blue_round"
+                    android:text="การดูแลเบื้องต้น"
+                    android:textSize="18sp"
+                    android:textColor="@color/dark"
+                    android:fontFamily="@font/baijamjuree_semibold"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compli_content_seven_care_2"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:lineSpacingExtra="5dp"

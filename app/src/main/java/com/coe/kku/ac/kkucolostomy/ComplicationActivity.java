@@ -83,8 +83,7 @@ public class ComplicationActivity extends AppCompatActivity implements View.OnCl
             startActivity(i);
         }
         else if (view == sevenBtn) {
-            Intent i = new Intent(ComplicationActivity.this, ComplicationContentActivity.class);
-            i.putExtra("content", 7);
+            Intent i = new Intent(ComplicationActivity.this, ComplicationContentSevenActivity.class);
             startActivity(i);
         }
         else if (view == eightBtn) {
