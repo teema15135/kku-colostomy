@@ -110,8 +110,8 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/speaker_red"
                         android:scaleType="fitCenter"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp" />
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginTop="20dp"
@@ -191,8 +191,8 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/speaker_red"
                         android:scaleType="fitCenter"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp" />
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_marginTop="20dp"
@@ -272,8 +272,8 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/speaker_red"
                         android:scaleType="fitCenter"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp" />
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:weightSum="2"
@@ -351,8 +351,8 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/speaker_red"
                         android:scaleType="fitCenter"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp" />
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:weightSum="2"
@@ -431,8 +431,8 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/speaker_red"
                         android:scaleType="fitCenter"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp" />
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:weightSum="2"
@@ -511,8 +511,8 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/speaker_red"
                         android:scaleType="fitCenter"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp" />
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:weightSum="2"
@@ -593,8 +593,8 @@
                         android:background="@android:color/transparent"
                         android:src="@drawable/speaker_red"
                         android:scaleType="fitCenter"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp" />
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
                 </LinearLayout>
                 <LinearLayout
                     android:weightSum="2"

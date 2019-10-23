@@ -90,8 +90,8 @@
                                 android:background="@android:color/transparent"
                                 android:src="@drawable/speaker_red"
                                 android:scaleType="fitCenter"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp" />
+                                android:layout_width="27dp"
+                                android:layout_height="27dp" />
 
                         </LinearLayout>
 
@@ -126,8 +126,8 @@
                                 android:background="@android:color/transparent"
                                 android:src="@drawable/speaker_red"
                                 android:scaleType="fitCenter"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp" />
+                                android:layout_width="27dp"
+                                android:layout_height="27dp" />
 
                         </LinearLayout>
 
@@ -161,8 +161,8 @@
                                 android:background="@android:color/transparent"
                                 android:src="@drawable/speaker_red"
                                 android:scaleType="fitCenter"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp" />
+                                android:layout_width="27dp"
+                                android:layout_height="27dp" />
 
                         </LinearLayout>
 
@@ -196,8 +196,8 @@
                                 android:background="@android:color/transparent"
                                 android:src="@drawable/speaker_red"
                                 android:scaleType="fitCenter"
-                                android:layout_width="20dp"
-                                android:layout_height="20dp" />
+                                android:layout_width="27dp"
+                                android:layout_height="27dp" />
 
                         </LinearLayout>
 

@@ -99,8 +99,8 @@
 
                     <ImageButton
                         android:id="@+id/taking_care_two_1_speaker"
-                        android:layout_width="25dp"
-                        android:layout_height="24dp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="10dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
@@ -145,8 +145,8 @@
 
                     <ImageButton
                         android:id="@+id/taking_care_two_2_speaker"
-                        android:layout_width="25dp"
-                        android:layout_height="24dp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="10dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
@@ -192,8 +192,8 @@
 
                     <ImageButton
                         android:id="@+id/taking_care_two_3_speaker"
-                        android:layout_width="25dp"
-                        android:layout_height="24dp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="10dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
@@ -267,8 +267,8 @@
 
                     <ImageButton
                         android:id="@+id/taking_care_two_41_speaker"
-                        android:layout_width="25dp"
-                        android:layout_height="24dp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="10dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
@@ -308,8 +308,8 @@
 
                     <ImageButton
                         android:id="@+id/taking_care_two_42_speaker"
-                        android:layout_width="25dp"
-                        android:layout_height="24dp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="5dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
@@ -317,8 +317,8 @@
 
                     <ImageButton
                         android:id="@+id/taking_care_two_show_video"
-                        android:layout_width="25dp"
-                        android:layout_height="24dp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="5dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
@@ -578,8 +578,8 @@
                     <ImageButton
                         android:layout_marginTop="15dp"
                         android:id="@+id/taking_care_two_43_speaker"
-                        android:layout_width="25dp"
-                        android:layout_height="24dp"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
                         android:layout_marginLeft="10dp"
                         android:background="@android:color/transparent"
                         android:scaleType="fitCenter"
