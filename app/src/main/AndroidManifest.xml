@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ComplicationContentSevenActivity"></activity>
+        <activity android:name=".CreditActivity"></activity>
+        <activity android:name=".ComplicationContentSevenActivity" />
         <activity android:name=".RoutineContentFourActivity" />
         <activity android:name=".RoutineContentThreeActivity" />
         <activity android:name=".RoutineContentTwoActivity" />

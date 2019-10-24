@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/credit_back_btn"
+            android:layout_width="@dimen/back_button_size"
+            android:layout_height="@dimen/back_button_size"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_bold_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/credit_back_btn"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Credit assets"
+            android:textColor="@color/dark"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp">
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/dark"
+            android:text="Icon made by Freepik from www.flaticon.com"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/dark"
+            android:text="Icon made by surang from www.flaticon.com"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/dark"
+            android:text="Icon made by Alfredo Hernandez from www.flaticon.com"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
