@@ -11,26 +11,41 @@
         android:theme="@style/AppTheme">
         <activity android:name=".FullscreenVideoActivity"
             android:screenOrientation="landscape"></activity>
-        <activity android:name=".ComplicationContentSevenActivity" />
-        <activity android:name=".CreditActivity"></activity>
-        <activity android:name=".RoutineContentFourActivity" />
-        <activity android:name=".RoutineContentThreeActivity" />
-        <activity android:name=".RoutineContentTwoActivity" />
-        <activity android:name=".RoutineContentOneActivity" />
-        <activity android:name=".TakingCareContentThreeActivity" />
+        <activity android:name=".ComplicationContentSevenActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CreditActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".RoutineContentFourActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RoutineContentThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RoutineContentTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RoutineContentOneActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".TakingCareContentThreeActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".TakingCareContentTwoActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".TakingCareContentOneActivity" />
-        <activity android:name=".CommunicationActivity" />
-        <activity android:name=".ComplicationContentDoctorActivity" />
-        <activity android:name=".ComplicationContentActivity" />
-        <activity android:name=".RoutineContentActivity" />
-        <activity android:name=".EvaluationContentActivity" />
-        <activity android:name=".RoutineActivity" />
+        <activity android:name=".TakingCareContentOneActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CommunicationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ComplicationContentDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ComplicationContentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RoutineContentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".EvaluationContentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RoutineActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,11 +55,13 @@
         <activity
             android:name=".ComplicationActivity"
             android:label="@string/title_activity_complication"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
