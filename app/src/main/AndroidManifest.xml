@@ -12,6 +12,7 @@
         <activity android:name=".FullscreenVideoActivity"
             android:screenOrientation="landscape"></activity>
         <activity android:name=".ComplicationContentSevenActivity" />
+        <activity android:name=".CreditActivity"></activity>
         <activity android:name=".RoutineContentFourActivity" />
         <activity android:name=".RoutineContentThreeActivity" />
         <activity android:name=".RoutineContentTwoActivity" />

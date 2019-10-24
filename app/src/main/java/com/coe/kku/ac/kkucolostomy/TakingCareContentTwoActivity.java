@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -17,6 +18,8 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
     private ImageButton backBtn, sound1, sound2, sound3, sound41, sound42, sound43;
     private ImageButton showVideo;
     private MediaPlayer mPlayer;
+    private Button contentOneBtn, contentTwoBtn;
+    private LinearLayout contentOnePanel, contentTwoPanel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,14 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
         sound41.setOnClickListener(this);
         sound42.setOnClickListener(this);
         sound43.setOnClickListener(this);
+
+        contentOnePanel = (LinearLayout) findViewById(R.id.tc_content_one_panel);
+        contentTwoPanel = (LinearLayout) findViewById(R.id.tc_content_two_panel);
+
+        contentOneBtn = (Button) findViewById(R.id.tc_content_one_btn);
+        contentTwoBtn = (Button) findViewById(R.id.tc_content_two_btn);
+        contentOneBtn.setOnClickListener(this);
+        contentTwoBtn.setOnClickListener(this);
     }
 
     @Override
@@ -78,6 +89,10 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
             playSound(R.raw.sound22_42);
         } else if (view == sound43) {
             playSound(R.raw.sound22_43);
+        } else if (view == contentOneBtn) {
+            toggleContentOne();
+        } else if (view == contentTwoBtn) {
+            toggleContentTwo();
         }
     }
 
@@ -95,5 +110,27 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
     protected void onDestroy() {
         super.onDestroy();
         if (mPlayer != null && mPlayer.isPlaying()) mPlayer.stop();
+    }
+
+    public void toggleContentOne() {
+        if(contentOnePanel.getVisibility()==View.GONE) {
+            contentOnePanel.setVisibility(View.VISIBLE);
+            contentOneBtn.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_keyboard_arrow_down_black_24dp, 0);
+        }
+        else if(contentOnePanel.getVisibility()==View.VISIBLE) {
+            contentOnePanel.setVisibility(View.GONE);
+            contentOneBtn.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_keyboard_arrow_right_black_24dp, 0);
+        }
+    }
+
+    public void toggleContentTwo() {
+        if(contentTwoPanel.getVisibility()==View.GONE) {
+            contentTwoPanel.setVisibility(View.VISIBLE);
+            contentTwoBtn.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_keyboard_arrow_down_black_24dp, 0);
+        }
+        else if(contentTwoPanel.getVisibility()==View.VISIBLE) {
+            contentTwoPanel.setVisibility(View.GONE);
+            contentTwoBtn.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_keyboard_arrow_right_black_24dp, 0);
+        }
     }
 }

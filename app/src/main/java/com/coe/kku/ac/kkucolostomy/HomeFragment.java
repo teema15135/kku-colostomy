@@ -11,11 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
     private Button complicatoinBtn, communicationBtn, routineBtn;
     private ImageButton whatColostomy, whyColostomy, whoColostomy, positionColostomy;
+    private TextView creditTv;
 
     private MediaPlayer mediaPlayer;
 
@@ -27,6 +31,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         routineBtn = (Button) view.findViewById(R.id.home_routine_btn);
         communicationBtn = (Button) view.findViewById(R.id.home_commu_btn);
         complicatoinBtn = (Button) view.findViewById(R.id.home_compli_btn);
+        creditTv = (TextView) view.findViewById(R.id.credit_btn);
 
         routineBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +55,13 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 Intent intent = new Intent(getActivity(), ComplicationActivity.class);
                 getActivity().startActivity(intent);
                 if (mediaPlayer != null && mediaPlayer.isPlaying()) mediaPlayer.stop();
+            }
+        });
+        creditTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), CreditActivity.class);
+                getActivity().startActivity(intent);
             }
         });
 
