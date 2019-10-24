@@ -1,6 +1,6 @@
 package com.coe.kku.ac.kkucolostomy;
 
-import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -10,12 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 
-import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -28,7 +28,7 @@ import android.widget.VideoView;
  * Use the {@link TakingCareDialogFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class TakingCareDialogFragment extends DialogFragment {
+public class TakingCareDialogFragment extends DialogFragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 
@@ -36,7 +36,17 @@ public class TakingCareDialogFragment extends DialogFragment {
     private MediaController mediaController;
     private Uri uri;
 
+    private ImageButton playPauseButton;
+
     private Button close;
+
+    private int stopPosition;
+
+    private boolean pauseCauseOfFullscreen = false;
+
+    public static final int BACK_FORWARD_MILLI = 10000;
+
+    public static final int FULLSCREEN_REQUEST_CODE = 5930;
 
     public TakingCareDialogFragment() {
         // Required empty public constructor
@@ -74,6 +84,8 @@ public class TakingCareDialogFragment extends DialogFragment {
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         setStyle(DialogFragment.STYLE_NO_FRAME, android.R.style.Theme);
 
+        stopPosition = 0;
+
         close = (Button) view.findViewById(R.id.taking_care_dialog_close_button);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +93,13 @@ public class TakingCareDialogFragment extends DialogFragment {
                 dismiss();
             }
         });
+
+        playPauseButton = (ImageButton) view.findViewById(R.id.taking_care_dialog_video_pause_play);
+
+        playPauseButton.setOnClickListener(this);
+        view.findViewById(R.id.taking_care_dialog_video_back).setOnClickListener(this);
+        view.findViewById(R.id.taking_care_dialog_video_forward).setOnClickListener(this);
+        view.findViewById(R.id.taking_care_dialog_fullscreen_button).setOnClickListener(this);
 
         videoView = (VideoView) view.findViewById(R.id.taking_care_dialog_video);
         mediaController = new MediaController(getActivity());
@@ -95,9 +114,89 @@ public class TakingCareDialogFragment extends DialogFragment {
     }
 
     @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == FullscreenVideoActivity.OUT_FULLSCREEN_CODE) {
+            videoView.seekTo(data.getIntExtra("continue", 1000) - 1000);
+            videoView.start();
+            pauseCauseOfFullscreen = true;
+        }
+    }
+
+    private void goFullscreen() {
+        videoView.pause();
+        Intent intent = new Intent(getActivity(), FullscreenVideoActivity.class);
+        intent.putExtra("continue", videoView.getCurrentPosition());
+        startActivityForResult(intent, FULLSCREEN_REQUEST_CODE);
+        pauseCauseOfFullscreen = true;
+    }
+
+    private void pausePlayVideo() {
+        if (videoView.isPlaying()) {
+            videoView.pause();
+            playPauseButton.setImageResource(R.drawable.play);
+        }
+        else {
+            videoView.start();
+            playPauseButton.setImageResource(R.drawable.pause);
+        }
+    }
+
+    private void backward() {
+        int curr = videoView.getCurrentPosition();
+        if (curr - BACK_FORWARD_MILLI < 0)
+            videoView.seekTo(0);
+        else
+            videoView.seekTo(curr - BACK_FORWARD_MILLI);
+    }
+
+    private void forward() {
+        int curr = videoView.getCurrentPosition();
+        if (curr + BACK_FORWARD_MILLI > videoView.getDuration())
+            videoView.seekTo(videoView.getDuration() - 1000);
+        else
+            videoView.seekTo(curr + BACK_FORWARD_MILLI);
+    }
+
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         videoView.stopPlayback();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        stopPosition = videoView.getCurrentPosition();
+        videoView.pause();
+        pauseCauseOfFullscreen = false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (!pauseCauseOfFullscreen) videoView.seekTo(stopPosition);
+        videoView.start();
+    }
+
+    @Override
+    public void onClick(View view) {
+        int id = view.getId();
+        switch (id) {
+            case R.id.taking_care_dialog_video_pause_play:
+                pausePlayVideo();
+                break;
+            case R.id.taking_care_dialog_video_forward:
+                forward();
+                break;
+            case R.id.taking_care_dialog_video_back:
+                backward();
+                break;
+            case R.id.taking_care_dialog_fullscreen_button:
+                goFullscreen();
+                break;
+            default:
+        }
     }
 
     /**

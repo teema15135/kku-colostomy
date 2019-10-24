@@ -30,18 +30,64 @@
                 android:text="@string/demo_video"
                 android:textSize="24sp" />
 
-            <com.google.android.exoplayer2.ui.PlayerView
+            <VideoView
                 android:id="@+id/taking_care_dialog_video"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_margin="10dp"
                 />
 
-            <Button
-                android:id="@+id/taking_care_dialog_fullscreen_button"
-                android:text="Full screen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/backward_10_sec"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/taking_care_dialog_video_back"
+                        android:layout_width="@dimen/video_button_size"
+                        android:layout_height="@dimen/video_button_size" />
+
+                    <ImageButton
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pause"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/taking_care_dialog_video_pause_play"
+                        android:text="Pause/Play"
+                        android:layout_width="@dimen/video_button_size"
+                        android:layout_height="@dimen/video_button_size" />
+
+                    <ImageButton
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/forward_10_sec"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/taking_care_dialog_video_forward"
+                        android:text="Forward10"
+                        android:layout_width="@dimen/video_button_size"
+                        android:layout_height="@dimen/video_button_size" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fullscreen"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/taking_care_dialog_fullscreen_button"
+                    android:text="Full screen"
+                    android:layout_width="@dimen/video_button_size"
+                    android:layout_height="@dimen/video_button_size" />
+
+            </RelativeLayout>
 
             <Button
                 android:id="@+id/taking_care_dialog_close_button"
