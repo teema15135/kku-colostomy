@@ -18,7 +18,8 @@
         <activity android:name=".RoutineContentTwoActivity" />
         <activity android:name=".RoutineContentOneActivity" />
         <activity android:name=".TakingCareContentThreeActivity" />
-        <activity android:name=".TakingCareContentTwoActivity" />
+        <activity android:name=".TakingCareContentTwoActivity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".TakingCareContentOneActivity" />
         <activity android:name=".CommunicationActivity" />
         <activity android:name=".ComplicationContentDoctorActivity" />

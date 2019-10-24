@@ -22,13 +22,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/mitr_regular"
+                android:fontFamily="@font/mitr_light"
                 android:textColor="@color/darker"
                 android:gravity="center"
                 android:text="@string/demo_video"
-                android:textSize="24sp" />
+                android:textSize="20sp" />
 
             <VideoView
                 android:id="@+id/taking_care_dialog_video"
@@ -54,10 +55,11 @@
                         android:src="@drawable/backward_10_sec"
                         android:background="@android:color/transparent"
                         android:id="@+id/taking_care_dialog_video_back"
-                        android:layout_width="@dimen/video_button_size"
-                        android:layout_height="@dimen/video_button_size" />
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
 
                     <ImageButton
+                        android:layout_marginHorizontal="20dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/pause"
                         android:background="@android:color/transparent"
@@ -72,29 +74,32 @@
                         android:background="@android:color/transparent"
                         android:id="@+id/taking_care_dialog_video_forward"
                         android:text="Forward10"
-                        android:layout_width="@dimen/video_button_size"
-                        android:layout_height="@dimen/video_button_size" />
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
 
                 </LinearLayout>
 
                 <ImageButton
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/fullscreen"
                     android:background="@android:color/transparent"
                     android:layout_alignParentRight="true"
                     android:id="@+id/taking_care_dialog_fullscreen_button"
                     android:text="Full screen"
-                    android:layout_width="@dimen/video_button_size"
-                    android:layout_height="@dimen/video_button_size" />
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
 
             </RelativeLayout>
 
             <Button
+                android:layout_marginVertical="20dp"
                 android:id="@+id/taking_care_dialog_close_button"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/design_default_color_primary"
+                android:background="@drawable/selector_pastel_red_button"
                 android:fontFamily="@font/mitr_regular"
                 android:text="@string/close"
                 android:textColor="@color/white" />
