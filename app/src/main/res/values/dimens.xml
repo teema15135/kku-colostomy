@@ -23,4 +23,5 @@
     <dimen name="tc_content_two_img_height">130dp</dimen>
     <dimen name="tc_content_two_text_size">16sp</dimen>
     <dimen name="video_button_size">50dp</dimen>
+    <dimen name="knowing_menu_horizontal_gap">15dp</dimen>
 </resources>

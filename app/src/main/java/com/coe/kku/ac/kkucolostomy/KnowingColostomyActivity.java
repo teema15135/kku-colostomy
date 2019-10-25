@@ -13,10 +13,10 @@ public class KnowingColostomyActivity extends AppCompatActivity implements View.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_knowing_colostomy);
 
-        findViewById(R.id.knowing_general_knowledge_button).setOnClickListener(this);
-        findViewById(R.id.knowing_complication_button).setOnClickListener(this);
-        findViewById(R.id.knowing_communication_button).setOnClickListener(this);
-        findViewById(R.id.knowing_routine_button).setOnClickListener(this);
+        findViewById(R.id.knowing_goto_general_knowledge).setOnClickListener(this);
+        findViewById(R.id.knowing_goto_complication).setOnClickListener(this);
+        findViewById(R.id.knowing_goto_communication).setOnClickListener(this);
+        findViewById(R.id.knowing_goto_routine).setOnClickListener(this);
     }
 
     @Override
@@ -25,16 +25,16 @@ public class KnowingColostomyActivity extends AppCompatActivity implements View.
         Intent intent;
         switch (id) {
             default:
-            case R.id.knowing_general_knowledge_button:
+            case R.id.knowing_goto_general_knowledge:
                 intent = new Intent(KnowingColostomyActivity.this, GeneralKnowledgeActivity.class);
                 break;
-            case R.id.knowing_complication_button:
+            case R.id.knowing_goto_complication:
                 intent = new Intent(KnowingColostomyActivity.this, ComplicationActivity.class);
                 break;
-            case R.id.knowing_communication_button:
+            case R.id.knowing_goto_communication:
                 intent = new Intent(KnowingColostomyActivity.this, CommunicationActivity.class);
                 break;
-            case R.id.knowing_routine_button:
+            case R.id.knowing_goto_routine:
                 intent = new Intent(KnowingColostomyActivity.this, RoutineActivity.class);
                 break;
         }
