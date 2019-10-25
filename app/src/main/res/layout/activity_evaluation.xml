@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EvaluationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:fontFamily="@font/mitr_regular"
+            android:gravity="center"
+            android:text="@string/evaluation"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/mitr_light"
+            android:gravity="center"
+            android:text="กรุณาเลือกระยะเวลาหลังทำทวารเทียม"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pastel_dark_blue_button"
+                android:id="@+id/evaluation_period1_button"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:fontFamily="@font/baijamjuree_semibold"
+                android:text="1 วัน - 7 วัน" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pastel_yellow_button"
+                android:id="@+id/evaluation_period2_button"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:fontFamily="@font/baijamjuree_semibold"
+                android:text="8 วัน - 8 สัปดาห์" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:background="@drawable/selector_pastel_red_button"
+                android:id="@+id/evaluation_period3_button"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:fontFamily="@font/baijamjuree_semibold"
+                android:text="มากกว่า 8 สัปดาห์" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

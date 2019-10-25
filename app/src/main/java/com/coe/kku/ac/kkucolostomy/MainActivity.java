@@ -1,5 +1,6 @@
 package com.coe.kku.ac.kkucolostomy;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -15,91 +16,34 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
-
-    BottomNavigationView bottomNav;
-
-    static boolean isHome = false;
-
-    static Fragment homeFragment,
-            TakingCareFragment,
-            EvaluationFragment,
-            selectedFragment ;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        homeFragment = new HomeFragment();
-        TakingCareFragment = new TakingCareFragment();
-        EvaluationFragment = new EvaluationFragment();
-
-        bottomNav = (BottomNavigationView)findViewById(R.id.bottom_navigation);
-        bottomNav.setOnNavigationItemSelectedListener(this);
-
-        bottomNav.setSelectedItemId(R.id.nav_home);
-
-//        StatusBarUtil.setTranslucentForImageView(MainActivity.this, 5, null);
-
-
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        findViewById(R.id.main_1_know_colostomy).setOnClickListener(this);
+        findViewById(R.id.main_2_taking_care).setOnClickListener(this);
+        findViewById(R.id.main_3_evaluation).setOnClickListener(this);
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
-
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        selectedFragment = null;
-
-        switch (menuItem.getItemId()) {
-            case R.id.nav_home:
-                selectedFragment = homeFragment;
-                isHome = true;
+    public void onClick(View view) {
+        int id = view.getId();
+        Intent intent;
+        switch (id) {
+            default:
+            case R.id.main_1_know_colostomy:
+                intent = new Intent(MainActivity.this, KnowingColostomyActivity.class);
                 break;
-            case R.id.nav_taking_care:
-                selectedFragment = TakingCareFragment;
-                isHome = false;
+            case R.id.main_2_taking_care:
+                intent = new Intent(MainActivity.this, TakingCareActivity.class);
                 break;
-            case R.id.nav_evaluation:
-                selectedFragment = EvaluationFragment;
-                isHome = false;
+            case R.id.main_3_evaluation:
+                intent = new Intent(MainActivity.this, EvaluationActivity.class);
                 break;
         }
-
-        if(selectedFragment != null) getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                selectedFragment).commit();
-
-        return true;
+        if (intent != null) startActivity(intent);
     }
 }

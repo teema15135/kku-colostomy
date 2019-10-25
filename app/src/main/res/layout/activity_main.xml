@@ -4,26 +4,31 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation" />
 
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_navigation"
-        app:itemIconTint="@color/pastel_dark_blue"
-        app:itemTextColor="@color/pastel_dark_blue"
-        app:itemTextAppearanceActive="@style/style_textView_active"
-        app:itemTextAppearanceInactive="@style/style_textView_inactive"
-        app:labelVisibilityMode="labeled"
-        android:background="?android:attr/windowBackground">
+        <Button
+            android:id="@+id/main_1_know_colostomy"
+            android:text="To topic 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
-        <!--#B3B6B7-->
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <Button
+            android:id="@+id/main_2_taking_care"
+            android:text="To topic 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/main_3_evaluation"
+            android:text="To topic 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </RelativeLayout>

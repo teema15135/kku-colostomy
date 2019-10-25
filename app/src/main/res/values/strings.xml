@@ -112,7 +112,7 @@
     <string name="see_the_wound_before_change_the_bag">มาดูแผลก่อนเปลี่ยนถุงกันเถอะ</string>
     <string name="take_out_waste">การเทสิ่งขับถ่าย</string>
     <string name="change_platform">การเปลี่ยนถุงรองรับสิ่งขับถ่าย และการเปลี่ยนแป้นขอบแผล</string>
-    <string name="evaluation">การประเมินผล</string>
+    <string name="evaluation">การประเมินทวารเทียม</string>
     <string name="pink_or_red">ชมพู, แดง</string>
     <string name="dark_red_and_more_red">แดงคล้ำ, แดงมากขึ้น</string>
     <string name="dark_and_black">สีดำคล้ำ, ดำ</string>
@@ -286,5 +286,9 @@
     <string name="eating_5">- อาหารที่ทำให้ท้องเสีย เช่น อาหารรสจัด อาหารหมักดอง ผลไม้ดิบ ผักดิบ อาหารที่ใส่เครื่องเทศมาก อาหารไขมันสูง เป็นต้น\n
         - อาหารที่ทำให้เกิดกลิ่น เช่น กระเทียม ถั่ว ผักกาด หัวหอม กะหล่ำปลี ชะอม ผักกระเฉด สะตอ กระถิน เป็นต้น\n
         - อาหารที่ทำให้เกิดแก๊ส เช่น ถั่วเปลือกแข็ง เบียร์ น้ำอัดลม แตงกวา กะหล่ำปลี หัวหอม ข้าวโพด หัวผักกาด นมเปรี้ยว เป็นต้น\n</string>
+    <string name="general_knowledge">ความรู้ทั่วไป</string>
+    <string name="knowing_about_colostomy">รู้เกี่ยวกับทวารเทียม</string>
+    <string name="communication">การเข้าสังคม</string>
+    <string name="complication">ภาวะแทรกซ้อน</string>
 
 </resources>
