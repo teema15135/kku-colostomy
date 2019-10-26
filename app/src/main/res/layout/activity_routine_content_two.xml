@@ -81,7 +81,6 @@
                     android:src="@drawable/exercise"/>
 
                 <TextView
-                    android:justificationMode="inter_word"
                     android:layout_marginTop="20dp"
                     android:id="@+id/routine_content_describe"
                     android:layout_width="match_parent"

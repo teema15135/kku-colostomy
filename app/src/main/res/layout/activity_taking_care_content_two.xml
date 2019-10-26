@@ -454,7 +454,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="15dp"
-                        android:src="@drawable/img_2_22_9" />
+                        android:src="@drawable/img_2_22_10a" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -464,6 +464,23 @@
                         android:fontFamily="@font/baijamjuree_regular"
                         android:lineSpacingExtra="5dp"
                         android:text="@string/tc_two_c2_s10"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
+
+                    <ImageView
+                        android:layout_width="@dimen/tc_content_two_img_width"
+                        android:layout_height="@dimen/tc_content_two_img_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_2_22_9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/tc_two_c2_s11"
                         android:textColor="@color/darker"
                         android:textSize="@dimen/tc_content_two_text_size" />
 
@@ -479,7 +496,7 @@
                             android:layout_width="@dimen/tc_content_two_img_width"
                             android:layout_height="@dimen/tc_content_two_img_height"
                             android:layout_gravity="center"
-                            android:src="@drawable/img_2_22_10a" />
+                            android:src="@drawable/img_2_22_10c" />
 
                         <ImageView
                             android:layout_width="@dimen/tc_content_two_img_width"
@@ -488,23 +505,27 @@
                             android:src="@drawable/img_2_22_10b" />
                     </LinearLayout>
 
-                    <ImageView
-                        android:layout_width="@dimen/tc_content_two_img_width"
-                        android:layout_height="@dimen/tc_content_two_img_height"
-                        android:layout_gravity="center"
-                        android:src="@drawable/img_2_22_10c" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/tc_two_c2_s12"
+                        android:textColor="@color/darker"
+                        android:textSize="@dimen/tc_content_two_text_size" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:fontFamily="@font/baijamjuree_regular"
                         android:lineSpacingExtra="5dp"
-                        android:text="@string/tc_two_c2_s11"
+                        android:text="@string/tc_two_c2_s13"
                         android:textColor="@color/darker"
                         android:textSize="@dimen/tc_content_two_text_size" />
-
 
                     <LinearLayout
                         android:layout_width="wrap_content"

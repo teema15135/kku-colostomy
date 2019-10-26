@@ -58,7 +58,7 @@
                     android:background="@drawable/shape_pastel_blue_round"
                     android:fontFamily="@font/baijamjuree_semibold"
                     android:paddingHorizontal="20dp"
-                    android:text="1. ลำไส้มีสีที่เปลี่ยนไป "
+                    android:text="1. ทวารเทียมมีสีที่เปลี่ยนไป "
                     android:textColor="@color/dark"
                     android:textSize="18sp" />
                 <TextView
@@ -83,7 +83,7 @@
                     android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2. ลำไส้นูนยื่นออกมา"
+                    android:text="2. ทวารเทียมนูนยื่นออกมา"
                     android:textSize="18sp"
                     android:textColor="@color/dark"
                     android:background="@drawable/shape_pastel_blue_round"

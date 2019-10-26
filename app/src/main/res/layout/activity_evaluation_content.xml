@@ -301,108 +301,116 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey_shadow" />
-
-            <!-- 6.4 Position of colostomy -->
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/evaluation_content_position_section"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp">
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:gravity="center_vertical"
-                    android:text="@string/position_of_colostomy"
-                    android:textSize="18sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_shadow" />
 
+                <!-- 6.4 Position of colostomy -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:orientation="horizontal"
-                    android:paddingLeft="@dimen/evaluation_button_right_margin">
-
-                    <ImageButton
-                        android:padding="4dp"
-                        android:src="@drawable/check_circle_unchecked"
-                        android:background="@android:color/transparent"
-                        android:scaleType="fitCenter"
-                        android:id="@+id/choice_41"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginRight="@dimen/evaluation_button_right_margin" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp">
 
                     <TextView
-                        android:textSize="@dimen/tc_content_two_text_size"
-                        android:fontFamily="@font/baijamjuree_regular"
-                        android:textColor="@color/darker"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
-                        android:text="@string/normal_position" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:orientation="horizontal"
-                    android:paddingLeft="@dimen/evaluation_button_right_margin">
-
-                    <ImageButton
-                        android:padding="4dp"
-                        android:src="@drawable/check_circle_unchecked"
-                        android:background="@android:color/transparent"
-                        android:scaleType="fitCenter"
-                        android:id="@+id/choice_42"
-                        android:layout_width="40dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:layout_marginRight="@dimen/evaluation_button_right_margin" />
-
-                    <TextView
-                        android:textSize="@dimen/tc_content_two_text_size"
-                        android:fontFamily="@font/baijamjuree_regular"
-                        android:textColor="@color/darker"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center_vertical"
-                        android:text="@string/popout" />
+                        android:text="@string/position_of_colostomy"
+                        android:textSize="18sp" />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:orientation="horizontal"
-                    android:paddingLeft="@dimen/evaluation_button_right_margin">
-
-                    <ImageButton
-                        android:padding="4dp"
-                        android:src="@drawable/check_circle_unchecked"
-                        android:background="@android:color/transparent"
-                        android:scaleType="fitCenter"
-                        android:id="@+id/choice_43"
-                        android:layout_width="40dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_marginRight="@dimen/evaluation_button_right_margin" />
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/evaluation_button_right_margin">
 
-                    <TextView
+                        <ImageButton
+                            android:padding="4dp"
+                            android:src="@drawable/check_circle_unchecked"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/choice_41"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="@dimen/evaluation_button_right_margin" />
+
+                        <TextView
+                            android:textSize="@dimen/tc_content_two_text_size"
+                            android:fontFamily="@font/baijamjuree_regular"
+                            android:textColor="@color/darker"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/normal_position" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textSize="@dimen/tc_content_two_text_size"
-                        android:fontFamily="@font/baijamjuree_regular"
-                        android:textColor="@color/darker"
-                        android:gravity="center_vertical"
-                        android:text="@string/collapse" />
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/evaluation_button_right_margin">
+
+                        <ImageButton
+                            android:padding="4dp"
+                            android:src="@drawable/check_circle_unchecked"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/choice_42"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="@dimen/evaluation_button_right_margin" />
+
+                        <TextView
+                            android:textSize="@dimen/tc_content_two_text_size"
+                            android:fontFamily="@font/baijamjuree_regular"
+                            android:textColor="@color/darker"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/popout" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/evaluation_button_right_margin">
+
+                        <ImageButton
+                            android:padding="4dp"
+                            android:src="@drawable/check_circle_unchecked"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/choice_43"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="@dimen/evaluation_button_right_margin" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/tc_content_two_text_size"
+                            android:fontFamily="@font/baijamjuree_regular"
+                            android:textColor="@color/darker"
+                            android:gravity="center_vertical"
+                            android:text="@string/collapse" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
-
 
             </LinearLayout>
 
@@ -547,6 +555,7 @@
 
             <!-- 6.6 Size of colostomy -->
             <LinearLayout
+                android:id="@+id/choice_6_section"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -653,6 +662,7 @@
 
             <!-- 6.7 Skin around colostomy -->
             <LinearLayout
+                android:id="@+id/choice_7_section"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -809,6 +819,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/choice_76_section"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:orientation="horizontal"

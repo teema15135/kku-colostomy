@@ -137,26 +137,6 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/baijamjuree_regular"
                     android:lineSpacingExtra="5dp"/>
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/commu_content_6"
-                    android:textColor="@color/dark"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:lineSpacingExtra="5dp"/>
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/commu_content_7"
-                    android:textColor="@color/dark"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:lineSpacingExtra="5dp"/>
 
 
             </LinearLayout>

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import java.util.HashMap;
 
@@ -44,6 +45,7 @@ public class EvaluationContentActivity extends AppCompatActivity implements View
         addViewListener();
         makeStringIdMap();
         makeComplicationNumberMap();
+        hideContent();
     }
 
     private void initializeView() {
@@ -98,6 +100,16 @@ public class EvaluationContentActivity extends AppCompatActivity implements View
         choice75.setOnClickListener(this);
         choice76.setOnClickListener(this);
         choice77.setOnClickListener(this);
+    }
+
+    private void hideContent() {
+        if (period != EvaluationPeriod.MORE_THAN_EIGHT_WEEK) {
+            ((LinearLayout) findViewById(R.id.evaluation_content_position_section)).removeAllViewsInLayout();
+            ((LinearLayout) findViewById(R.id.choice_6_section)).removeViewAt(3);
+            ((LinearLayout) findViewById(R.id.choice_7_section)).removeViewAt(6);
+        } else {
+            ((LinearLayout) findViewById(R.id.choice_6_section)).removeViewAt(2);
+        }
     }
 
     private void makeStringIdMap() {
