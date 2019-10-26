@@ -152,6 +152,6 @@
         android:layout_margin="@dimen/fab_margin"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />
+        android:src="@android:drawable/ic_lock_silent_mode_off"/>
 
 </RelativeLayout>

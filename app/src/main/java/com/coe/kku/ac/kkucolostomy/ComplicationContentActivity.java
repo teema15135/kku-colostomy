@@ -93,6 +93,12 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
     }
 
     @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mPlayer != null && mPlayer.isPlaying()) mPlayer.stop();
+    }
+
+    @Override
     public void onClick(View view) {
         if (view == backBtn) {
             finish();

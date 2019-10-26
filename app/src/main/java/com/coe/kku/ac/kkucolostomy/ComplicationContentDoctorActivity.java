@@ -65,4 +65,10 @@ public class ComplicationContentDoctorActivity extends AppCompatActivity impleme
                 break;
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mPlayer != null && mPlayer.isPlaying()) mPlayer.stop();
+    }
 }
