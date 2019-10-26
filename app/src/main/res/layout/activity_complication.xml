@@ -56,13 +56,13 @@
                 android:layout_marginTop="20dp">
                 <Button
                     android:layout_marginLeft="40dp"
-                    android:id="@+id/compli_menu_seven_btn"
+                    android:id="@+id/compli_menu_eight_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
                     android:background="@drawable/selector_pastel_blue_shadow_round"
                     android:fontFamily="@font/baijamjuree_regular"
-                    android:text="@string/compli_menu_seven"
+                    android:text="@string/compli_menu_eight"
                     android:textSize="@dimen/compli_menu_font_size" />
                 <ImageView
                     android:layout_marginLeft="20dp"
@@ -81,13 +81,13 @@
                 <Button
                     android:layout_marginRight="40dp"
                     android:layout_alignParentRight="true"
-                    android:id="@+id/compli_menu_eight_btn"
+                    android:id="@+id/compli_menu_seven_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingHorizontal="20dp"
                     android:background="@drawable/selector_pastel_blue_shadow_round"
                     android:fontFamily="@font/baijamjuree_regular"
-                    android:text="@string/compli_menu_eight"
+                    android:text="@string/compli_menu_seven"
                     android:textSize="@dimen/compli_menu_font_size" />
                 <ImageView
                     android:layout_marginRight="15dp"
