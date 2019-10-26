@@ -15,7 +15,7 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
 
     private static final String tag = "TakingCareDialogFragment";
 
-    private ImageButton backBtn, sound1, sound2, sound3, sound41, sound42, sound43;
+    private ImageButton backBtn, sound1, sound2, sound3, sound41, sound42, sound43, sound44;
     private ImageButton showVideo;
     private MediaPlayer mPlayer;
     private Button contentOneBtn, contentTwoBtn;
@@ -58,6 +58,7 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
         sound41 = (ImageButton) findViewById(R.id.taking_care_two_41_speaker);
         sound42 = (ImageButton) findViewById(R.id.taking_care_two_42_speaker);
         sound43 = (ImageButton) findViewById(R.id.taking_care_two_43_speaker);
+        sound44 = (ImageButton) findViewById(R.id.taking_care_two_44_speaker);
 
         sound1.setOnClickListener(this);
         sound2.setOnClickListener(this);
@@ -65,6 +66,7 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
         sound41.setOnClickListener(this);
         sound42.setOnClickListener(this);
         sound43.setOnClickListener(this);
+        sound44.setOnClickListener(this);
 
         contentOnePanel = (LinearLayout) findViewById(R.id.tc_content_one_panel);
         contentTwoPanel = (LinearLayout) findViewById(R.id.tc_content_two_panel);
@@ -89,6 +91,8 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
             playSound(R.raw.sound22_42);
         } else if (view == sound43) {
             playSound(R.raw.sound22_43);
+        } else if (view == sound44) {
+            playSound(R.raw.sound22_44);
         } else if (view == contentOneBtn) {
             toggleContentOne();
         } else if (view == contentTwoBtn) {

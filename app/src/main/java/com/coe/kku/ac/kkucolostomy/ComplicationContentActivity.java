@@ -3,6 +3,7 @@ package com.coe.kku.ac.kkucolostomy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,6 +17,9 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
     private ImageView img;
     private ImageButton backBtn;
     private int content;
+    private int soundId;
+
+    private MediaPlayer mPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,8 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
 
         backBtn.setOnClickListener(this);
 
+        findViewById(R.id.complication_fab).setOnClickListener(this);
+
         //filter intent
         Intent intent = getIntent();
         content = (int) intent.getIntExtra("content", 0);
@@ -40,6 +46,7 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
             title.setText(getString(R.string.compli_content_one_title));
             subtitle.setText(getString(R.string.compli_content_one_subtitle));
             care.setText(getString(R.string.compli_content_one_care));
+            soundId = R.raw.sound411;
         }
         else if (content == 2) {
             img.getLayoutParams().height = 0;
@@ -47,6 +54,7 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
             img.requestLayout();
             title.setText(getString(R.string.compli_content_two_title));
             care.setText(getString(R.string.compli_content_one_care));
+            soundId = R.raw.sound412;
         }
         else if (content == 3) {
             img.getLayoutParams().height = 0;
@@ -54,12 +62,14 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
             img.requestLayout();
             title.setText(getString(R.string.compli_content_three_title));
             care.setText(getString(R.string.compli_content_three_care));
+            soundId = R.raw.sound413;
         }
         else if (content == 4) {
             img.setImageResource(R.drawable.img_4_1_4);
             title.setText(getString(R.string.compli_content_four_title));
             subtitle.setText(getString(R.string.compli_content_four_subtitle));
             care.setText(getString(R.string.compli_content_four_care));
+            soundId = R.raw.sound414;
         }
         else if (content == 5) {
             img.getLayoutParams().height = 0;
@@ -68,12 +78,14 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
             title.setText(getString(R.string.compli_content_five_title));
             subtitle.setText(getString(R.string.compli_content_five_subtitle));
             care.setText(getString(R.string.compli_content_five_care));
+            soundId = R.raw.sound415;
         }
         else if (content == 6) {
             img.setImageResource(R.drawable.img_4_1_6);
             title.setText(getString(R.string.compli_content_six_title));
             subtitle.setText(getString(R.string.compli_content_six_subtitle));
             care.setText(getString(R.string.compli_content_six_care));
+            soundId = R.raw.sound416;
         }
         else if (content == 8) {
 
@@ -84,6 +96,17 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
     public void onClick(View view) {
         if (view == backBtn) {
             finish();
+        } else if (view.getId() == R.id.complication_fab) {
+            playSound();
         }
+    }
+
+    private void playSound() {
+        if (mPlayer == null)
+            mPlayer = MediaPlayer.create(ComplicationContentActivity.this, soundId);
+        if (mPlayer.isPlaying())
+            mPlayer.stop();
+        mPlayer = MediaPlayer.create(ComplicationContentActivity.this, soundId);
+        mPlayer.start();
     }
 }

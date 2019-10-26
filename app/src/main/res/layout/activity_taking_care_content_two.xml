@@ -237,8 +237,6 @@
                         android:textColor="@color/darker"
                         android:textSize="@dimen/tc_content_two_text_size" />
 
-
-
                 </LinearLayout>
 
 
@@ -267,8 +265,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-
-
 
                     <!--11 steps-->
                     <LinearLayout
@@ -623,17 +619,36 @@
                         android:textSize="@dimen/tc_content_two_text_size" />
 
                     <!--c5-->
-                    <TextView
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
-                        android:background="@drawable/shape_pastel_blue_round"
-                        android:fontFamily="@font/baijamjuree_semibold"
-                        android:paddingHorizontal="20dp"
-                        android:paddingVertical="5dp"
-                        android:text="@string/tc_two_c5_title"
-                        android:textColor="@color/darker"
-                        android:textSize="@dimen/tc_content_two_text_size" />
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:background="@drawable/shape_pastel_blue_round"
+                            android:fontFamily="@font/baijamjuree_semibold"
+                            android:paddingHorizontal="20dp"
+                            android:paddingVertical="5dp"
+                            android:text="@string/tc_two_c5_title"
+                            android:textColor="@color/darker"
+                            android:textSize="@dimen/tc_content_two_text_size" />
+
+                        <ImageButton
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/taking_care_two_44_speaker"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@android:color/transparent"
+                            android:scaleType="fitCenter"
+                            android:layout_marginRight="@dimen/speaker_right_margin"
+                            android:src="@drawable/speaker_red" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:layout_marginBottom="50dp"

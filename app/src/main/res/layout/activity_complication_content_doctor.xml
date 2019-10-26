@@ -51,16 +51,33 @@
                 android:background="@drawable/shadow_home"
                 android:orientation="vertical">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:fontFamily="@font/baijamjuree_semibold"
-                    android:paddingHorizontal="20dp"
-                    android:text="1. ทวารเทียมมีสีที่เปลี่ยนไป "
-                    android:textColor="@color/dark"
-                    android:textSize="18sp" />
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:fontFamily="@font/baijamjuree_semibold"
+                        android:paddingHorizontal="20dp"
+                        android:text="1. ทวารเทียมมีสีที่เปลี่ยนไป "
+                        android:textColor="@color/dark"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/complication_doctor_sound1"
+                        android:layout_marginLeft="@dimen/speaker_right_margin"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/speaker_red"
+                        android:scaleType="fitCenter"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -78,17 +95,34 @@
                     android:layout_height="130dp"/>
 
 
-                <TextView
+                <LinearLayout
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="40dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2. ทวารเทียมนูนยื่นออกมา"
-                    android:textSize="18sp"
-                    android:textColor="@color/dark"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/baijamjuree_semibold"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. ทวารเทียมนูนยื่นออกมา"
+                        android:textSize="18sp"
+                        android:textColor="@color/dark"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:paddingHorizontal="20dp"
+                        android:fontFamily="@font/baijamjuree_semibold"/>
+
+                    <ImageButton
+                        android:id="@+id/complication_doctor_sound2"
+                        android:layout_marginLeft="@dimen/speaker_right_margin"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/speaker_red"
+                        android:scaleType="fitCenter"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -105,17 +139,34 @@
                     android:layout_height="130dp"/>
 
 
-                <TextView
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="40dp"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3. ทวารเทียมตีบ "
-                    android:textSize="18sp"
-                    android:textColor="@color/dark"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/baijamjuree_semibold"/>
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. ทวารเทียมตีบ "
+                        android:textSize="18sp"
+                        android:textColor="@color/dark"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:paddingHorizontal="20dp"
+                        android:fontFamily="@font/baijamjuree_semibold"/>
+
+                    <ImageButton
+                        android:id="@+id/complication_doctor_sound3"
+                        android:layout_marginLeft="@dimen/speaker_right_margin"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/speaker_red"
+                        android:scaleType="fitCenter"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -145,6 +196,16 @@
                     android:paddingHorizontal="20dp"
                     android:fontFamily="@font/baijamjuree_semibold"/>
 
+                <ImageButton
+                    android:id="@+id/complication_doctor_sound4"
+                    android:layout_marginLeft="@dimen/speaker_right_margin"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/speaker_red"
+                    android:scaleType="fitCenter"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -162,17 +223,36 @@
                     android:layout_height="130dp"/>
 
 
-                <TextView
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="50dp"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5. ปวดท้องร่วมกับการมีไข้ "
-                    android:textSize="18sp"
-                    android:textColor="@color/dark"
-                    android:background="@drawable/shape_pastel_blue_round"
-                    android:paddingHorizontal="20dp"
-                    android:fontFamily="@font/baijamjuree_semibold"/>
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="50dp">
+
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. ปวดท้องร่วมกับการมีไข้ "
+                        android:textSize="18sp"
+                        android:textColor="@color/dark"
+                        android:background="@drawable/shape_pastel_blue_round"
+                        android:paddingHorizontal="20dp"
+                        android:fontFamily="@font/baijamjuree_semibold"/>
+
+                    <ImageButton
+                        android:id="@+id/complication_doctor_sound5"
+                        android:layout_marginLeft="@dimen/speaker_right_margin"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/speaker_red"
+                        android:scaleType="fitCenter"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp" />
+
+                </LinearLayout>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -188,9 +268,5 @@
         </ScrollView>
 
     </LinearLayout>
-
-
-
-
 
 </RelativeLayout>

@@ -35,6 +35,22 @@ public class CommunicationActivity extends AppCompatActivity {
                 mPlayer.start();
             }
         });
+
+        findViewById(R.id.communication_fab).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playMedia(R.raw.sound5);
+            }
+        });
+    }
+
+    private void playMedia(int rawResourceId) {
+        if (mPlayer == null)
+            mPlayer = MediaPlayer.create(CommunicationActivity.this, rawResourceId);
+        if (mPlayer.isPlaying())
+            mPlayer.stop();
+        mPlayer = MediaPlayer.create(CommunicationActivity.this, rawResourceId);
+        mPlayer.start();
     }
 
     @Override
