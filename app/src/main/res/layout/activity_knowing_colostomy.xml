@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
     <LinearLayout
@@ -49,82 +49,82 @@
             android:weightSum="2">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:paddingRight="@dimen/knowing_menu_horizontal_gap"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingRight="@dimen/knowing_menu_horizontal_gap"
+                android:paddingBottom="15dp">
 
                 <RelativeLayout
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintDimensionRatio="w,1:1"
                     android:id="@+id/knowing_goto_general_knowledge"
-                    android:background="@drawable/border_pink"
                     android:layout_width="0dp"
-                    android:layout_height="0dp">
+                    android:layout_height="0dp"
+                    android:background="@drawable/border_pink"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:src="@drawable/speaker_red"
-                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
                         android:layout_marginRight="30dp"
                         android:layout_marginBottom="40dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:src="@drawable/book" />
 
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/general_knowledge"
-                        android:textColor="@color/text_dark_pink"
-                        android:layout_marginBottom="15dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:textColor="@color/text_dark_pink" />
 
                 </RelativeLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:paddingLeft="@dimen/knowing_menu_horizontal_gap"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/knowing_menu_horizontal_gap"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
 
                 <RelativeLayout
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintDimensionRatio="w,1:1"
                     android:id="@+id/knowing_goto_routine"
-                    android:background="@drawable/border_yellow"
                     android:layout_width="0dp"
-                    android:layout_height="0dp">
+                    android:layout_height="0dp"
+                    android:background="@drawable/border_yellow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:src="@drawable/speaker_red"
-                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
                         android:layout_marginRight="30dp"
                         android:layout_marginBottom="40dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:src="@drawable/house" />
 
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/routine"
-                        android:textColor="@color/text_dark_yellow"
-                        android:layout_marginBottom="15dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:textColor="@color/text_dark_yellow" />
 
                 </RelativeLayout>
 
@@ -140,82 +140,82 @@
             android:weightSum="2">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:paddingRight="@dimen/knowing_menu_horizontal_gap"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingRight="@dimen/knowing_menu_horizontal_gap"
+                android:paddingBottom="15dp">
 
                 <RelativeLayout
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintDimensionRatio="w,1:1"
                     android:id="@+id/knowing_goto_communication"
-                    android:background="@drawable/border_silver"
                     android:layout_width="0dp"
-                    android:layout_height="0dp">
+                    android:layout_height="0dp"
+                    android:background="@drawable/border_silver"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:src="@drawable/speaker_red"
-                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
                         android:layout_marginRight="30dp"
                         android:layout_marginBottom="40dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:src="@drawable/teamwork" />
 
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/communication"
-                        android:textColor="@color/text_dark_silver"
-                        android:layout_marginBottom="15dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:textColor="@color/text_dark_silver" />
 
                 </RelativeLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:paddingLeft="@dimen/knowing_menu_horizontal_gap"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/knowing_menu_horizontal_gap"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
 
                 <RelativeLayout
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintDimensionRatio="w,1:1"
                     android:id="@+id/knowing_goto_complication"
-                    android:background="@drawable/border_orange"
                     android:layout_width="0dp"
-                    android:layout_height="0dp">
+                    android:layout_height="0dp"
+                    android:background="@drawable/border_orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="w,1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:src="@drawable/speaker_red"
-                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
                         android:layout_marginRight="30dp"
                         android:layout_marginBottom="40dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:src="@drawable/hospital_sign" />
 
                     <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/complication"
-                        android:textColor="@color/text_dark_orange"
-                        android:layout_marginBottom="15dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:textColor="@color/text_dark_orange" />
 
                 </RelativeLayout>
 
@@ -223,6 +223,34 @@
 
         </LinearLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_alignBottom="@id/knowing_goto_home"
+                android:paddingBottom="20dp"
+                android:src="@drawable/houses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            
+            <Button
+                android:id="@+id/knowing_goto_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/pastel_pink_button"
+                android:fontFamily="@font/baijamjuree_semibold"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="กลับหน้าหลัก"
+                android:textColor="@color/text_dark_pink_pastel"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
 
     </LinearLayout>
 

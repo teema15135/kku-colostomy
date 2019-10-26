@@ -32,4 +32,7 @@
     <color name="orange">#ffbe7e</color>
     <color name="dark_orange">#f08c3e</color>
     <color name="text_dark_orange">#561500</color>
+    <color name="pink_pastel">#ffe9de</color>
+    <color name="dark_pink_pastel">#dc93a4</color>
+    <color name="text_dark_pink_pastel">#cd6f8a</color>
 </resources>
