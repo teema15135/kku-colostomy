@@ -285,6 +285,14 @@
                             android:textColor="@color/darker"
                             android:textSize="@dimen/tc_content_two_text_size" />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
                         <ImageButton
                             android:id="@+id/taking_care_two_42_speaker"
                             android:layout_width="27dp"
@@ -298,11 +306,10 @@
                             android:id="@+id/taking_care_two_show_video"
                             android:layout_width="27dp"
                             android:layout_height="27dp"
-                            android:layout_marginLeft="5dp"
+                            android:layout_marginLeft="10dp"
                             android:background="@android:color/transparent"
                             android:scaleType="fitCenter"
                             android:src="@drawable/play_button" />
-
                     </LinearLayout>
 
                     <TextView
