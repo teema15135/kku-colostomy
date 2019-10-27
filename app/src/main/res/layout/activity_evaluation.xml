@@ -27,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:fontFamily="@font/mitr_light"
             android:gravity="center"
             android:text="กรุณาเลือกระยะเวลาหลังทำทวารเทียม"
@@ -37,8 +37,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:gravity="center_horizontal"
+            android:layout_weight="2.5"
+            android:gravity="center"
             android:orientation="vertical">
 
             <Button
@@ -85,11 +85,19 @@
             android:layout_weight="1">
 
             <ImageView
-                android:layout_alignBottom="@id/evaluation_goto_home"
-                android:paddingBottom="20dp"
-                android:src="@drawable/houses"
+                android:src="@drawable/home_bg_3png"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="-40dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/evaluation_goto_home"
+                android:src="@drawable/home_placeholder"
+                android:translationZ="3dp"/>
 
             <Button
                 android:id="@+id/evaluation_goto_home"
@@ -98,13 +106,12 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="20dp"
-                android:background="@drawable/pastel_pink_button"
-                android:fontFamily="@font/baijamjuree_semibold"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
+                android:background="@drawable/selector_cream_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:paddingHorizontal="20dp"
                 android:text="กลับหน้าหลัก"
                 android:textColor="@color/text_dark_pink_pastel"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
         </RelativeLayout>
 
