@@ -155,13 +155,14 @@
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginRight="10dp"
-            android:src="@drawable/nurse_logo" />
+            android:src="@drawable/kku_logo" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/kku_logo" />
+            android:src="@drawable/nurse_logo" />
 
     </LinearLayout>
 
