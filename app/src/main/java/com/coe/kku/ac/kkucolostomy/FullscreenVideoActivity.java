@@ -1,5 +1,6 @@
 package com.coe.kku.ac.kkucolostomy;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.MediaController;
@@ -32,6 +34,8 @@ public class FullscreenVideoActivity extends AppCompatActivity {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                     WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_fullscreen_video);
 
@@ -42,6 +46,13 @@ public class FullscreenVideoActivity extends AppCompatActivity {
         mediaController.setAnchorView(videoView);
 
         uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.taking_care);
+
+        findViewById(R.id.fullscreen_out_fullscreen).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                outFullscreen();
+            }
+        });
 
         videoView.setMediaController(mediaController);
         videoView.setVideoURI(uri);

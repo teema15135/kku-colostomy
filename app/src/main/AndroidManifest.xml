@@ -9,12 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GeneralKnowledgeActivity"></activity>
-        <activity android:name=".KnowingColostomyActivity" />
-        <activity android:name=".TakingCareActivity" />
-        <activity android:name=".EvaluationActivity" />
+        <activity
+            android:name=".GeneralKnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".KnowingColostomyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TakingCareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EvaluationActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".FullscreenVideoActivity"
+            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="landscape" />
         <activity
             android:name=".ComplicationContentSevenActivity"
