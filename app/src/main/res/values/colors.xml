@@ -35,4 +35,7 @@
     <color name="pink_pastel">#ffe9de</color>
     <color name="dark_pink_pastel">#dc93a4</color>
     <color name="text_dark_pink_pastel">#cd6f8a</color>
+    <color name="smoke">#B3B6B7</color>
+    <color name="cream">#f8f2da</color>
+    <color name="pinku">#f5a493</color>
 </resources>

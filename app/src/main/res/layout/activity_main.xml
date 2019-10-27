@@ -35,7 +35,7 @@
                 android:gravity="center"
                 android:padding="0dp"
                 android:text="KKU\nColostomy"
-                android:textSize="36sp" />
+                android:textSize="30sp" />
 
         </LinearLayout>
 
@@ -46,17 +46,19 @@
             android:gravity="center">
 
             <Button
-                style="?android:attr/borderlessButtonStyle"
                 android:id="@+id/main_1_know_colostomy"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
                 android:layout_marginLeft="@dimen/main_menu_horizontal_margin"
                 android:layout_marginRight="@dimen/main_menu_horizontal_margin"
-                android:background="@drawable/border_round_pink"
-                android:fontFamily="@font/baijamjuree_semibold"
+                android:background="@drawable/selector_cream_shadow_round"
+                android:fontFamily="@font/mitr_regular"
                 android:paddingTop="@dimen/main_menu_vertical_padding"
                 android:paddingBottom="@dimen/main_menu_vertical_padding"
                 android:text="@string/knowing_about_colostomy"
+                android:textColor="@color/dark"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -68,17 +70,19 @@
             android:gravity="center">
 
             <Button
+                android:layout_marginHorizontal="50dp"
                 style="?android:attr/borderlessButtonStyle"
                 android:id="@+id/main_2_taking_care"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/main_menu_horizontal_margin"
                 android:layout_marginRight="@dimen/main_menu_horizontal_margin"
-                android:background="@drawable/border_round_pink"
-                android:fontFamily="@font/baijamjuree_semibold"
+                android:background="@drawable/selector_cream_shadow_round"
+                android:fontFamily="@font/mitr_regular"
                 android:paddingTop="@dimen/main_menu_vertical_padding"
                 android:paddingBottom="@dimen/main_menu_vertical_padding"
                 android:text="@string/taking_care"
+                android:textColor="@color/dark"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -90,59 +94,99 @@
             android:gravity="center">
 
             <Button
+                android:layout_marginHorizontal="50dp"
                 style="?android:attr/borderlessButtonStyle"
                 android:id="@+id/main_3_evaluation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/main_menu_horizontal_margin"
                 android:layout_marginRight="@dimen/main_menu_horizontal_margin"
-                android:background="@drawable/border_round_pink"
-                android:fontFamily="@font/baijamjuree_semibold"
+                android:background="@drawable/selector_cream_shadow_round"
+                android:fontFamily="@font/mitr_regular"
                 android:paddingTop="@dimen/main_menu_vertical_padding"
                 android:paddingBottom="@dimen/main_menu_vertical_padding"
                 android:text="@string/evaluation"
+                android:textColor="@color/dark"
                 android:textSize="20sp" />
 
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            android:weightSum="3">
+            android:layout_weight="2">
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"
-                android:src="@drawable/male_nurse" />
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/male_nurse"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/female_nurse"/>
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/border_round_yellow"
-                android:fontFamily="@font/baijamjuree_semibold"
                 android:gravity="center"
-                android:padding="20dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_cream_round"
+                android:fontFamily="@font/mitr_regular"
+                android:textColor="@color/pinku"
+                android:paddingVertical="10dp"
                 android:text="หน้าหลัก"
-                android:textSize="24sp" />
+                android:textSize="16sp" />
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"
-                android:src="@drawable/female_nurse" />
+        </RelativeLayout>
 
-        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="2"-->
+            <!--android:gravity="bottom"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="3">-->
+
+            <!--<ImageView-->
+                <!--android:layout_marginBottom="-20dp"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/male_nurse" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/shape_pastel_yellow_round"-->
+                <!--android:fontFamily="@font/baijamjuree_semibold"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="20dp"-->
+                <!--android:text="หน้าหลัก"-->
+                <!--android:textSize="24sp" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_marginBottom="-20dp"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="end"-->
+                <!--android:layout_weight="1"-->
+                <!--android:scaleType="fitCenter"-->
+                <!--android:src="@drawable/female_nurse" />-->
+
+        <!--</LinearLayout>-->
 
     </LinearLayout>
 
@@ -153,15 +197,14 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="10dp"
             android:src="@drawable/kku_logo" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/nurse_logo" />
 
     </LinearLayout>
@@ -172,10 +215,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_margin="15dp"
+        android:layout_margin="5dp"
         android:background="@android:color/transparent"
         android:text="Credit"
         android:textAllCaps="false"
-        android:textColor="#555555" />
+        android:textSize="10sp"
+        android:fontFamily="@font/mitr_regular"
+        android:textColor="@color/smoke" />
 
 </RelativeLayout>

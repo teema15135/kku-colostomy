@@ -22,7 +22,7 @@
             android:fontFamily="@font/mitr_regular"
             android:gravity="center"
             android:text="@string/evaluation"
-            android:textSize="36sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="match_parent"
