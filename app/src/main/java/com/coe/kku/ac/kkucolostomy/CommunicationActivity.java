@@ -28,7 +28,7 @@ public class CommunicationActivity extends AppCompatActivity {
 
         backBtn = (ImageButton) findViewById(R.id.commu_content_back_btn);
         mediaPlay = (ImageButton) findViewById(R.id.commu_content_media_play);
-        mPlayer = MediaPlayer.create(CommunicationActivity.this, R.raw.sound422); // sound51
+        mPlayer = MediaPlayer.create(CommunicationActivity.this, R.raw.sound51); // sound51
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +47,7 @@ public class CommunicationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (currentPlaying != findViewById(R.id.communication_fab)) {
-                    playMedia(R.raw.sound422);
+                    playMedia(R.raw.sound51);
                     currentPlaying = findViewById(R.id.communication_fab);
                     ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.pause);
                 } else {

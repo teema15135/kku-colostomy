@@ -11,6 +11,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class ComplicationContentActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView title, subtitle, care, careTitle;
@@ -19,7 +21,11 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
     private int content;
     private int soundId;
 
+    private View currentPlaying;
+
     private MediaPlayer mPlayer;
+
+    private static final String TAG = "ComplicationContent";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,7 +109,15 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
         if (view == backBtn) {
             finish();
         } else if (view.getId() == R.id.complication_fab) {
-            playSound();
+            if (currentPlaying != findViewById(R.id.complication_fab)) {
+                playSound();
+                currentPlaying = findViewById(R.id.complication_fab);
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.pause);
+            } else {
+                mPlayer.stop();
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
         }
     }
 
@@ -113,6 +127,14 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(ComplicationContentActivity.this, soundId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                Log.d(TAG, "onCompletion: ");
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 }
