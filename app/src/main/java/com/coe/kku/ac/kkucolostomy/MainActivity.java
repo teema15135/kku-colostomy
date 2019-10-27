@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ((CropImageView) findViewById(R.id.main_background)).setCropOffset(0, 0);
+
         findViewById(R.id.main_1_know_colostomy).setOnClickListener(this);
         findViewById(R.id.main_2_taking_care).setOnClickListener(this);
         findViewById(R.id.main_3_evaluation).setOnClickListener(this);
