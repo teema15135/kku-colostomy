@@ -64,6 +64,22 @@
             android:textSize="14sp"
             android:textColor="@color/dark"
             android:text="Icon made by Alfredo Hernandez from www.flaticon.com"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/dark"
+            android:text="Icons made by Icon Pond from www.flaticon.com"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="14sp"
+            android:textColor="@color/dark"
+            android:text="Icons made by Pixel Buddha from www.flaticon.com"/>
 
     </LinearLayout>
 
