@@ -1,33 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="@drawable/rainbow_bg">
 
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/cloud"
+        android:fontFamily="@font/baijamjuree_semibold"
+        android:gravity="center"
+        android:text="KKU\nColostomy"
+        android:textSize="24sp" />
 
     <LinearLayout
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/main_1_know_colostomy"
-            android:text="To topic 1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="To topic 1" />
 
         <Button
             android:id="@+id/main_2_taking_care"
-            android:text="To topic 2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="To topic 2" />
 
         <Button
             android:id="@+id/main_3_evaluation"
-            android:text="To topic 3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="To topic 3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/male_nurse" />
+
+        <ImageView
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/female_nurse" />
 
     </LinearLayout>
 

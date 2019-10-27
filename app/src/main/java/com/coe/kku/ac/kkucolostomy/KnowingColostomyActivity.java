@@ -21,9 +21,6 @@ public class KnowingColostomyActivity extends AppCompatActivity implements View.
         findViewById(R.id.knowing_goto_home).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(KnowingColostomyActivity.this, MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
                 finish();
             }
         });

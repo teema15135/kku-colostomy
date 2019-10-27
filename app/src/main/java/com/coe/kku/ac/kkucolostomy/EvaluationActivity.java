@@ -19,6 +19,13 @@ public class EvaluationActivity extends AppCompatActivity implements View.OnClic
         findViewById(R.id.evaluation_period1_button).setOnClickListener(this);
         findViewById(R.id.evaluation_period2_button).setOnClickListener(this);
         findViewById(R.id.evaluation_period3_button).setOnClickListener(this);
+
+        findViewById(R.id.evaluation_goto_home).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override

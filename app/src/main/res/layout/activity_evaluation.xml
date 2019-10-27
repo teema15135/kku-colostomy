@@ -37,7 +37,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="2"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -78,6 +78,35 @@
                 android:text="มากกว่า 8 สัปดาห์" />
 
         </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_alignBottom="@id/evaluation_goto_home"
+                android:paddingBottom="20dp"
+                android:src="@drawable/houses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/evaluation_goto_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/pastel_pink_button"
+                android:fontFamily="@font/baijamjuree_semibold"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="กลับหน้าหลัก"
+                android:textColor="@color/text_dark_pink_pastel"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
 
     </LinearLayout>
 
