@@ -24,4 +24,6 @@
     <dimen name="tc_content_two_text_size">16sp</dimen>
     <dimen name="video_button_size">50dp</dimen>
     <dimen name="knowing_menu_horizontal_gap">15dp</dimen>
+    <dimen name="main_menu_horizontal_margin">40dp</dimen>
+    <dimen name="main_menu_vertical_padding">10dp</dimen>
 </resources>
