@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.main_1_know_colostomy).setOnClickListener(this);
         findViewById(R.id.main_2_taking_care).setOnClickListener(this);
         findViewById(R.id.main_3_evaluation).setOnClickListener(this);
+        findViewById(R.id.main_credit_button).setOnClickListener(this);
     }
 
     @Override
@@ -35,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = view.getId();
         Intent intent;
         switch (id) {
-            default:
             case R.id.main_1_know_colostomy:
                 intent = new Intent(MainActivity.this, KnowingColostomyActivity.class);
                 break;
@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.main_3_evaluation:
                 intent = new Intent(MainActivity.this, EvaluationActivity.class);
                 break;
+            case R.id.main_credit_button:
+                intent = new Intent(MainActivity.this, CreditActivity.class);
+                break;
+            default:
+                intent = null;
         }
         if (intent != null) startActivity(intent);
     }
