@@ -12,6 +12,7 @@ public class GeneralKnowledgeActivity extends AppCompatActivity implements View.
     private ImageButton whatColostomy, whyColostomy, whoColostomy, positionColostomy;
     private View currentPlaying;
     private MediaPlayer mPlayer;
+    private ImageButton backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,14 @@ public class GeneralKnowledgeActivity extends AppCompatActivity implements View.
         whyColostomy = (ImageButton) findViewById(R.id.general_knowledge_why);
         whoColostomy = (ImageButton) findViewById(R.id.general_knowledge_who);
         positionColostomy = (ImageButton) findViewById(R.id.general_knowledge_position);
+        backBtn = (ImageButton) findViewById(R.id.knowledge_back_button);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         whatColostomy.setOnClickListener(this);
         whyColostomy.setOnClickListener(this);
@@ -58,6 +67,7 @@ public class GeneralKnowledgeActivity extends AppCompatActivity implements View.
             } else if (v == positionColostomy) {
                 playSound(R.raw.sound_1_4_position);
             }
+
             if (currentPlaying != null)
                 ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
             currentPlaying = v;

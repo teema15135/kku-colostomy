@@ -9,18 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:clickable="true"
-            android:layout_margin="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="credit"
-            android:fontFamily="@font/mitr_light"
-            android:textColor="@color/white"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:translationZ="3dp"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -39,6 +27,32 @@
         </LinearLayout>
 
 
+        <RelativeLayout
+            android:id="@+id/basic_care_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/knowledge_back_button"
+                android:layout_width="@dimen/back_button_size"
+                android:layout_height="@dimen/back_button_size"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_bold_black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/knowledge_back_button"
+                android:fontFamily="@font/mitr_light"
+                android:text="ความรู้ทั่วไป"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,40 +63,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginTop="40dp"
-                    android:text="ทวารเทียม"
-                    android:textColor="@color/dark"
-                    android:textSize="35sp"
-                    android:fontFamily="@font/mitr_regular"/>
 
                 <RelativeLayout
-                    android:layout_marginTop="30dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="18dp"
-                        android:padding="30dp"
                         android:background="@drawable/shadow_home"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_marginTop="80dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="ความรู้ทั่วไป"
-                            android:textSize="15sp"
-                            android:fontFamily="@font/mitr_light"
-                            android:textColor="@color/pastel_dark_blue"/>
+                        android:orientation="vertical"
+                        android:padding="30dp">
 
                         <LinearLayout
-                            android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
@@ -90,185 +84,138 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="ทวารเทียมคืออะไร"
-                                android:textSize="20sp"
                                 android:fontFamily="@font/mitr_regular"
-                                android:textColor="@color/dark"/>
+                                android:text="ทวารเทียมคืออะไร"
+                                android:textColor="@color/dark"
+                                android:textSize="20sp" />
 
                             <ImageButton
                                 android:id="@+id/general_knowledge_what"
-                                android:layout_marginLeft="@dimen/speaker_right_margin"
-                                android:layout_gravity="center_vertical"
-                                android:background="@android:color/transparent"
-                                android:src="@drawable/speaker_red"
-                                android:scaleType="fitCenter"
                                 android:layout_width="27dp"
-                                android:layout_height="27dp" />
+                                android:layout_height="27dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/speaker_red" />
 
                         </LinearLayout>
 
                         <TextView
-                            android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/home_meaning"
-                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/baijamjuree_regular"
                             android:lineSpacingExtra="5dp"
-                            android:textColor="@color/dark"/>
+                            android:text="@string/home_meaning"
+                            android:textColor="@color/dark"
+                            android:textSize="16sp" />
 
                         <LinearLayout
-                            android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="ทำไมจึงต้องทำทวารเทียม"
-                                android:textSize="20sp"
                                 android:fontFamily="@font/mitr_regular"
-                                android:textColor="@color/dark"/>
+                                android:text="ทำไมจึงต้องทำทวารเทียม"
+                                android:textColor="@color/dark"
+                                android:textSize="20sp" />
 
                             <ImageButton
                                 android:id="@+id/general_knowledge_why"
-                                android:layout_marginLeft="@dimen/speaker_right_margin"
-                                android:layout_gravity="center_vertical"
-                                android:background="@android:color/transparent"
-                                android:src="@drawable/speaker_red"
-                                android:scaleType="fitCenter"
                                 android:layout_width="27dp"
-                                android:layout_height="27dp" />
+                                android:layout_height="27dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/speaker_red" />
 
                         </LinearLayout>
 
                         <TextView
-                            android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/home_object"
-                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/baijamjuree_regular"
                             android:lineSpacingExtra="5dp"
-                            android:textColor="@color/dark"/>
+                            android:text="@string/home_object"
+                            android:textColor="@color/dark"
+                            android:textSize="16sp" />
 
                         <LinearLayout
-                            android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="ใครบ้างที่ต้องทำทวารเทียม"
-                                android:textSize="20sp"
                                 android:fontFamily="@font/mitr_regular"
-                                android:textColor="@color/dark"/>
+                                android:text="ใครบ้างที่ต้องทำทวารเทียม"
+                                android:textColor="@color/dark"
+                                android:textSize="20sp" />
 
                             <ImageButton
                                 android:id="@+id/general_knowledge_who"
-                                android:layout_marginLeft="@dimen/speaker_right_margin"
-                                android:layout_gravity="center_vertical"
-                                android:background="@android:color/transparent"
-                                android:src="@drawable/speaker_red"
-                                android:scaleType="fitCenter"
                                 android:layout_width="27dp"
-                                android:layout_height="27dp" />
+                                android:layout_height="27dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/speaker_red" />
 
                         </LinearLayout>
 
                         <TextView
-                            android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/home_who"
-                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/baijamjuree_regular"
                             android:lineSpacingExtra="5dp"
-                            android:textColor="@color/dark"/>
+                            android:text="@string/home_who"
+                            android:textColor="@color/dark"
+                            android:textSize="16sp" />
 
                         <LinearLayout
-                            android:layout_marginTop="20dp"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="ตำแหน่งที่ทำทวารเทียม"
-                                android:textSize="20sp"
                                 android:fontFamily="@font/mitr_regular"
-                                android:textColor="@color/dark"/>
+                                android:text="ตำแหน่งที่ทำทวารเทียม"
+                                android:textColor="@color/dark"
+                                android:textSize="20sp" />
 
                             <ImageButton
                                 android:id="@+id/general_knowledge_position"
-                                android:layout_marginLeft="@dimen/speaker_right_margin"
-                                android:layout_gravity="center_vertical"
-                                android:background="@android:color/transparent"
-                                android:src="@drawable/speaker_red"
-                                android:scaleType="fitCenter"
                                 android:layout_width="27dp"
-                                android:layout_height="27dp" />
+                                android:layout_height="27dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/speaker_right_margin"
+                                android:background="@android:color/transparent"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/speaker_red" />
 
                         </LinearLayout>
 
                         <TextView
-                            android:layout_marginTop="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/home_where"
-                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/baijamjuree_regular"
                             android:lineSpacingExtra="5dp"
-                            android:textColor="@color/dark"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="10dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_centerHorizontal="true"
-                        android:weightSum="2">
-                        <Button
-                            android:layout_width="280dp"
-                            android:layout_height="wrap_content"
-                            android:text="กิจวัตรประจำวัน"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_weight="1"
-                            android:textSize="18sp"
-                            android:textColor="@color/darker"
-                            android:paddingHorizontal="20dp"
-                            android:fontFamily="@font/mitr_regular"
-                            android:background="@drawable/selector_bright_grey_round"/>
-                        <LinearLayout
-                            android:layout_marginTop="7dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_weight="1">
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="7dp"
-                                android:text="การเข้าสังคม"
-                                android:textSize="18sp"
-                                android:textColor="@color/darker"
-                                android:paddingHorizontal="20dp"
-                                android:fontFamily="@font/mitr_regular"
-                                android:background="@drawable/selector_pastel_blue_shadow_round"/>
-                            <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="ภาวะแทรกซ้อน"
-                                android:textSize="18sp"
-                                android:textColor="@color/darker"
-                                android:paddingHorizontal="20dp"
-                                android:fontFamily="@font/mitr_regular"
-                                android:background="@drawable/selector_pastel_yellow_shadow_round"/>
-                        </LinearLayout>
+                            android:text="@string/home_where"
+                            android:textColor="@color/dark"
+                            android:textSize="16sp" />
                     </LinearLayout>
 
 
