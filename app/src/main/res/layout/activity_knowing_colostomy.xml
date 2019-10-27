@@ -18,26 +18,24 @@
             android:layout_weight="2">
 
             <TextView
+                android:id="@+id/title_tc"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/pastel_blue_banner"
-                android:fontFamily="@font/baijamjuree_semibold"
-                android:gravity="center"
-                android:paddingLeft="50dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:text="@string/knowing_about_colostomy"
-                android:textColor="@color/dark_blue"
-                android:textSize="30sp" />
-
-            <ImageView
-                android:layout_width="70dp"
                 android:layout_height="100dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_margin="25dp"
-                android:src="@drawable/placeholder_hospital_2" />
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/mitr_regular"
+                android:gravity="center"
+                android:textColor="@color/darker"
+                android:text="รู้เกี่ยวกับทวารเทียม"
+                android:textSize="30dp" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_margin="25dp"-->
+                <!--android:src="@drawable/placeholder_hospital_2" />-->
 
         </RelativeLayout>
 
@@ -60,7 +58,7 @@
                     android:id="@+id/knowing_goto_general_knowledge"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@drawable/border_pink"
+                    android:background="@drawable/shape_pinku_shadow_round"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintDimensionRatio="w,1:1"
                     app:layout_constraintRight_toRightOf="parent"
@@ -83,7 +81,7 @@
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/general_knowledge"
-                        android:textColor="@color/text_dark_pink" />
+                        android:textColor="@color/darker" />
 
                 </RelativeLayout>
 
@@ -101,7 +99,7 @@
                     android:id="@+id/knowing_goto_routine"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@drawable/border_yellow"
+                    android:background="@drawable/shape_light_yellow_shadow_round"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintDimensionRatio="w,1:1"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -124,7 +122,7 @@
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/routine"
-                        android:textColor="@color/text_dark_yellow" />
+                        android:textColor="@color/darker" />
 
                 </RelativeLayout>
 
@@ -151,7 +149,7 @@
                     android:id="@+id/knowing_goto_communication"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@drawable/border_silver"
+                    android:background="@drawable/selector_pastel_blue_shadow_round"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintDimensionRatio="w,1:1"
                     app:layout_constraintRight_toRightOf="parent"
@@ -174,7 +172,7 @@
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/communication"
-                        android:textColor="@color/text_dark_silver" />
+                        android:textColor="@color/darker" />
 
                 </RelativeLayout>
 
@@ -192,7 +190,7 @@
                     android:id="@+id/knowing_goto_complication"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@drawable/border_orange"
+                    android:background="@drawable/shape_bright_grey_round"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintDimensionRatio="w,1:1"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -215,7 +213,7 @@
                         android:fontFamily="@font/baijamjuree_semibold"
                         android:gravity="center"
                         android:text="@string/complication"
-                        android:textColor="@color/text_dark_orange" />
+                        android:textColor="@color/darker" />
 
                 </RelativeLayout>
 
@@ -229,12 +227,20 @@
             android:layout_weight="2">
 
             <ImageView
-                android:layout_alignBottom="@id/knowing_goto_home"
-                android:paddingBottom="20dp"
-                android:src="@drawable/houses"
+                android:src="@drawable/home_bg_3png"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-            
+
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="-40dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/knowing_goto_home"
+                android:src="@drawable/home_placeholder"
+                android:translationZ="3dp"/>
+
             <Button
                 android:id="@+id/knowing_goto_home"
                 android:layout_width="wrap_content"
@@ -242,13 +248,12 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="20dp"
-                android:background="@drawable/pastel_pink_button"
-                android:fontFamily="@font/baijamjuree_semibold"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
+                android:background="@drawable/selector_cream_shadow_round"
+                android:fontFamily="@font/mitr_regular"
+                android:paddingHorizontal="20dp"
                 android:text="กลับหน้าหลัก"
                 android:textColor="@color/text_dark_pink_pastel"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
         </RelativeLayout>
 
