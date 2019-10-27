@@ -96,6 +96,7 @@
                                 android:textColor="@color/dark"/>
 
                             <ImageButton
+                                android:id="@+id/general_knowledge_what"
                                 android:layout_marginLeft="@dimen/speaker_right_margin"
                                 android:layout_gravity="center_vertical"
                                 android:background="@android:color/transparent"
@@ -131,6 +132,7 @@
                                 android:textColor="@color/dark"/>
 
                             <ImageButton
+                                android:id="@+id/general_knowledge_why"
                                 android:layout_marginLeft="@dimen/speaker_right_margin"
                                 android:layout_gravity="center_vertical"
                                 android:background="@android:color/transparent"
@@ -165,6 +167,7 @@
                                 android:textColor="@color/dark"/>
 
                             <ImageButton
+                                android:id="@+id/general_knowledge_who"
                                 android:layout_marginLeft="@dimen/speaker_right_margin"
                                 android:layout_gravity="center_vertical"
                                 android:background="@android:color/transparent"
@@ -199,6 +202,7 @@
                                 android:textColor="@color/dark"/>
 
                             <ImageButton
+                                android:id="@+id/general_knowledge_position"
                                 android:layout_marginLeft="@dimen/speaker_right_margin"
                                 android:layout_gravity="center_vertical"
                                 android:background="@android:color/transparent"
