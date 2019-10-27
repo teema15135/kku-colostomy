@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -17,6 +18,8 @@ public class RoutineContentOneActivity extends AppCompatActivity {
     private MediaPlayer mPlayer;
 
     private ImageButton backButton;
+
+    private View currentPlaying;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +38,15 @@ public class RoutineContentOneActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                playMedia(R.raw.sound31);
+                if (currentPlaying != findViewById(R.id.fab)) {
+                    playMedia(R.raw.sound31);
+                    currentPlaying = findViewById(R.id.fab);
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.pause);
+                } else {
+                    mPlayer.stop();
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                    currentPlaying = null;
+                }
             }
         });
 
@@ -54,6 +65,13 @@ public class RoutineContentOneActivity extends AppCompatActivity {
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(RoutineContentOneActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 

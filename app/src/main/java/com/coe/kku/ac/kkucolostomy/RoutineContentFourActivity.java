@@ -17,6 +17,8 @@ public class RoutineContentFourActivity extends AppCompatActivity {
 
     private ImageButton backButton;
 
+    private View currentPlaying;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,15 @@ public class RoutineContentFourActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                playMedia(R.raw.sound34);
+                if (currentPlaying != findViewById(R.id.fab)) {
+                    playMedia(R.raw.sound34);
+                    currentPlaying = findViewById(R.id.fab);
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.pause);
+                } else {
+                    mPlayer.stop();
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                    currentPlaying = null;
+                }
             }
         });
 
@@ -53,6 +63,13 @@ public class RoutineContentFourActivity extends AppCompatActivity {
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(RoutineContentFourActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 

@@ -253,6 +253,7 @@
                         android:layout_height="27dp" />
 
                 </LinearLayout>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -261,7 +262,6 @@
                     android:textColor="@color/dark"
                     android:fontFamily="@font/baijamjuree_regular"
                     android:lineSpacingExtra="5dp"/>
-
 
             </LinearLayout>
 

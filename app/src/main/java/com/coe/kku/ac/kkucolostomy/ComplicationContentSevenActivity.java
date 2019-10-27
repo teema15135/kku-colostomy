@@ -4,13 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ComplicationContentSevenActivity extends AppCompatActivity {
 
     private ImageButton backBtn;
     private MediaPlayer mPlayer;
+
+    private static final String TAG = "ComplicationSeven";
+
+    private View currentPlaying;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +36,15 @@ public class ComplicationContentSevenActivity extends AppCompatActivity {
         findViewById(R.id.complication_fab_7).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playMedia(R.raw.sound417);
+                if (currentPlaying != findViewById(R.id.complication_fab_7)) {
+                    playMedia(R.raw.sound417);
+                    currentPlaying = findViewById(R.id.complication_fab_7);
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.pause);
+                } else {
+                    mPlayer.stop();
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                    currentPlaying = null;
+                }
             }
         });
     }
@@ -40,6 +55,14 @@ public class ComplicationContentSevenActivity extends AppCompatActivity {
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(ComplicationContentSevenActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                Log.d(TAG, "onCompletion: ");
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 

@@ -8,10 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class ComplicationContentDoctorActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageButton backBtn;
     private MediaPlayer mPlayer;
+
+    private View currentPlaying;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,29 +44,46 @@ public class ComplicationContentDoctorActivity extends AppCompatActivity impleme
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(ComplicationContentDoctorActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        switch (id) {
-            default:
-            case R.id.complication_doctor_sound1:
-                playMedia(R.raw.sound421);
-                break;
-            case R.id.complication_doctor_sound2:
-                playMedia(R.raw.sound422);
-                break;
-            case R.id.complication_doctor_sound3:
-                playMedia(R.raw.sound423);
-                break;
-            case R.id.complication_doctor_sound4:
-                playMedia(R.raw.sound424);
-                break;
-            case R.id.complication_doctor_sound5:
-                playMedia(R.raw.sound425);
-                break;
+        if (currentPlaying != v) {
+            switch (id) {
+                default:
+                case R.id.complication_doctor_sound1:
+                    playMedia(R.raw.sound421);
+                    break;
+                case R.id.complication_doctor_sound2:
+                    playMedia(R.raw.sound422);
+                    break;
+                case R.id.complication_doctor_sound3:
+                    playMedia(R.raw.sound423);
+                    break;
+                case R.id.complication_doctor_sound4:
+                    playMedia(R.raw.sound424);
+                    break;
+                case R.id.complication_doctor_sound5:
+                    playMedia(R.raw.sound425);
+                    break;
+            }
+            if (currentPlaying != null)
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+            currentPlaying = v;
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.pause);
+        } else {
+            mPlayer.stop();
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+            currentPlaying = null;
         }
     }
 

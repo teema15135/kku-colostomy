@@ -17,6 +17,8 @@ public class RoutineContentTwoActivity extends AppCompatActivity {
 
     private ImageButton backButton;
 
+    private View currentPlaying;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +37,15 @@ public class RoutineContentTwoActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                playMedia(R.raw.sound32);
+                if (currentPlaying != findViewById(R.id.fab)) {
+                    playMedia(R.raw.sound32);
+                    currentPlaying = findViewById(R.id.fab);
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.pause);
+                } else {
+                    mPlayer.stop();
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                    currentPlaying = null;
+                }
             }
         });
 
@@ -54,6 +64,13 @@ public class RoutineContentTwoActivity extends AppCompatActivity {
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(RoutineContentTwoActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 

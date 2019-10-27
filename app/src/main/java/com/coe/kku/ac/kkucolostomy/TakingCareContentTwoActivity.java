@@ -21,6 +21,8 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
     private Button contentOneBtn, contentTwoBtn;
     private LinearLayout contentOnePanel, contentTwoPanel;
 
+    private View currentPlaying;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,24 +81,34 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
 
     @Override
     public void onClick(View view) {
-        if (view == sound1) {
-            playSound(R.raw.sound22_14);
-        } else if (view == sound2) {
-            playSound(R.raw.sound22_24);
-        } else if (view == sound3) {
-            playSound(R.raw.sound22_34);
-        } else if (view == sound41) {
-            playSound(R.raw.sound22_41);
-        } else if (view == sound42) {
-            playSound(R.raw.sound22_42);
-        } else if (view == sound43) {
-            playSound(R.raw.sound22_43);
-        } else if (view == sound44) {
-            playSound(R.raw.sound22_44);
-        } else if (view == contentOneBtn) {
+        if (view == contentOneBtn) {
             toggleContentOne();
         } else if (view == contentTwoBtn) {
             toggleContentTwo();
+        } else if (currentPlaying != view) {
+            if (view == sound1) {
+                playSound(R.raw.sound22_14);
+            } else if (view == sound2) {
+                playSound(R.raw.sound22_24);
+            } else if (view == sound3) {
+                playSound(R.raw.sound22_34);
+            } else if (view == sound41) {
+                playSound(R.raw.sound22_41);
+            } else if (view == sound42) {
+                playSound(R.raw.sound22_42);
+            } else if (view == sound43) {
+                playSound(R.raw.sound22_43);
+            } else if (view == sound44) {
+                playSound(R.raw.sound22_44);
+            }
+            if (currentPlaying != null)
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+            currentPlaying = view;
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.pause);
+        } else {
+            mPlayer.stop();
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+            currentPlaying = null;
         }
     }
 
@@ -107,6 +119,13 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
             mPlayer.stop();
         }
         mPlayer = MediaPlayer.create(TakingCareContentTwoActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 

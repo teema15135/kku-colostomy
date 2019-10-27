@@ -17,18 +17,17 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
 
     private MediaPlayer mPlayer;
 
+    private View currentPlaying;
+
+    private FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taking_care_content_one);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                playMedia(R.raw.sound21_0);
-            }
-        });
+        fab = findViewById(R.id.fab);
+        fab.setOnClickListener(this);
 
         backBtn = (ImageButton) findViewById(R.id.tc_one_back_btn);
         backBtn.setOnClickListener(new View.OnClickListener() {
@@ -59,20 +58,37 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
 
     @Override
     public void onClick(View view) {
-        if (view == sound1) {
-            playMedia(R.raw.sound21_1);
-        } else if (view == sound2) {
-            playMedia(R.raw.sound21_2);
-        } else if (view == sound3) {
-            playMedia(R.raw.sound21_3);
-        } else if (view == sound4) {
-            playMedia(R.raw.sound21_4);
-        } else if (view == sound5) {
-            playMedia(R.raw.sound21_5);
-        } else if (view == sound6) {
-            playMedia(R.raw.sound21_6);
-        } else if (view == sound7) {
-            playMedia(R.raw.sound21_7);
+        if (currentPlaying != view) {
+            if (view == sound1) {
+                playMedia(R.raw.sound21_1);
+            } else if (view == sound2) {
+                playMedia(R.raw.sound21_2);
+            } else if (view == sound3) {
+                playMedia(R.raw.sound21_3);
+            } else if (view == sound4) {
+                playMedia(R.raw.sound21_4);
+            } else if (view == sound5) {
+                playMedia(R.raw.sound21_5);
+            } else if (view == sound6) {
+                playMedia(R.raw.sound21_6);
+            } else if (view == sound7) {
+                playMedia(R.raw.sound21_7);
+            } else if (view == fab) {
+                playMedia(R.raw.sound21_0);
+            }
+            if (currentPlaying != null) {
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+                if (currentPlaying == fab)
+                    fab.setImageResource(R.drawable.speaker_transparent);
+            }
+            currentPlaying = view;
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.pause);
+        } else {
+            mPlayer.stop();
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+            if (currentPlaying == fab)
+                fab.setImageResource(R.drawable.speaker_transparent);
+            currentPlaying = null;
         }
     }
 
@@ -82,6 +98,15 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(TakingCareContentOneActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+                if (currentPlaying == fab)
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 

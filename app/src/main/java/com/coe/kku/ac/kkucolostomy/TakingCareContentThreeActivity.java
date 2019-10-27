@@ -18,6 +18,8 @@ public class TakingCareContentThreeActivity extends AppCompatActivity implements
 
     private MediaPlayer mPlayer;
 
+    private View currentPlaying;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,15 +32,6 @@ public class TakingCareContentThreeActivity extends AppCompatActivity implements
             @Override
             public void onClick(View v) {
                 finish();
-            }
-        });
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (!mPlayer.isPlaying())
-                    mPlayer.start();
             }
         });
 
@@ -62,6 +55,13 @@ public class TakingCareContentThreeActivity extends AppCompatActivity implements
             mPlayer.stop();
         }
         mPlayer = MediaPlayer.create(TakingCareContentThreeActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 
@@ -74,14 +74,24 @@ public class TakingCareContentThreeActivity extends AppCompatActivity implements
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        switch (id) {
-            default:
-            case R.id.taking_care_three_231_speaker:
-                playSound(R.raw.sound231);
-                break;
-            case R.id.taking_care_three_232_speaker:
-                playSound(R.raw.sound232);
-                break;
+        if (currentPlaying != v) {
+            switch (id) {
+                default:
+                case R.id.taking_care_three_231_speaker:
+                    playSound(R.raw.sound231);
+                    break;
+                case R.id.taking_care_three_232_speaker:
+                    playSound(R.raw.sound232);
+                    break;
+            }
+            if (currentPlaying != null)
+                ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+            currentPlaying = v;
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.pause);
+        } else {
+            mPlayer.stop();
+            ((ImageButton) currentPlaying).setImageResource(R.drawable.speaker_red);
+            currentPlaying = null;
         }
     }
 }

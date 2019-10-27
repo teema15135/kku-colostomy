@@ -84,7 +84,7 @@
                     android:textSize="14sp"
                     android:textColor="@color/darker"
                     android:paddingHorizontal="10dp"
-                    android:text="คลิกเพื่ออ่านต่อ"/>
+                    android:text="@string/press_to_continue_reading"/>
 
             </LinearLayout>
 
@@ -129,7 +129,7 @@
                     android:textSize="14sp"
                     android:textColor="@color/darker"
                     android:paddingHorizontal="10dp"
-                    android:text="คลิกเพื่ออ่านต่อ"/>
+                    android:text="@string/press_to_continue_reading"/>
 
             </LinearLayout>
 
@@ -174,7 +174,7 @@
                     android:textSize="14sp"
                     android:textColor="@color/darker"
                     android:paddingHorizontal="10dp"
-                    android:text="คลิกเพื่ออ่านต่อ"/>
+                    android:text="@string/press_to_continue_reading"/>
 
             </LinearLayout>
 
@@ -219,7 +219,7 @@
                     android:textSize="14sp"
                     android:textColor="@color/darker"
                     android:paddingHorizontal="10dp"
-                    android:text="คลิกเพื่ออ่านต่อ"/>
+                    android:text="@string/press_to_continue_reading"/>
 
             </LinearLayout>
 
