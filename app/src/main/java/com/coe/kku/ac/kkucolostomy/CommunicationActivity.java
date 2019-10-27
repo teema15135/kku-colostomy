@@ -5,14 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ImageButton;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class CommunicationActivity extends AppCompatActivity {
 
     private ImageButton backBtn, mediaPlay;
     private MediaPlayer mPlayer;
+
+    private View currentPlaying;
+
+    private static final String TAG = "CommunicationActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +28,7 @@ public class CommunicationActivity extends AppCompatActivity {
 
         backBtn = (ImageButton) findViewById(R.id.commu_content_back_btn);
         mediaPlay = (ImageButton) findViewById(R.id.commu_content_media_play);
-        mPlayer = MediaPlayer.create(CommunicationActivity.this, R.raw.sound51);
+        mPlayer = MediaPlayer.create(CommunicationActivity.this, R.raw.sound422); // sound51
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +46,15 @@ public class CommunicationActivity extends AppCompatActivity {
         findViewById(R.id.communication_fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                playMedia(R.raw.sound5);
+                if (currentPlaying != findViewById(R.id.communication_fab)) {
+                    playMedia(R.raw.sound422);
+                    currentPlaying = findViewById(R.id.communication_fab);
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.pause);
+                } else {
+                    mPlayer.stop();
+                    ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                    currentPlaying = null;
+                }
             }
         });
     }
@@ -50,6 +65,14 @@ public class CommunicationActivity extends AppCompatActivity {
         if (mPlayer.isPlaying())
             mPlayer.stop();
         mPlayer = MediaPlayer.create(CommunicationActivity.this, rawResourceId);
+        mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                Log.d(TAG, "onCompletion: ");
+                ((FloatingActionButton) currentPlaying).setImageResource(R.drawable.speaker_transparent);
+                currentPlaying = null;
+            }
+        });
         mPlayer.start();
     }
 
