@@ -22,7 +22,7 @@
         android:scrollbars="none">
 
         <LinearLayout
-            android:weightSum="10"
+            android:weightSum="7.5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -30,119 +30,163 @@
             <TextView
                 android:id="@+id/title_tc"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="0dp"
+                android:layout_weight="3"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
                 android:fontFamily="@font/mitr_regular"
                 android:gravity="center"
                 android:textColor="@color/darker"
                 android:text="@string/taking_care"
                 android:textSize="30dp" />
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/taking_care_one_btn"
+                <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="25dp"
-                    android:background="@drawable/selector_pastel_blue_shadow_round"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:paddingLeft="20dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="20dp"
-                    android:paddingBottom="10dp"
-                    android:text="@string/see_the_wound_before_change_the_bag"
-                    android:textColor="@color/darker"
-                    android:textScaleX="1.04"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_alignParentBottom="true"
-                    android:src="@drawable/people_placeholder"
-                    android:translationZ="3dp" />
-
-            </RelativeLayout>
-
-
-
-            <RelativeLayout
-                android:layout_marginTop="80dp"
-                android:layout_width="wrap_content"
-                android:layout_height="120dp"
-                android:layout_marginRight="20dp">
-
-                <Button
-                    android:layout_marginRight="10dp"
-                    android:id="@+id/taking_care_two_btn"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/selector_pastel_blue_shadow_round"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:lineSpacingExtra="5dp"
-                    android:lineSpacingMultiplier="0.8"
-                    android:paddingLeft="30dp"
-                    android:paddingTop="8dp"
-                    android:paddingRight="30dp"
-                    android:paddingBottom="8dp"
-                    android:text="@string/change_platform"
-                    android:textAlignment="center"
-                    android:textColor="@color/darker"
-                    android:textScaleX="1.04"
-                    android:textSize="18sp" />
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/people_placeholder"
-                    android:translationZ="3dp" />
+                    <Button
+                        android:id="@+id/taking_care_one_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="25dp"
+                        android:background="@drawable/selector_pastel_blue_shadow_round"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/see_the_wound_before_change_the_bag"
+                        android:textColor="@color/darker"
+                        android:textScaleX="1.04"
+                        android:textSize="18sp" />
 
-            </RelativeLayout>
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/people_placeholder"
+                        android:translationZ="3dp" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/taking_care_two_btn"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/selector_pastel_blue_shadow_round"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:lineSpacingExtra="5dp"
+                        android:lineSpacingMultiplier="0.8"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/change_platform"
+                        android:textAlignment="center"
+                        android:textColor="@color/darker"
+                        android:textScaleX="1.04"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/people_placeholder"
+                        android:translationZ="3dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="40dp">
+
+                    <Button
+                        android:id="@+id/taking_care_three_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/selector_pastel_blue_shadow_round"
+                        android:fontFamily="@font/baijamjuree_regular"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="30dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/take_out_waste"
+                        android:textColor="@color/darker"
+                        android:textScaleX="1.04"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/people_placeholder"
+                        android:translationZ="3dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
 
             <RelativeLayout
-                android:layout_marginTop="80dp"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_marginLeft="40dp">
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:src="@drawable/home_bg_3png"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="-40dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/taking_care_goto_home"
+                    android:src="@drawable/home_placeholder"
+                    android:translationZ="3dp"/>
 
                 <Button
-                    android:id="@+id/taking_care_three_btn"
+                    android:id="@+id/taking_care_goto_home"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/selector_pastel_blue_shadow_round"
-                    android:fontFamily="@font/baijamjuree_regular"
-                    android:paddingLeft="30dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="30dp"
-                    android:paddingBottom="10dp"
-                    android:text="@string/take_out_waste"
-                    android:textColor="@color/darker"
-                    android:textScaleX="1.04"
-                    android:textSize="18sp" />
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/people_placeholder"
-                    android:translationZ="3dp" />
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/selector_cream_shadow_round"
+                    android:fontFamily="@font/mitr_regular"
+                    android:paddingHorizontal="20dp"
+                    android:text="กลับหน้าหลัก"
+                    android:textColor="@color/text_dark_pink_pastel"
+                    android:textSize="16sp" />
 
             </RelativeLayout>
 

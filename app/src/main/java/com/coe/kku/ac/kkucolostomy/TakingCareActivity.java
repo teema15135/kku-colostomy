@@ -17,6 +17,12 @@ public class TakingCareActivity extends AppCompatActivity implements View.OnClic
         findViewById(R.id.taking_care_one_btn).setOnClickListener(this);
         findViewById(R.id.taking_care_two_btn).setOnClickListener(this);
         findViewById(R.id.taking_care_three_btn).setOnClickListener(this);
+        findViewById(R.id.taking_care_goto_home).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     @Override
