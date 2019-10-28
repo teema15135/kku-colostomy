@@ -69,7 +69,7 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
             img.getLayoutParams().width = 0;
             img.requestLayout();
             title.setText(getString(R.string.compli_content_two_title));
-            care.setText(getString(R.string.compli_content_one_care));
+            care.setText(getString(R.string.compli_content_two_care));
             soundId = R.raw.sound412;
         }
         else if (content == 3) {
