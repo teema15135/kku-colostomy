@@ -29,7 +29,9 @@ public class ComplicationActivity extends AppCompatActivity implements View.OnCl
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ComplicationActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         });
 

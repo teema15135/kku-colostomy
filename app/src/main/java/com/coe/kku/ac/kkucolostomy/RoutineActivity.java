@@ -22,7 +22,9 @@ public class RoutineActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RoutineActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         });
 

@@ -26,7 +26,9 @@ public class ComplicationContentDoctorActivity extends AppCompatActivity impleme
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ComplicationContentDoctorActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         });
 

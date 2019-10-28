@@ -31,7 +31,9 @@ public class TakingCareContentOneActivity extends AppCompatActivity implements V
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TakingCareContentOneActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         });
 

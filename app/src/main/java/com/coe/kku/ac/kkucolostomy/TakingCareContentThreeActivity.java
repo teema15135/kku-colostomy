@@ -30,7 +30,9 @@ public class TakingCareContentThreeActivity extends AppCompatActivity implements
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TakingCareContentThreeActivity.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
+                finish();
             }
         });
 
