@@ -26,41 +26,6 @@
                 android:layout_weight="1.7" />
         </LinearLayout>
 
-
-        <RelativeLayout
-            android:id="@+id/basic_care_header"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:gravity="center_vertical">
-            <ImageButton
-                android:id="@+id/knowledge_back_button"
-                android:layout_width="@dimen/back_button_size"
-                android:layout_height="@dimen/back_button_size"
-                android:layout_margin="20dp"
-                android:clickable="true"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/back_bold_black" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@id/knowledge_back_button"
-                android:fontFamily="@font/mitr_light"
-                android:text="ความรู้ทั่วไป"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-            <ImageView
-                android:id="@+id/general_home_btn"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/home_black"/>
-        </RelativeLayout>
-
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -232,6 +197,38 @@
 
         </ScrollView>
 
+        <RelativeLayout
+            android:id="@+id/basic_care_header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/knowledge_back_button"
+                android:layout_width="@dimen/back_button_size"
+                android:layout_height="@dimen/back_button_size"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_bold_black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/knowledge_back_button"
+                android:fontFamily="@font/mitr_light"
+                android:text="ความรู้ทั่วไป"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <ImageView
+                android:id="@+id/general_home_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_black"/>
+        </RelativeLayout>
 
     </RelativeLayout>
 
