@@ -27,7 +27,6 @@
             android:paddingBottom="25dp">
 
             <TextView
-                android:id="@+id/main_kku_colostomy"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/cloud"
