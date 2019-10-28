@@ -2,6 +2,7 @@ package com.coe.kku.ac.kkucolostomy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,14 @@ public class TakingCareContentTwoActivity extends AppCompatActivity implements V
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taking_care_content_two);
+
+        findViewById(R.id.tc_content_2_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TakingCareContentTwoActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         backBtn = (ImageButton) findViewById(R.id.tc_two_back_btn);
         backBtn.setOnClickListener(new View.OnClickListener() {

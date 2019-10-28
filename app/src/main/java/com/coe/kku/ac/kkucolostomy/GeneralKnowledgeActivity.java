@@ -2,6 +2,7 @@ package com.coe.kku.ac.kkucolostomy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,14 @@ public class GeneralKnowledgeActivity extends AppCompatActivity implements View.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general_knowledge);
+
+        findViewById(R.id.general_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GeneralKnowledgeActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         whatColostomy = (ImageButton) findViewById(R.id.general_knowledge_what);
         whyColostomy = (ImageButton) findViewById(R.id.general_knowledge_why);

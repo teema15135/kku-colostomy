@@ -24,6 +24,15 @@ public class ComplicationActivity extends AppCompatActivity implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complication);
 
+
+        findViewById(R.id.compli_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ComplicationActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         backBtn = (ImageButton) findViewById(R.id.compli_back_btn);
 
         oneBtn = (Button) findViewById(R.id.compli_menu_one_btn);

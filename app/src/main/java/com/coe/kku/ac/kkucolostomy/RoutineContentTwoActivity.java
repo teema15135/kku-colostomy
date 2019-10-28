@@ -2,6 +2,7 @@ package com.coe.kku.ac.kkucolostomy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,14 @@ public class RoutineContentTwoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_routine_content_two);
+
+        findViewById(R.id.routine_content_2_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RoutineContentTwoActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
 //        playMedia = (LinearLayout) findViewById(R.id.routine_content_two_media_play);
 //        playMedia.setOnClickListener(new View.OnClickListener() {

@@ -29,6 +29,14 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/back_bold_black" />
+            <ImageView
+                android:id="@+id/tc_content_3_home_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_black"/>
         </RelativeLayout>
 
     </LinearLayout>

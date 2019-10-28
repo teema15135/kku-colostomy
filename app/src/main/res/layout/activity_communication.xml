@@ -34,6 +34,15 @@
                 android:text="การเข้าสังคม"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/commu_home_btn"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_black"/>
         </RelativeLayout>
 
 
@@ -84,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/commu_content_subtitle"
                     android:textColor="@color/pastel_yellow"
-                    android:textSize="14sp"
+                    android:textSize="18sp"
                     android:fontFamily="@font/baijamjuree_semibold"/>
 
                 <TextView
@@ -97,9 +106,17 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/baijamjuree_regular"
                     android:lineSpacingExtra="5dp"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/c1"/>
+
                 <TextView
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/commu_content_2"
@@ -107,6 +124,14 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/baijamjuree_regular"
                     android:lineSpacingExtra="5dp"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/c2"/>
+
                 <TextView
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
@@ -117,9 +142,17 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/baijamjuree_regular"
                     android:lineSpacingExtra="5dp"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/c3"/>
+
                 <TextView
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/commu_content_4"
@@ -127,9 +160,17 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/baijamjuree_regular"
                     android:lineSpacingExtra="5dp"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/c4"/>
+
                 <TextView
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/commu_content_5"
@@ -137,6 +178,13 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/baijamjuree_regular"
                     android:lineSpacingExtra="5dp"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/c5"/>
 
 
             </LinearLayout>

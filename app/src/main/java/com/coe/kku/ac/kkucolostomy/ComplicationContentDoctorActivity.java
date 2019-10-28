@@ -22,6 +22,14 @@ public class ComplicationContentDoctorActivity extends AppCompatActivity impleme
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complication_content_doctor);
 
+        findViewById(R.id.compli_content_doctor_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ComplicationContentDoctorActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         backBtn = (ImageButton) findViewById(R.id.compli_content_doctor_back_btn);
 
         backBtn.setOnClickListener(new View.OnClickListener() {

@@ -32,6 +32,14 @@ public class ComplicationContentActivity extends AppCompatActivity implements Vi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complication_content);
 
+        findViewById(R.id.compli_content_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ComplicationContentActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         backBtn = (ImageButton) findViewById(R.id.compli_content_back_btn);
 
         title = (TextView) findViewById(R.id.compli_content_title);

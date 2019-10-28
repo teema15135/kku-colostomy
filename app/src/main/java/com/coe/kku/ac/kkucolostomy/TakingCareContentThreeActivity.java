@@ -2,6 +2,7 @@ package com.coe.kku.ac.kkucolostomy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -24,6 +25,14 @@ public class TakingCareContentThreeActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_taking_care_content_three);
+
+        findViewById(R.id.tc_content_3_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TakingCareContentThreeActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mPlayer = MediaPlayer.create(TakingCareContentThreeActivity.this, R.raw.sound23);
 

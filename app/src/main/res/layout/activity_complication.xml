@@ -35,6 +35,15 @@
             android:text="ภาวะแทรกซ้อน"
             android:textColor="@color/black"
             android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/compli_home_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home_black"/>
     </RelativeLayout>
 
 

@@ -29,13 +29,19 @@
 
             <TextView
                 android:id="@+id/routine_content_topic"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/header_left_margin"
                 android:fontFamily="@font/mitr_regular"
                 android:gravity="center_vertical"
                 android:text="@string/sex"
                 android:textSize="@dimen/header_font_size" />
+            <ImageView
+                android:layout_marginLeft="100dp"
+                android:id="@+id/routine_content_home_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home_black"/>
 
         </LinearLayout>
 

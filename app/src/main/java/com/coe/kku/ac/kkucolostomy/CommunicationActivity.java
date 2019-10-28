@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -25,6 +26,14 @@ public class CommunicationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_communication);
+
+        findViewById(R.id.commu_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CommunicationActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         backBtn = (ImageButton) findViewById(R.id.commu_content_back_btn);
         mediaPlay = (ImageButton) findViewById(R.id.commu_content_media_play);

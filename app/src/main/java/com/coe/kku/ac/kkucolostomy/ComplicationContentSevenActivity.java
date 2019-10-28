@@ -2,6 +2,7 @@ package com.coe.kku.ac.kkucolostomy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,14 @@ public class ComplicationContentSevenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complication_content_seven);
+
+        findViewById(R.id.compli_content_seven_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ComplicationContentSevenActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         backBtn = (ImageButton) findViewById(R.id.compli_content_seven_back_btn);
 

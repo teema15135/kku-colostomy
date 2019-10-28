@@ -18,6 +18,14 @@ public class RoutineActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_routine);
 
+        findViewById(R.id.routine_home_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RoutineActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         routineBathing = (LinearLayout) findViewById(R.id.routine_bathing);
         routineWorkOut = (LinearLayout) findViewById(R.id.routine_work_out);
         routineEating = (LinearLayout) findViewById(R.id.routine_eating);
