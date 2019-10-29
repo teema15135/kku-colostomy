@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -34,6 +36,9 @@ public class RoutineContentThreeActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        ((TextView) findViewById(R.id.routine_content_describe)).setText(Html.fromHtml(String.format(
+                getString(R.string.eating_1))));
 
 //        playMedia = (LinearLayout) findViewById(R.id.routine_content_three_media_play);
 //        playMedia.setOnClickListener(new View.OnClickListener() {

@@ -74,6 +74,13 @@
 
                         </LinearLayout>
 
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/general_knowledge_6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -83,6 +90,7 @@
                             android:text="@string/home_meaning"
                             android:textColor="@color/dark"
                             android:textSize="16sp" />
+
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -109,6 +117,13 @@
                                 android:src="@drawable/speaker_red" />
 
                         </LinearLayout>
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/general_knowledge_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -145,6 +160,13 @@
 
                         </LinearLayout>
 
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/general_knowledge_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -180,6 +202,13 @@
 
                         </LinearLayout>
 
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/general_knowledge_1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -189,15 +218,17 @@
                             android:text="@string/home_where"
                             android:textColor="@color/dark"
                             android:textSize="16sp" />
+
                     </LinearLayout>
 
-
                 </RelativeLayout>
+
             </LinearLayout>
 
         </ScrollView>
 
         <RelativeLayout
+            android:background="@color/pastel_blue"
             android:id="@+id/basic_care_header"
             android:layout_width="match_parent"
             android:layout_height="70dp"

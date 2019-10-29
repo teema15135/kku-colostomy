@@ -35,51 +35,110 @@
 
     <LinearLayout
 
-        android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="70dp">
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_semibold"
-            android:textSize="14sp"
+            android:text="Icons made by Freepik from www.flaticon.com"
             android:textColor="@color/dark"
-            android:text="Icon made by Freepik from www.flaticon.com"/>
+            android:textSize="14sp" />
+
         <TextView
-            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/nunito_semibold"
-            android:textSize="14sp"
+            android:text="Icons made by surang from www.flaticon.com"
             android:textColor="@color/dark"
-            android:text="Icon made by surang from www.flaticon.com"/>
+            android:textSize="14sp" />
+
         <TextView
-            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/nunito_semibold"
-            android:textSize="14sp"
+            android:text="Icons made by Alfredo Hernandez from www.flaticon.com"
             android:textColor="@color/dark"
-            android:text="Icon made by Alfredo Hernandez from www.flaticon.com"/>
+            android:textSize="14sp" />
+
         <TextView
-            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/nunito_semibold"
-            android:textSize="14sp"
+            android:text="Icons made by Icon Pond from www.flaticon.com"
             android:textColor="@color/dark"
-            android:text="Icons made by Icon Pond from www.flaticon.com"/>
+            android:textSize="14sp" />
+
         <TextView
-            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/nunito_semibold"
-            android:textSize="14sp"
+            android:text="Icons made by Pixel Buddha from www.flaticon.com"
             android:textColor="@color/dark"
-            android:text="Icons made by Pixel Buddha from www.flaticon.com"/>
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Icons made by Smashicons from www.flaticon.com"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Icons made by Vitaly Gorbachev from www.flaticon.com"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Icons made by Flat Icons from www.flaticon.com"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Icons made by Vectors Market from www.flaticon.com"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:text="Icons made by Darius Dan from www.flaticon.com"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baijamjuree_regular"
+            android:text="ภาพประกอบจากหนังสือ การพยาบาลผู้ป่วยที่มีลำไส้และรูเปิดทางหน้าท้อง: ประสบการณ์จากผู้เชี่ยวชาญ โดย จุฬาพร สังประสิต"
+            android:textColor="@color/dark"
+            android:textSize="14sp" />
 
     </LinearLayout>
 

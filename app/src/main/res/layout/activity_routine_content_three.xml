@@ -116,9 +116,10 @@
                     android:src="@drawable/good_food" />
 
                 <TextView
+                    android:textColor="@color/darker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/shape_pastel_blue_round"
+                    android:background="@drawable/shape_eating_red"
                     android:fontFamily="@font/baijamjuree_semibold"
                     android:paddingHorizontal="20dp"
                     android:text="@string/eating_4"

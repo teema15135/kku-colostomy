@@ -47,6 +47,8 @@ public class EvaluationAdviceDialogFragment extends DialogFragment {
     private TextView toComplicationTextView;
     private Button closeButton;
 
+    private View currentView;
+
     public EvaluationAdviceDialogFragment() {
         // Required empty public constructor
     }
@@ -84,7 +86,7 @@ public class EvaluationAdviceDialogFragment extends DialogFragment {
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         setStyle(DialogFragment.STYLE_NO_FRAME, android.R.style.Theme);
         bindView(view);
-        setupView();
+        setupView(view);
     }
 
     private void bindView(View view) {
@@ -100,7 +102,7 @@ public class EvaluationAdviceDialogFragment extends DialogFragment {
         });
     }
 
-    private void setupView() {
+    private void setupView(View view) {
         advertiseTextView.setText(stringId);
 
         switch (complicationNumber) {
@@ -145,6 +147,19 @@ public class EvaluationAdviceDialogFragment extends DialogFragment {
                 Log.d(TAG, "onClick: Goto complication " + complicationNumber);
             }
         });
+
+        switch (stringId) {
+            case R.string.choice12:
+            case R.string.choice13:
+            case R.string.choice22:
+            case R.string.choice32:
+            case R.string.choice42:
+            case R.string.choice43:
+            case R.string.choice54:
+            case R.string.choice63:
+                view.findViewById(R.id.evaluation_dialog_alert_image).setVisibility(View.VISIBLE);
+            default:
+        }
     }
 
     private void goToComplicationActivity() {
